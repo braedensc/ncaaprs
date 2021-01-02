@@ -56,7 +56,11 @@ class App extends Component {
       this.setState({isLoading: true})
       let team = {};
       fetch(`/athletes/?param1=${teamLink}`)
-      .then(res => res.json())
+      .then((res) => {
+        if (!res.ok) {
+          throw Error (res.statusText)
+        }
+        return res.json()})
       .then(data => {
         console.log(data)
         let allAthletes = []
@@ -194,6 +198,12 @@ class App extends Component {
         }
         const t = this.state.teamList
         console.log(this.state.teamList)
+        }).catch((error) => {
+          q--
+          if (q === 0) {
+            this.setState({isLoading : false})
+          }
+          alert("Unable to access team data (try checking internet connection, link, or team roster)")
         })
        
   }
