@@ -7,7 +7,6 @@ export default function AthleteList(props) {
     athleteList
   } = props;
 
-console.log(athleteList)
   return (
     <div className="athlete-list">
       {athleteList.map((athlete) => (

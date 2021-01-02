@@ -18,17 +18,6 @@ class App extends Component {
     this.state = {
       currentTime : null,
       teamList: [],
-      athletes : [],
-      athletes800: [],
-      athletes1500: [],
-      athletesMile: [],
-      athletes3000: [],
-      athletes5000: [],
-      athletes10000: [],
-      athletes8k: [],
-      athletes10k: [],
-      athletes5k: [],
-      athletes6k: [],
       currentAthletes: 'athletes800',
       teamurl: 'https://www.tfrrs.org/teams/GA_college_m_Georgia_Tech.html',
       id : teamID,
@@ -41,7 +30,6 @@ class App extends Component {
 
   componentDidMount() {
     let teamurls = JSON.parse(localStorage.getItem("teamurls") || "[]");
-    console.log(teamurls)
     if (teamurls.length !== 0) {
     for (let i = 0; i < teamurls.length; i ++) {
     this.fetchData(teamurls[i])
@@ -50,7 +38,11 @@ class App extends Component {
   }
   
 
-
+/**
+ * Sends a fetch req to the backend python server which then retrieves data from tfrrs
+ * and then compiles into into a series of lists. THe lists are initially retrieved as a JSON object
+ * @param {String} teamLink the idToken of the user
+ */
   fetchData = (teamLink) => {
       q++;
       this.setState({isLoading: true})
@@ -62,7 +54,6 @@ class App extends Component {
         }
         return res.json()})
       .then(data => {
-        console.log(data)
         let allAthletes = []
         let currAthlete = null
         for (let i = 0; i < data.athletes.length; i++) {
@@ -75,7 +66,6 @@ class App extends Component {
 
        let allAthletes800 = []
        let currAthlete800 = null
-       console.log(data)
        for (let i = 0; i < data.athletes800.length; i++) {
          currAthlete800 = data.athletes800[i]
          currAthlete800 = JSON.parse(JSON.parse(currAthlete800))
@@ -85,27 +75,22 @@ class App extends Component {
 
        let allAthletes1500 = []
        let currAthlete1500 = null
-       console.log(data)
        for (let i = 0; i < data.athletes1500.length; i++) {
          currAthlete1500 = data.athletes1500[i]
          currAthlete1500 = JSON.parse(JSON.parse(currAthlete1500))
          allAthletes1500.push(currAthlete1500)
        }
        team.athletes1500 = allAthletes1500
-
        let allAthletesMile = []
        let currAthleteMile = null
-       console.log(data)
        for (let i = 0; i < data.athletesMile.length; i++) {
          currAthleteMile = data.athletesMile[i]
          currAthleteMile = JSON.parse(JSON.parse(currAthleteMile))
          allAthletesMile.push(currAthleteMile)
        }
        team.athletesMile = allAthletesMile
-
        let allAthletes3000 = []
        let currAthlete3000 = null
-       console.log(data)
        for (let i = 0; i < data.athletes3000.length; i++) {
          currAthlete3000 = data.athletes3000[i]
          currAthlete3000 = JSON.parse(JSON.parse(currAthlete3000))
@@ -115,7 +100,6 @@ class App extends Component {
 
        let allAthletes5000 = []
        let currAthlete5000 = null
-       console.log(data)
        for (let i = 0; i < data.athletes5000.length; i++) {
          currAthlete5000 = data.athletes5000[i]
          currAthlete5000 = JSON.parse(JSON.parse(currAthlete5000))
@@ -125,7 +109,6 @@ class App extends Component {
 
        let allAthletes10000 = []
        let currAthlete10000 = null
-       console.log(data)
        for (let i = 0; i < data.athletes10000.length; i++) {
          currAthlete10000 = data.athletes10000[i]
          currAthlete10000 = JSON.parse(JSON.parse(currAthlete10000))
@@ -135,7 +118,6 @@ class App extends Component {
 
        let allAthletes8k = []
        let currAthlete8k = null
-       console.log(data)
        for (let i = 0; i < data.athletes8k.length; i++) {
          currAthlete8k = data.athletes8k[i]
          currAthlete8k = JSON.parse(JSON.parse(currAthlete8k))
@@ -145,7 +127,6 @@ class App extends Component {
 
        let allAthletes10k = []
        let currAthlete10k = null
-       console.log(data)
        for (let i = 0; i < data.athletes10k.length; i++) {
          currAthlete10k = data.athletes10k[i]
          currAthlete10k = JSON.parse(JSON.parse(currAthlete10k))
@@ -155,24 +136,20 @@ class App extends Component {
 
        let allAthletes5k = []
        let currAthlete5k = null
-       console.log(data)
        for (let i = 0; i < data.athletes5k.length; i++) {
          currAthlete5k = data.athletes5k[i]
          currAthlete5k = JSON.parse(JSON.parse(currAthlete5k))
          allAthletes5k.push(currAthlete5k)
        }
        team.athletes5k = allAthletes5k
-
        let allAthletes6k = []
        let currAthlete6k = null
-       console.log(data)
        for (let i = 0; i < data.athletes6k.length; i++) {
          currAthlete6k = data.athletes6k[i]
          currAthlete6k = JSON.parse(JSON.parse(currAthlete6k))
          allAthletes6k.push(currAthlete6k)
        }
-       team.athletes6k = allAthletes6k
-       
+      team.athletes6k = allAthletes6k
       teamID ++
       team.id = teamID
       team.currentAthletes = this.state.currentAthletes
@@ -196,8 +173,6 @@ class App extends Component {
                   localStorage.setItem('teamurls', JSON.stringify(this.state.teamurlList))
                 })
         }
-        const t = this.state.teamList
-        console.log(this.state.teamList)
         }).catch((error) => {
           q--
           if (q === 0) {
@@ -208,6 +183,12 @@ class App extends Component {
        
   }
 
+
+
+  /**
+ * Cahnges the event currently being viewed.
+ * @param {String} event a String of 'pr' followed by the event: 'pr800', for example
+ */
   changeEvent = (event) => {
     let teams = this.state.teamList 
     for (let i = 0; i < teams.length; i ++) {
@@ -219,6 +200,12 @@ class App extends Component {
     })
   }
 
+
+
+  /**
+ * Adds a team. Should be called addTeam, but I can't be bothered to change it now
+ * @param {String} event a String of 'pr' followed by the event: 'pr800', for example
+ */
   changeTeam = (event) => {
     this.setState({
       teamurl : event
@@ -226,6 +213,13 @@ class App extends Component {
     this.fetchData(event)
   }
 
+
+
+  
+  /**
+ * Removes a team by removing it from the teamList in state
+ * @param {String} teamID the unique id assigned to the team when it was added
+ */
   removeTeam = (teamID) => {
       this.setState((prevState) => {
         const newTeamList = prevState.teamList.filter((team) => team.id !== teamID);
@@ -241,6 +235,11 @@ class App extends Component {
                 });
   }
 
+
+  
+  /**
+ * Removes all the teams, clears the teamList in state, clears localStorage
+ */
   removeAllTeams = () => {
     this.setState((prevState) => {
       return {

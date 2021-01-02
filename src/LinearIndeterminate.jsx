@@ -14,7 +14,6 @@ const useStyles = makeStyles((theme) => ({
 export default function LinearIndeterminate({isLoading}) {
   const classes = useStyles();
 
-console.log(isLoading)
   return (
     <div className={classes.root}>
       <LinearProgress />

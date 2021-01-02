@@ -14,16 +14,16 @@ def get_current_time():
     return {'time': time.time()}
 
 
+
 @app.route('/athletes/')
 def get_athlete_lists():
+    '''Returns a JSON object containingg lists of all events and its athletes for the given team the parameter is the url needed to go to to find the team roster '''
     teamurl = request.args.get('param1')
-    print(teamurl)
     athletes = athleteProfiles.buildAthleteList(teamurl)
     athletes = athleteProfiles.setallprs(athletes)
     sathletes = copy.deepcopy(athletes)
     for i in range(len(athletes)):
         athletes[i] = json.dumps(athletes[i].toJson())
-    print(athletes)
     athletes800 = athleteProfiles.buildprList(sathletes, 'pr800')
     for i in range(len(athletes800)):
         athletes800[i] = json.dumps(athletes800[i].toJson())

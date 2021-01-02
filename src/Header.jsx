@@ -54,7 +54,6 @@ changeTeam, removeTeams
     changeTeam(value)
   }
 
- console.log(changeTeam)
   return (
 
   

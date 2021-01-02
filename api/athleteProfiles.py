@@ -12,6 +12,9 @@ import json
 
 timeFormats = ['%M:%S.%f', '%H:%M:%S.%f']
 
+#example commented at the bottom
+
+
 class Athlete:
     def __init__(self, name, link, prs, logo, title, teamType):
         self.name = name
@@ -38,43 +41,48 @@ class Athlete:
     def toJson(self):
         return json.dumps(self, default=lambda o: o.__dict__)
 
+
 def getAthleteTimes(profileurl):
+    '''
+    returns a list of events followed by prs for the given athlete: ex. [800, 1:40, 1500, 5:40]
+            Parameters:
+                    profileurl (String): The link to the athletes tfrrs page
+    '''
+
     req = Request(profileurl, headers={'User-Agent': 'Mozilla/5.0'})
     page1 = urlopen(req)
     html_bytes1 = page1.read()
     html1 = html_bytes1.decode('utf-8', 'ignore')
     p = HTMLTableParser()
     p.feed(html1)
-    #pprint(p.tables[0])
     return p.tables[0]
 
 
-
+ 
 def getAthletes(teamurl):
+    '''
+    builds a list of athlete objects which contain all the info needed for each athlete
+            Parameters:
+                    profileurl (teamurl): The link to the team tfrrs page
+    '''
+
     req = Request(teamurl, headers={'User-Agent': 'Mozilla/5.0'})
     page1 = urlopen(req)
     html_bytes1 = page1.read()
     html1 = html_bytes1.decode('utf-8', 'ignore')
-    #print(html1)
     p = HTMLTableParser()
     p.feed(html1)
     athleteNames = p.tables[0]
-    
     athleteProfiles = getLinksToAthleteProfiles(html1)
     logo = getLogo(html1)
     teamTitle = getTeamTitle(html1)
     athleteList = []
     teamType = getTeamType(html1)
-    print(teamType)
-    print(logo)
-    print(teamTitle)
-   # pprint(athleteNames)
     for i in range(1, len(athleteNames) - 1):
         name = " ".join(athleteNames[i][0].split(", ")[::-1])
         athleteList.append(Athlete(name, athleteProfiles[i - 1], [], logo, teamTitle, teamType))
     name = " ".join(athleteNames[-1][0].split(", ")[::-1])
     athleteList.append(Athlete(name, athleteProfiles[-1], [], logo, teamTitle, teamType))
-   # print(athleteList)
     return athleteList
 
 
@@ -82,31 +90,52 @@ def getAthletes(teamurl):
 
 
 def getLinksToAthleteProfiles(html1):
+    '''
+    returns a list of urls for each athlete in the roster
+            Parameters:
+                    html1 (String): All the html code on the team roster web page, as a very very long String
+    '''
+
     urllist = re.findall(r"""<\s*A\s*HREF=["']([^=]+)["']""", html1)
     string = '//www.tfrrs.org/athletes/'
     urls = list(filter(lambda x : ('athletes' in x), urllist))
-    
     for i in range(len(urls)):
         urls[i] = urls[i].replace(" ", "")
-    #pprint(urls)
     return urls
 
 
 #https://logos.tfrrs.org/(insert team here)
 def getLogo(html1):
+    '''
+    returns the link to the team logo on the tffrs team page
+            Parameters:
+                    html1 (String): All the html code on the team roster web page, as a very very long String
+    '''
+
     urllist = re.findall(r"""https://logos.tfrrs.org/[^\s<>"]+""", html1)
-   # print(urllist)
     for i in range(len(urllist)):
         urllist[i] = urllist[i].replace(" ", "")
     return urllist[0]
 
+
 def getTeamTitle(html1):
+    '''
+    returns the name of the team from the tfrrs page ex. Georgia Tech
+            Parameters:
+                    html1 (String): All the html code on the team roster web page, as a very very long String
+    '''
+
     urllist = re.findall(r"""https://logos.tfrrs.org/[^\s<>"]+.*\n.*\n""", html1)
     teamNameIndex = urllist[0].find("\n")
     teamTitle = urllist[0][teamNameIndex:-6]
     return teamTitle
 
 def getTeamType(html1):
+    '''
+    returns the type of the team from the tfrrs page: ex. Men's Cross Country
+            Parameters:
+                    html1 (String): All the html code on the team roster web page, as a very very long String
+    '''
     urllist = re.findall(r"""https://logos.tfrrs.org/[^\s<>"]+.*\n.*\n.*\n.*\n""", html1)
     teamTypeIndex = urllist[0].find('actions">')
     teamType = urllist[0][teamTypeIndex + 9:-6]
@@ -114,6 +143,12 @@ def getTeamType(html1):
 
 
 def buildAthleteList(teamurl):
+    '''
+    returns a list of of athlete objects which now have a messy array of prs
+            Parameters:
+                    teamurl (String): link to team tffrs page
+    '''
+
     athleteList = getAthletes(teamurl)
     for i in range(len(athleteList)):
         table = getAthleteTimes('https:' + str(athleteList[i].link))
@@ -124,6 +159,13 @@ def buildAthleteList(teamurl):
 
 
 def setallprs(athleteList):
+    '''
+    builds the prlists for each athlete for each event. Each event gets its own list of athletes for each team.
+    Ex. {Georgia Tech - {prs800: [{name: alan drosky, time: 1:41}]}}
+            Parameters:
+                    athleteList (list): list of all athletes, as returned from buildAthleteList()
+    '''
+
     for i in range(len(athleteList)):
         try:
             index =  athleteList[i].prs.index('800') + 1
@@ -180,6 +222,13 @@ def setallprs(athleteList):
 
 
 def buildprList(athleteList, distance):
+    '''
+    returns a list of athletes for an even ranked by their prs
+            Parameters:
+                    athleteList (list): the list of athletes, as returned from setAllprs()
+                    distance (String): the event being compared. ex: "pr800" or "pr10k"
+    '''
+
     listprs = []
     for i in range(len(athleteList)):
         if getattr(athleteList[i], distance, None) is not None:
@@ -199,8 +248,10 @@ def sortprs(date, formats):
             continue
 
 
+#Example of how it should work.The /athlete route does this process for each team
+#athletes = buildAthleteList('https://www.tfrrs.org/teams/xc/FL_college_m_Miami_FL.html')
+#athletes = setallprs(athletes)
 
-athletes = buildAthleteList('https://www.tfrrs.org/teams/xc/FL_college_m_Miami_FL.html')
-athletes = setallprs(athletes)
-print(buildprList(athletes, 'pr8k'))
+#the fetch request does this for each event after the above and then sends it all as one big JSON object to the front-end
+#return buildprList(athletes, 'pr8k'))
 
