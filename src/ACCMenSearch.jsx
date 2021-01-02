@@ -100,11 +100,8 @@ export default function ACCMenSearch({ changeTeam }) {
   });
 
   const handleFilterChange = (selected) => {
-    console.log(selected)
     if (selected === 'all') {
-      console.log(selected)
       for (let i = 1; i< filterOptions.length; i++) {
-        console.log(filterOptions[i].value)
         changeTeam(filterOptions[i].value)
       }
     } else {

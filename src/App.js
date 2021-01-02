@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import List from './List';
 import Sidebar from './Sidebar';
 import Header from './Header';
 import TeamList from './TeamList'
@@ -257,7 +256,7 @@ class App extends Component {
   render() {
     
     const {
-      currentTime, athletes, athletes800, athletes1500, athletesMile, athletes3000, athletes5000, athletes10000, athletes8k, athletes10k, currentAthletes, teamList, athletes5k, athletes6k, isLoading
+       teamList, isLoading
     } = this.state;
 
 

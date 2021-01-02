@@ -21,7 +21,7 @@ class User extends Component {
 
     return (
         <div className="athlete" >
-            <a href={link} target="_blank">{name}</a> - {time}
+            <a href={link} target="_blank" rel="noreferrer">{name}</a> - {time}
         </div>
      
     );

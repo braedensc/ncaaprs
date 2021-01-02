@@ -1,17 +1,15 @@
 import React, { useState } from 'react';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faCaretSquareLeft, faCaretSquareRight, faUserPlus, faShareSquare, faStar, faHome, faUserSlash,
+  faCaretSquareLeft, faCaretSquareRight
 } from '@fortawesome/free-solid-svg-icons';
-import { faGoogleDrive } from '@fortawesome/free-brands-svg-icons';
 import './Sidebar.css';
 
 export default function Sidebar({
    changeEvent
 }) {
   const body = document.getElementsByTagName('body')[0];
-  const style = getComputedStyle(body);
+ 
 
   const initialState = true;
   const [expand, setExpand] = useState(initialState);

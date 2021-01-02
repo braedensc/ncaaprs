@@ -1,9 +1,5 @@
 import React, { useState } from 'react';
-import PropTypes from 'prop-types';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSyncAlt, faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
-//import icon from './images/unidrive-logo.png';
-//import iconWhite from './images/unidrive-logo-white.png';
 import './Header.css';
 import ACCMenSearch from './ACCMenSearch.jsx';
 import ACCWomenSearch from './ACCWomenSearch.jsx';
@@ -17,31 +13,11 @@ import {
 export default function Header({
 changeTeam, removeTeams
 }) {
-  let currentTheme = localStorage.getItem('theme');
-  if (currentTheme === null) currentTheme = 'light';
-  const [theme, setTheme] = useState(currentTheme);
-
   let currentValue = 'https://www.tfrrs.org/teams/GA_college_m_Georgia_Tech.html'
   const [value, setValue] = useState(currentValue);
-  
-  const body = document.getElementsByTagName('body')[0];
 
 
-  if (theme === 'dark') {
-    body.classList.add('dark-theme');
-  }
 
-  const toggleTheme = () => {
-    if (theme === 'dark') {
-      body.classList.remove('dark-theme');
-      setTheme('light');
-      localStorage.setItem('theme', 'light');
-    } else {
-      body.classList.add('dark-theme');
-      setTheme('dark');
-      localStorage.setItem('theme', 'dark');
-    }
-  };
 
   const handleChange = (event) => {
    // changeTeam(event.target.value)
