@@ -1,0 +1,68 @@
+.user {
+    width: 75%;
+    margin: 15px 0px;
+    flex-basis: 25%;
+  }
+  
+  .user-banner {
+    border-radius: 5px;
+    border: none;
+    top: calc(var(--header-margin) + 5px);
+    height: 40px;
+    margin: 5px 0px;
+    color: var(--text);
+    background-color: var(--sub-bg);
+    text-align: left;
+    z-index: 1;
+    -webkit-box-shadow: 2px 2px 5px 0px var(--shadow-color);
+    -moz-box-shadow: 2px 2px 5px 0px var(--shadow-color);
+    box-shadow: 2px 2px 5px 0px var(--shadow-color);
+  }
+  
+  .user-banner:hover {
+    cursor: pointer;
+    outline: 1px solid var(--blue);
+  }
+  
+  .profile-picture {
+    height: 20px;
+    vertical-align: text-bottom;
+    border-radius: 10px;
+  }
+
+  .profile-picture1 {
+    height: 20px;
+    vertical-align: text-bottom;
+    border-radius: 10px;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .profile-name {
+    font-weight: bold;
+    text-overflow: ellipsis;
+  }
+  
+  .profile-email {
+    font-style: italic;
+    color: var(--subtle2);
+    font-size: 10px;
+  }
+  
+  .fa-minus-circle {
+    padding: 3px 6px;
+    color: var(--subtle2);
+    margin-left: 100px;
+
+  }
+
+  .fa-minus-circle:hover {
+    color: red;
+  }
+
+  
+ 
+  
+  /* icon CSS */
+  
+ 

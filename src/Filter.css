@@ -1,0 +1,9 @@
+.filter-container {
+    margin: 0px 0px;
+    float: right;
+    align-items: center;
+  }
+  
+  .filter-container div:hover {
+    cursor: pointer;
+  }
