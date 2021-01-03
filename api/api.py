@@ -9,13 +9,13 @@ app = Flask(__name__)
 
 
 
-@app.route('/time')
+@app.route('/api/time')
 def get_current_time():
     return {'time': time.time()}
 
 
 
-@app.route('/athletes/')
+@app.route('/api/athletes/')
 def get_athlete_lists():
     '''Returns a JSON object containingg lists of all events and its athletes for the given team the parameter is the url needed to go to to find the team roster '''
     teamurl = request.args.get('param1')

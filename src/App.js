@@ -46,7 +46,7 @@ class App extends Component {
       q++;
       this.setState({isLoading: true})
       let team = {};
-      fetch(`/athletes/?param1=${teamLink}`)
+      fetch(`/api/athletes/?param1=${teamLink}`)
       .then((res) => {
         if (!res.ok) {
           throw Error (res.statusText)
