@@ -49,7 +49,7 @@ class App extends Component {
       fetch(`/api/athletes/?param1=${teamLink}`)
       .then((res) => {
         if (!res.ok) {
-          throw Error (res.statusText)
+          throw Error (res)
         }
         return res.json()})
       .then(data => {
