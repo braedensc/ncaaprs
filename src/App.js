@@ -177,6 +177,7 @@ class App extends Component {
           if (q === 0) {
             this.setState({isLoading : false})
           }
+          console.log(error)
           alert("Unable to access team data (try checking internet connection, link, or team roster)")
         })
        
