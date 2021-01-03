@@ -1,6 +1,6 @@
 import time
 from flask import Flask
-import athleteProfiles
+from .athleteProfiles import *
 import json
 import copy
 from flask import request
