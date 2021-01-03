@@ -52,6 +52,7 @@ class App extends Component {
         if (!res.ok) {
           throw Error (res)
         }
+        console.log(res.json())
         return res.json()})
       .then(data => {
         let allAthletes = []
