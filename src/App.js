@@ -49,6 +49,7 @@ class App extends Component {
       fetch(`/api/athletes/?param1=${teamLink}`)
       .then(res => res.text())        
       .then(text => console.log(text))
+      /*
       .then((res) => {
         console.log(res)
         if (!res.ok) {
@@ -183,7 +184,7 @@ class App extends Component {
           console.log(error)
           alert("Unable to access team data (try checking internet connection, link, or team roster)")
         })
-       
+       */
   }
 
 
