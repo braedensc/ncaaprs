@@ -1,8 +1,7 @@
 from urllib.request import Request, urlopen
 from pprint import pprint
-from html_table_parser import HTMLTableParser
 import pandas as p
-from bs4 import BeautifulSoup 
+from html_table_parser import HTMLTableParser
 import lxml.html
 import re
 from itertools import chain
