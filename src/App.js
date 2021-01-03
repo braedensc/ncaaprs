@@ -47,12 +47,13 @@ class App extends Component {
       this.setState({isLoading: true})
       let team = {};
       fetch(`/api/athletes/?param1=${teamLink}`)
+      .then(res => res.text())        
+      .then(text => console.log(text))
       .then((res) => {
         console.log(res)
         if (!res.ok) {
           throw Error (res)
         }
-        console.log(res.json())
         return res.json()})
       .then(data => {
         let allAthletes = []
