@@ -48,6 +48,7 @@ class App extends Component {
       let team = {};
       fetch(`/api/athletes/?param1=${teamLink}`)
       .then((res) => {
+        console.log(res)
         if (!res.ok) {
           throw Error (res)
         }
