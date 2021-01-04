@@ -1,11 +1,14 @@
 import time
 from flask import Flask
-from .athleteProfiles import *
+from athleteProfiles import *
 import json
 import copy
 from flask import request
 
-app = Flask(__name__, static_folder='../build', static_url_path='/')
+#use for deployment
+#app = Flask(__name__, static_folder='../build', static_url_path='/')
+
+app = Flask(__name__)
 
 @app.route('/')
 def index():
