@@ -15,11 +15,11 @@ In order to deploy (Heroku specifically) there were several changes that had to 
 The following are all the ways that Deployment should differ from Main. The Deployment branch will not work locally.
 
 MAIN  (in api.py)                  
-- app = Flask(__name__)
+- app = Flask(\_\_name__)
 - from athleteProfiles import * 
 
 DEPLOYMENT (in api.py)
- - app = Flask(__name__, static_folder='../build', static_url_path='/')
+ - app = Flask(\_\_name__, static_folder='../build', static_url_path='/')
  - from .athleteProfiles import *
 
 MAIN (in package.json), Remove this line in Deployment
