@@ -31,9 +31,42 @@ MAIN (in package.json), Remove this line in Deployment
 INSTRUCTIONS TO DEPLOY (on Heroku):
 
 
+-To Update Current Deployment (Works only if you've installed heroku cli and already have a deployment):
+
+(open cmd window in root)
+
+git push heroku deployment:master
+
+
+
+-To Make New Deployment:
+
+go to heroku.com
+
+create an account
+
+create a new app
+
+once in your new app's page, click on deploy tab
+
+Follow instructions on how to deploy using existing git repository, make sure you are on deployment branch
+
+If heroku cli is installed:
+
+heroku login
+
+heroku create <my heroku app name>
+
+heroku git:remote -a <my heroku app name>
+
+git push heroku main
+
+
 
 
 INSTRUCTIONS TO RUN LOCALLY:
+
+(open cmd window)
 
 git clone https://github.com/braedensc/teamprs.git
 
