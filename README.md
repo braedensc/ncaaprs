@@ -1,3 +1,4 @@
+https://ncaaprs.herokuapp.com/
 # Getting Started with Create React App
 This is a create-react-app, but with python flask as backend also, so it's a little different. Read below for info on running the code and deploying it/updates to it.
 
@@ -27,12 +28,12 @@ MAIN (in package.json), Remove this line in Deployment
 
 
 
-TO DEPLOY (on Heroku):
+INSTRUCTIONS TO DEPLOY (on Heroku):
 
 
 
 
-TO RUN LOCALLY:
+INSTRUCTIONS TO RUN LOCALLY:
 
 git clone https://github.com/braedensc/teamprs.git
 
