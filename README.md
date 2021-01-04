@@ -33,3 +33,18 @@ TO DEPLOY (on Heroku):
 
 
 TO RUN LOCALLY:
+git clone https://github.com/braedensc/teamprs.git
+npm install
+cd api
+venv\Scripts\activate
+pip install -r requirements.txt
+cd ..
+npm run start-api
+(open new cmd window in same directory)
+npm start
+(it should now be running on localhost:3000)
+
+npm install and pip install only need to be done once (or if new packages have been added)
+make sure to always update requirements.txt when installing new python packages (both of them I'm not sure which one is actually being used)
+
+
