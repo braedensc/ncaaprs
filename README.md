@@ -13,9 +13,13 @@ Deployment should be used for... deployment (Heroku specifically)
 
 In order to deploy (Heroku specifically) there were several changes that had to be made in the code.
 The following are all the ways that Deployment should differ from Main. The Deployment branch will not work locally.
-MAIN  (in api.py)                   DEPLOYMENT (in api.py)
-- app = Flask(__name__)            - app = Flask(__name__, static_folder='../build', static_url_path='/')
-- from athleteProfiles import *    - from .athleteProfiles import *
+MAIN  (in api.py)                  
+- app = Flask(__name__)
+- from athleteProfiles import * 
+
+DEPLOYMENT (in api.py)
+ - app = Flask(__name__, static_folder='../build', static_url_path='/')
+ - from .athleteProfiles import *
 
 MAIN (in package.json), Remove this line in Deployment
 - ,"proxy" : "http://localhost:5000"  
