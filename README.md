@@ -13,6 +13,7 @@ Deployment should be used for... deployment (Heroku specifically)
 
 In order to deploy (Heroku specifically) there were several changes that had to be made in the code.
 The following are all the ways that Deployment should differ from Main. The Deployment branch will not work locally.
+
 MAIN  (in api.py)                  
 - app = Flask(__name__)
 - from athleteProfiles import * 
