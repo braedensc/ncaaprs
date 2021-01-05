@@ -1,4 +1,13 @@
 https://ncaaprs.herokuapp.com/
+
+TODO: 
+
+-add track events (add xc and track option for all list teams)
+
+-add mobile compatibility 
+
+-reduce load times
+
 # Getting Started with Create React App
 This is a create-react-app, but with python flask as backend also, so it's a little different. Read below for info on running the code and deploying it/updates to it.
 
@@ -47,7 +56,7 @@ create an account
 
 create a new app
 
-once in your new app's page, click on deploy tab
+once in your new app's page, click on deploy tab (make sure to add python to build packages in app settings, and make sure it is underneath node.js)
 
 Follow instructions on how to deploy using existing git repository, make sure you are on deployment branch
 
