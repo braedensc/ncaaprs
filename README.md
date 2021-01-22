@@ -44,7 +44,7 @@ INSTRUCTIONS TO DEPLOY (on Heroku):
 
 (open cmd window in root)
 
-git push heroku deployment:master
+git push heroku deployment:main
 
 
 
@@ -68,7 +68,7 @@ heroku create <my heroku app name>
 
 heroku git:remote -a <my heroku app name>
 
-git push heroku main
+git push heroku deployment:main
 
 
 
