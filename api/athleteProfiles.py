@@ -8,8 +8,10 @@ from itertools import chain
 from flask import Flask
 from datetime import datetime
 import json
+import concurrent.futures
 
 timeFormats = ['%M:%S.%f', '%H:%M:%S.%f']
+MAX_THREADS = 60
 
 #example commented at the bottom
 
@@ -149,10 +151,21 @@ def buildAthleteList(teamurl):
     '''
 
     athleteList = getAthletes(teamurl)
+    threads = min(MAX_THREADS, len(athleteList))
+    #make new temp table of links here
+    tempTable = []
+    table = []
+
     for i in range(len(athleteList)):
-        table = getAthleteTimes('https:' + str(athleteList[i].link))
-        table = list(chain.from_iterable(table))
-        athleteList[i].prs = table
+        tempTable.append('https:' + str(athleteList[i].link))
+    with concurrent.futures.ThreadPoolExecutor(max_workers=threads) as executor:
+        table.append(executor.map(getAthleteTimes, tempTable))
+   # for i in range(len(athleteList)):
+    #     table = getAthleteTimes('https:' + str(athleteList[i].link))
+    table = list(chain.from_iterable(table))
+    for i in range(len(athleteList)):
+        table[i] = list(chain.from_iterable(table[i]))
+        athleteList[i].prs = table[i]
     return athleteList
 
 
