@@ -8,6 +8,7 @@ from itertools import chain
 from flask import Flask
 from datetime import datetime
 import json
+from urllib.parse import quote
 
 timeFormats = ['%M:%S.%f', '%H:%M:%S.%f']
 
@@ -48,7 +49,7 @@ def getAthleteTimes(profileurl):
                     profileurl (String): The link to the athletes tfrrs page
     '''
 
-    req = Request(profileurl, headers={'User-Agent': 'Mozilla/5.0'})
+    req = Request(quote(profileurl, safe=':/'), headers={'User-Agent': 'Mozilla/5.0'})
     page1 = urlopen(req)
     html_bytes1 = page1.read()
     html1 = html_bytes1.decode('utf-8', 'ignore')
