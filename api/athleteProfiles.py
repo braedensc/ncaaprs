@@ -8,8 +8,11 @@ from itertools import chain
 from flask import Flask
 from datetime import datetime
 import json
+import concurrent.futures
+from urllib.parse import quote
 
 timeFormats = ['%M:%S.%f', '%H:%M:%S.%f']
+MAX_THREADS = 60
 
 #example commented at the bottom
 
@@ -48,7 +51,7 @@ def getAthleteTimes(profileurl):
                     profileurl (String): The link to the athletes tfrrs page
     '''
 
-    req = Request(profileurl, headers={'User-Agent': 'Mozilla/5.0'})
+    req = Request(quote(profileurl, safe=':/'), headers={'User-Agent': 'Mozilla/5.0'})
     page1 = urlopen(req)
     html_bytes1 = page1.read()
     html1 = html_bytes1.decode('utf-8', 'ignore')
@@ -149,10 +152,21 @@ def buildAthleteList(teamurl):
     '''
 
     athleteList = getAthletes(teamurl)
+    threads = min(MAX_THREADS, len(athleteList))
+    #make new temp table of links here
+    tempTable = []
+    table = []
+
     for i in range(len(athleteList)):
-        table = getAthleteTimes('https:' + str(athleteList[i].link))
-        table = list(chain.from_iterable(table))
-        athleteList[i].prs = table
+        tempTable.append('https:' + str(athleteList[i].link))
+    with concurrent.futures.ThreadPoolExecutor(max_workers=threads) as executor:
+        table.append(executor.map(getAthleteTimes, tempTable))
+   # for i in range(len(athleteList)):
+    #     table = getAthleteTimes('https:' + str(athleteList[i].link))
+    table = list(chain.from_iterable(table))
+    for i in range(len(athleteList)):
+        table[i] = list(chain.from_iterable(table[i]))
+        athleteList[i].prs = table[i]
     return athleteList
 
 

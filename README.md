@@ -1,70 +1,104 @@
+https://ncaaprs.herokuapp.com/
+
+TODO: 
+
+-add track events (add xc and track option for all list teams)
+
+-add mobile compatibility 
+
+-reduce load times
+
 # Getting Started with Create React App
+This is a create-react-app, but with python flask as backend also, so it's a little different. Read below for info on running the code and deploying it/updates to it.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I used heroku for hosting. If you want to use something else to deploy, it might be different. There's a ton of potential ways to host.
+I created the project using the tutorial in the following link. This project is structured and runs exactly like that, so refer there if needed.
+https://blog.miguelgrinberg.com/post/how-to-create-a-react--flask-project
 
-## Available Scripts
+And for deployment info
+https://blog.miguelgrinberg.com/post/how-to-deploy-a-react--flask-project
 
-In the project directory, you can run:
+Main should be used for local testing and development
+Deployment should be used for... deployment (Heroku specifically)
 
-### `npm start`
+In order to deploy (Heroku specifically) there were several changes that had to be made in the code.
+The following are all the ways that Deployment should differ from Main. The Deployment branch will not work locally.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+MAIN  (in api.py)                  
+- app = Flask(\_\_name__)
+- from athleteProfiles import * 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+DEPLOYMENT (in api.py)
+ - app = Flask(\_\_name__, static_folder='../build', static_url_path='/')
+ - from .athleteProfiles import *
 
-### `npm test`
+MAIN (in package.json), Remove this line in Deployment
+- ,"proxy" : "http://localhost:5000"  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+INSTRUCTIONS TO DEPLOY (on Heroku):
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-To Update Current Deployment (Works only if you've installed heroku cli and already have a deployment):
 
-### `npm run eject`
+(open cmd window in root)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+git push heroku deployment:main
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+-To Make New Deployment:
 
-## Learn More
+go to heroku.com
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+create an account
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+create a new app
 
-### Code Splitting
+once in your new app's page, click on deploy tab (make sure to add python to build packages in app settings, and make sure it is underneath node.js)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Follow instructions on how to deploy using existing git repository, make sure you are on deployment branch
 
-### Analyzing the Bundle Size
+If heroku cli is installed:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+heroku login
 
-### Making a Progressive Web App
+heroku create <my heroku app name>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+heroku git:remote -a <my heroku app name>
 
-### Advanced Configuration
+git push heroku deployment:main
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+INSTRUCTIONS TO RUN LOCALLY:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+(open cmd window)
+
+git clone https://github.com/braedensc/teamprs.git
+
+npm install
+
+cd api
+
+venv\Scripts\activate
+
+pip install -r requirements.txt
+
+cd ..
+
+npm run start-api
+
+(open new cmd window in same directory)
+
+npm start
+
+(it should now be running on localhost:3000)
+
+
+npm install and pip install only need to be done once (or if new packages have been added).
+Make sure to always update requirements.txt when installing new python packages (both of them I'm not sure which one is actually being used).
+
+
