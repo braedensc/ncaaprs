@@ -30,6 +30,13 @@ class Athlete:
         self.prs400 = None
         self.prs1000 = None
 
+        self.prs600 = None
+        self.prs100H = None
+        self.prs110H = None
+        self.prs400H = None
+        self.prs3000S = None
+
+
         self.pr800 = None
         self.pr1500 = None
         self.prMile = None
@@ -285,6 +292,34 @@ def setallprs(athleteList):
             athleteList[i].pr10k = athleteList[i].prs[index]
         except ValueError:
             pass
+
+        try:
+            index =  athleteList[i].prs.index('600') + 1
+            athleteList[i].pr600 = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('100H') + 1
+            athleteList[i].pr100H = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('110H') + 1
+            athleteList[i].pr110H = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('400H') + 1
+            athleteList[i].pr400H = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('3000S') + 1
+            athleteList[i].pr3000S = athleteList[i].prs[index]
+        except ValueError:
+            pass
+
+        
    # print(athleteList)
     return athleteList
 

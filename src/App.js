@@ -73,6 +73,53 @@ class App extends Component {
        }
        team.athletes60 = allAthletes60
 
+       let allAthletes100H = []
+       let currAthlete100H = null
+       for (let i = 0; i < data.athletes100H.length; i++) {
+         currAthlete100H = data.athletes100H[i]
+         currAthlete100H = JSON.parse(JSON.parse(currAthlete100H))
+         allAthletes100H.push(currAthlete100H)
+       }
+       team.athletes100H = allAthletes100H
+
+       let allAthletes110H = []
+       let currAthlete110H = null
+       for (let i = 0; i < data.athletes110H.length; i++) {
+         currAthlete110H = data.athletes110H[i]
+         currAthlete110H = JSON.parse(JSON.parse(currAthlete110H))
+         allAthletes110H.push(currAthlete110H)
+       }
+       team.athletes110H = allAthletes110H
+
+       let allAthletes400H = []
+       let currAthlete400H = null
+       for (let i = 0; i < data.athletes400H.length; i++) {
+         currAthlete400H = data.athletes400H[i]
+         currAthlete400H = JSON.parse(JSON.parse(currAthlete400H))
+         allAthletes400H.push(currAthlete400H)
+       }
+       team.athletes400H = allAthletes400H
+
+       let allAthletes600 = []
+       let currAthlete600 = null
+       for (let i = 0; i < data.athletes600.length; i++) {
+         currAthlete600 = data.athletes600[i]
+         currAthlete600 = JSON.parse(JSON.parse(currAthlete600))
+         allAthletes600.push(currAthlete600)
+       }
+       team.athletes600 = allAthletes600
+
+       let allAthletes3000S = []
+       let currAthlete3000S = null
+       for (let i = 0; i < data.athletes3000S.length; i++) {
+         currAthlete3000S = data.athletes3000S[i]
+         currAthlete3000S = JSON.parse(JSON.parse(currAthlete3000S))
+         allAthletes3000S.push(currAthlete3000S)
+       }
+       team.athletes3000S = allAthletes3000S
+
+
+
        let allAthletes60H = []
        let currAthlete60H = null
        for (let i = 0; i < data.athletes60H.length; i++) {
