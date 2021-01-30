@@ -29,6 +29,28 @@ def get_athlete_lists():
     sathletes = copy.deepcopy(athletes)
     for i in range(len(athletes)):
         athletes[i] = json.dumps(athletes[i].toJson())
+
+    athletes60 = buildprList(sathletes, 'pr60')
+    for i in range(len(athletes60)):
+        athletes60[i] = json.dumps(athletes60[i].toJson())
+    athletes60H = buildprList(sathletes, 'pr60H')
+    for i in range(len(athletes60H)):
+        athletes60H[i] = json.dumps(athletes60H[i].toJson())
+    athletes100 = buildprList(sathletes, 'pr100')
+    for i in range(len(athletes100)):
+        athletes100[i] = json.dumps(athletes100[i].toJson())
+    athletes200 = buildprList(sathletes, 'pr200')
+    for i in range(len(athletes200)):
+        athletes200[i] = json.dumps(athletes200[i].toJson())
+    athletes400 = buildprList(sathletes, 'pr400')
+    for i in range(len(athletes400)):
+        athletes400[i] = json.dumps(athletes400[i].toJson())
+    athletes1000 = buildprList(sathletes, 'pr1000')
+    for i in range(len(athletes1000)):
+        athletes1000[i] = json.dumps(athletes1000[i].toJson())
+
+
+    
     athletes800 = buildprList(sathletes, 'pr800')
     for i in range(len(athletes800)):
         athletes800[i] = json.dumps(athletes800[i].toJson())
@@ -59,8 +81,14 @@ def get_athlete_lists():
     athletes6k = buildprList(sathletes, 'pr6k')
     for i in range(len(athletes6k)):
         athletes6k[i] = json.dumps(athletes6k[i].toJson())
-    #print(athletes)
+    print(athletes)
     return {'athletes' : athletes,
+            'athletes60' : athletes60,
+            'athletes60H' : athletes60H,
+            'athletes100' : athletes100,
+            'athletes200' : athletes200,
+            'athletes400' : athletes400,
+            'athletes1000' : athletes1000,
             'athletes800' : athletes800,
             'athletes1500' : athletes1500,
             'athletesMile' : athletesMile,

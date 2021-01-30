@@ -11,7 +11,7 @@ import json
 import concurrent.futures
 from urllib.parse import quote
 
-timeFormats = ['%M:%S.%f', '%H:%M:%S.%f']
+timeFormats = ['%M:%S.%f', '%H:%M:%S.%f', '%S.%f']
 MAX_THREADS = 60
 
 #example commented at the bottom
@@ -22,6 +22,14 @@ class Athlete:
         self.name = name
         self.link = link
         self.prs = prs
+
+        self.prs60 = None
+        self.prs60H = None
+        self.prs100 = None
+        self.prs200 = None
+        self.prs400 = None
+        self.prs1000 = None
+
         self.pr800 = None
         self.pr1500 = None
         self.prMile = None
@@ -85,7 +93,6 @@ def getAthletes(teamurl):
                     if (num == 0):
                         num = p.tables[0][i][j].count(",")
                     extraLinkCount += num
-        print(extraLinkCount)
         del athleteProfiles[:extraLinkCount]
     else: 
         athleteNames = p.tables[0]
@@ -192,12 +199,42 @@ def buildAthleteList(teamurl):
 def setallprs(athleteList):
     '''
     builds the prlists for each athlete for each event. Each event gets its own list of athletes for each team.
-    Ex. {Georgia Tech - {prs800: [{name: alan drosky, time: 1:41}]}}
+    Ex. {Georgia Tech - {prs1500: [{name: alan drosky, time: 3:43}]}}
             Parameters:
                     athleteList (list): list of all athletes, as returned from buildAthleteList()
     '''
 
     for i in range(len(athleteList)):
+        try:
+            index =  athleteList[i].prs.index('60') + 1
+            athleteList[i].pr60 = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('60H') + 1
+            athleteList[i].pr60H = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('100') + 1
+            athleteList[i].pr100 = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('200') + 1
+            athleteList[i].pr200 = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('400') + 1
+            athleteList[i].pr400 = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('1000') + 1
+            athleteList[i].pr1000 = athleteList[i].prs[index]
+        except ValueError:
+            pass
         try:
             index =  athleteList[i].prs.index('800') + 1
             athleteList[i].pr800 = athleteList[i].prs[index]
@@ -262,6 +299,7 @@ def buildprList(athleteList, distance):
 
     listprs = []
     for i in range(len(athleteList)):
+        print(athleteList)
         if getattr(athleteList[i], distance, None) is not None:
             listprs.append(athleteList[i])
     listprs = sorted(listprs, key=lambda x: sortprs(getattr(x, distance), timeFormats))
@@ -271,6 +309,8 @@ def buildprList(athleteList, distance):
     return listprs
     
 def sortprs(date, formats):
+    date = date.split("  ")[0]
+
     for frmt in formats:
         try:
             str_date = datetime.strptime(date, frmt)
