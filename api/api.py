@@ -59,7 +59,7 @@ def get_athlete_lists():
     athletes6k = buildprList(sathletes, 'pr6k')
     for i in range(len(athletes6k)):
         athletes6k[i] = json.dumps(athletes6k[i].toJson())
-    print(athletes)
+    #print(athletes)
     return {'athletes' : athletes,
             'athletes800' : athletes800,
             'athletes1500' : athletes1500,

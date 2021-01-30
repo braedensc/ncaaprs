@@ -74,12 +74,20 @@ def getAthletes(teamurl):
     html1 = html_bytes1.decode('utf-8', 'ignore')
     p = HTMLTableParser()
     p.feed(html1)
-    athleteNames = p.tables[0]
-    athleteProfiles = getLinksToAthleteProfiles(html1)
+    if "/teams/xc/" not in teamurl:
+        athleteNames = p.tables[1]
+        athleteProfiles = getLinksToAthleteProfiles(html1)
+        del athleteProfiles[:(len(p.tables[0]) - 1)]
+    else: 
+        athleteNames = p.tables[0]
+        athleteProfiles = getLinksToAthleteProfiles(html1)
+
     logo = getLogo(html1)
     teamTitle = getTeamTitle(html1)
     athleteList = []
     teamType = getTeamType(html1)
+    #print(athleteNames)
+    #print(athleteProfiles)
     for i in range(1, len(athleteNames) - 1):
         name = " ".join(athleteNames[i][0].split(", ")[::-1])
         athleteList.append(Athlete(name, athleteProfiles[i - 1], [], logo, teamTitle, teamType))
@@ -167,6 +175,8 @@ def buildAthleteList(teamurl):
     for i in range(len(athleteList)):
         table[i] = list(chain.from_iterable(table[i]))
         athleteList[i].prs = table[i]
+        #print(athleteList[i])
+    
     return athleteList
 
 
