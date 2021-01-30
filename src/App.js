@@ -73,6 +73,87 @@ class App extends Component {
        }
        team.athletes60 = allAthletes60
 
+       let allAthletesHJ = []
+       let currAthleteHJ = null
+       for (let i = 0; i < data.athletesHJ.length; i++) {
+         currAthleteHJ = data.athletesHJ[i]
+         currAthleteHJ = JSON.parse(JSON.parse(currAthleteHJ))
+         allAthletesHJ.push(currAthleteHJ)
+       }
+       team.athletesHJ = allAthletesHJ
+
+       let allAthletesLJ = []
+       let currAthleteLJ = null
+       for (let i = 0; i < data.athletesLJ.length; i++) {
+         currAthleteLJ = data.athletesLJ[i]
+         currAthleteLJ = JSON.parse(JSON.parse(currAthleteLJ))
+         allAthletesLJ.push(currAthleteLJ)
+       }
+       team.athletesLJ = allAthletesLJ
+
+       let allAthletesTJ = []
+       let currAthleteTJ = null
+       for (let i = 0; i < data.athletesTJ.length; i++) {
+         currAthleteTJ = data.athletesTJ[i]
+         currAthleteTJ = JSON.parse(JSON.parse(currAthleteTJ))
+         allAthletesTJ.push(currAthleteTJ)
+       }
+       team.athletesTJ = allAthletesTJ
+
+       let allAthletesPV = []
+       let currAthletePV = null
+       for (let i = 0; i < data.athletesPV.length; i++) {
+         currAthletePV = data.athletesPV[i]
+         currAthletePV = JSON.parse(JSON.parse(currAthletePV))
+         allAthletesPV.push(currAthletePV)
+       }
+       team.athletesPV = allAthletesPV
+
+       let allAthletesWT = []
+       let currAthleteWT = null
+       for (let i = 0; i < data.athletesWT.length; i++) {
+         currAthleteWT = data.athletesWT[i]
+         currAthleteWT = JSON.parse(JSON.parse(currAthleteWT))
+         allAthletesWT.push(currAthleteWT)
+       }
+       team.athletesWT = allAthletesWT
+
+       let allAthletesHT = []
+       let currAthleteHT = null
+       for (let i = 0; i < data.athletesHT.length; i++) {
+         currAthleteHT = data.athletesHT[i]
+         currAthleteHT = JSON.parse(JSON.parse(currAthleteHT))
+         allAthletesHT.push(currAthleteHT)
+       }
+       team.athletesHT = allAthletesHT
+
+       let allAthletesST = []
+       let currAthleteST = null
+       for (let i = 0; i < data.athletesST.length; i++) {
+         currAthleteST = data.athletesST[i]
+         currAthleteST = JSON.parse(JSON.parse(currAthleteST))
+         allAthletesST.push(currAthleteST)
+       }
+       team.athletesST = allAthletesST
+
+       let allAthletesDT = []
+       let currAthleteDT = null
+       for (let i = 0; i < data.athletesDT.length; i++) {
+         currAthleteDT = data.athletesDT[i]
+         currAthleteDT = JSON.parse(JSON.parse(currAthleteDT))
+         allAthletesDT.push(currAthleteDT)
+       }
+       team.athletesDT = allAthletesDT
+
+       let allAthletesJT = []
+       let currAthleteJT = null
+       for (let i = 0; i < data.athletesJT.length; i++) {
+         currAthleteJT = data.athletesJT[i]
+         currAthleteJT = JSON.parse(JSON.parse(currAthleteJT))
+         allAthletesJT.push(currAthleteJT)
+       }
+       team.athletesJT = allAthletesJT
+
        let allAthletes100H = []
        let currAthlete100H = null
        for (let i = 0; i < data.athletes100H.length; i++) {

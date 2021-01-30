@@ -14,6 +14,8 @@ from urllib.parse import quote
 timeFormats = ['%M:%S.%f', '%H:%M:%S.%f', '%S.%f']
 MAX_THREADS = 60
 
+FIELDEVENTS = ["prHJ", "prLJ", "prTJ", "prPV", "prST", "prDT", "prHT", "prJT", "prWT"]
+
 #example commented at the bottom
 
 
@@ -23,18 +25,28 @@ class Athlete:
         self.link = link
         self.prs = prs
 
-        self.prs60 = None
-        self.prs60H = None
-        self.prs100 = None
-        self.prs200 = None
-        self.prs400 = None
-        self.prs1000 = None
+        self.pr60 = None
+        self.pr60H = None
+        self.pr100 = None
+        self.pr200 = None
+        self.pr400 = None
+        self.pr1000 = None
 
-        self.prs600 = None
-        self.prs100H = None
-        self.prs110H = None
-        self.prs400H = None
-        self.prs3000S = None
+        self.pr600 = None
+        self.pr100H = None
+        self.pr110H = None
+        self.pr400H = None
+        self.pr3000S = None
+
+        self.prHJ = None
+        self.prLJ = None
+        self.prTJ = None
+        self.prPV = None
+        self.prST = None
+        self.prDT = None
+        self.prHT = None
+        self.prJT = None
+        self.prWT = None
 
 
         self.pr800 = None
@@ -89,7 +101,6 @@ def getAthletes(teamurl):
     html1 = html_bytes1.decode('utf-8', 'ignore')
     p = HTMLTableParser()
     p.feed(html1)
-    print(p.tables[0])
     if "/teams/xc/" not in teamurl:
         athleteNames = p.tables[1]
         athleteProfiles = getLinksToAthleteProfiles(html1)
@@ -319,6 +330,56 @@ def setallprs(athleteList):
         except ValueError:
             pass
 
+
+        try:
+            index =  athleteList[i].prs.index('TJ') + 1
+            athleteList[i].prTJ = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('LJ') + 1
+            athleteList[i].prLJ = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('HJ') + 1
+            athleteList[i].prHJ = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('PV') + 1
+            athleteList[i].prPV = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('WT') + 1
+            athleteList[i].prWT = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('HT') + 1
+            athleteList[i].prHT = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('ST') + 1
+            athleteList[i].prST = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('DT') + 1
+            athleteList[i].prDT = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('JT') + 1
+            athleteList[i].prJT = athleteList[i].prs[index]
+        except ValueError:
+            pass
+
+
+
+
         
    # print(athleteList)
     return athleteList
@@ -334,18 +395,21 @@ def buildprList(athleteList, distance):
 
     listprs = []
     for i in range(len(athleteList)):
-        print(athleteList)
         if getattr(athleteList[i], distance, None) is not None:
             listprs.append(athleteList[i])
-    listprs = sorted(listprs, key=lambda x: sortprs(getattr(x, distance), timeFormats))
-
+    if (distance in FIELDEVENTS):
+         listprs = sorted(listprs, key=lambda x: sortprs(getattr(x, distance), timeFormats), reverse=True)
+    else:
+        listprs = sorted(listprs, key=lambda x: sortprs(getattr(x, distance), timeFormats))
     for i in range(len(listprs)):
         listprs[i].time = getattr(listprs[i], distance)
     return listprs
     
 def sortprs(date, formats):
     date = date.split("  ")[0]
-
+    if "m" in date:
+        date = date.replace("m", "")
+        return float(date)
     for frmt in formats:
         try:
             str_date = datetime.strptime(date, frmt)
