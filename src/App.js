@@ -64,6 +64,60 @@ class App extends Component {
        team.teamurl = teamLink
        team.athletes = allAthletes
 
+       let allAthletes60 = []
+       let currAthlete60 = null
+       for (let i = 0; i < data.athletes60.length; i++) {
+         currAthlete60 = data.athletes60[i]
+         currAthlete60 = JSON.parse(JSON.parse(currAthlete60))
+         allAthletes60.push(currAthlete60)
+       }
+       team.athletes60 = allAthletes60
+
+       let allAthletes60H = []
+       let currAthlete60H = null
+       for (let i = 0; i < data.athletes60H.length; i++) {
+         currAthlete60H = data.athletes60H[i]
+         currAthlete60H = JSON.parse(JSON.parse(currAthlete60H))
+         allAthletes60H.push(currAthlete60H)
+       }
+       team.athletes60H = allAthletes60H
+
+       let allAthletes100 = []
+       let currAthlete100 = null
+       for (let i = 0; i < data.athletes100.length; i++) {
+         currAthlete100 = data.athletes100[i]
+         currAthlete100 = JSON.parse(JSON.parse(currAthlete100))
+         allAthletes100.push(currAthlete100)
+       }
+       team.athletes100 = allAthletes100
+
+       let allAthletes200 = []
+       let currAthlete200 = null
+       for (let i = 0; i < data.athletes200.length; i++) {
+         currAthlete200 = data.athletes200[i]
+         currAthlete200 = JSON.parse(JSON.parse(currAthlete200))
+         allAthletes200.push(currAthlete200)
+       }
+       team.athletes200 = allAthletes200
+
+       let allAthletes400 = []
+       let currAthlete400 = null
+       for (let i = 0; i < data.athletes400.length; i++) {
+         currAthlete400 = data.athletes400[i]
+         currAthlete400 = JSON.parse(JSON.parse(currAthlete400))
+         allAthletes400.push(currAthlete400)
+       }
+       team.athletes400 = allAthletes400
+
+       let allAthletes1000 = []
+       let currAthlete1000 = null
+       for (let i = 0; i < data.athletes1000.length; i++) {
+         currAthlete1000 = data.athletes1000[i]
+         currAthlete1000 = JSON.parse(JSON.parse(currAthlete1000))
+         allAthletes1000.push(currAthlete1000)
+       }
+       team.athletes1000 = allAthletes1000
+
        let allAthletes800 = []
        let currAthlete800 = null
        for (let i = 0; i < data.athletes800.length; i++) {

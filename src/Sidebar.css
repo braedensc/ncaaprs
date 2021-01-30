@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y:auto
 }
 
 .sidebar.collapse, .sidebar-item.collapse, .sidebar-user.collapse {
@@ -147,6 +148,7 @@
   background: none;
   border: none;
   color: var(--text);
+ 
 }
 
 .collapse-button:hover {

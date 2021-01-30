@@ -52,11 +52,35 @@ export default function Sidebar({
   return (
     <div className={(expand) ? 'sidebar' : 'sidebar collapse'}>
       <div>
-  
+
+      <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletes60') ? 'selected' : ''}`} id="athletes60" onClick={() => handleClick('athletes60')}>
+          
+          {expand ? ' 60' : '60'}
+        </button>
+      <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletes60H') ? 'selected' : ''}`} id="athletes60H" onClick={() => handleClick('athletes60H')}>
+          
+          {expand ? ' 60 Hurdles' : '60H'}
+      </button>
+      <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletes100') ? 'selected' : ''}`} id="athletes100" onClick={() => handleClick('athletes100')}>
+          
+          {expand ? ' 100' : '100'}
+      </button>
+      <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletes200') ? 'selected' : ''}`} id="athletes200" onClick={() => handleClick('athletes200')}>
+          
+          {expand ? ' 200' : '200'}
+      </button>
+      <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletes400') ? 'selected' : ''}`} id="athletes400" onClick={() => handleClick('athletes400')}>
+          
+          {expand ? ' 400' : '400'}
+      </button>
         <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletes800') ? 'selected' : ''}`} id="athletes800" onClick={() => handleClick('athletes800')}>
           
           {expand ? ' 800' : '800'}
         </button>
+        <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletes1000') ? 'selected' : ''}`} id="athletes1000" onClick={() => handleClick('athletes1000')}>
+          
+          {expand ? ' 1000' : '1000'}
+      </button>
         <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletes1500') ? 'selected' : ''}`} id="athletes1500" onClick={() => handleClick('athletes1500')}>
           
           {expand ? ' 1500' : '1500'}
@@ -93,15 +117,24 @@ export default function Sidebar({
          
          {expand ? ' 10k (XC)' : '10k'}
        </button>
+       
+     
 
        
       </div>
+
+    
       <div className="collapse-container collapsible">
+      {/*
         <button type="button" className="collapse-button" onClick={() => toggleExpand()}>
           <FontAwesomeIcon icon={expand ? faCaretSquareLeft : faCaretSquareRight} size="lg" title={expand ? 'Collapse' : 'Expand'} />
         </button>
+        */}
       </div>
+     
     </div>
+           
+    
   );
 }
 
