@@ -11,8 +11,10 @@ import json
 import concurrent.futures
 from urllib.parse import quote
 
-timeFormats = ['%M:%S.%f', '%H:%M:%S.%f']
+timeFormats = ['%M:%S.%f', '%H:%M:%S.%f', '%S.%f']
 MAX_THREADS = 60
+
+FIELDEVENTS = ["prHJ", "prLJ", "prTJ", "prPV", "prST", "prDT", "prHT", "prJT", "prWT"]
 
 #example commented at the bottom
 
@@ -22,6 +24,31 @@ class Athlete:
         self.name = name
         self.link = link
         self.prs = prs
+
+        self.pr60 = None
+        self.pr60H = None
+        self.pr100 = None
+        self.pr200 = None
+        self.pr400 = None
+        self.pr1000 = None
+
+        self.pr600 = None
+        self.pr100H = None
+        self.pr110H = None
+        self.pr400H = None
+        self.pr3000S = None
+
+        self.prHJ = None
+        self.prLJ = None
+        self.prTJ = None
+        self.prPV = None
+        self.prST = None
+        self.prDT = None
+        self.prHT = None
+        self.prJT = None
+        self.prWT = None
+
+
         self.pr800 = None
         self.pr1500 = None
         self.prMile = None
@@ -74,12 +101,31 @@ def getAthletes(teamurl):
     html1 = html_bytes1.decode('utf-8', 'ignore')
     p = HTMLTableParser()
     p.feed(html1)
-    athleteNames = p.tables[0]
-    athleteProfiles = getLinksToAthleteProfiles(html1)
+    table = 0
+    athleteNames = p.tables[table]
+    while (p.tables[table][0][0] != "NAME"):
+        table += 1
+        athleteNames = p.tables[table]
+
+
+    if (table != 0):
+        athleteProfiles = getLinksToAthleteProfiles(html1)
+        extraLinkCount = 0
+        for i in range(1, len(p.tables[0])):
+            for j in range(0, len(p.tables[0][i])):
+                    num = p.tables[0][i][j].count(". ")
+                    if (num == 0):
+                        num = p.tables[0][i][j].count(",")
+                    extraLinkCount += num
+        del athleteProfiles[:extraLinkCount]
+    else: 
+        athleteProfiles = getLinksToAthleteProfiles(html1)
     logo = getLogo(html1)
     teamTitle = getTeamTitle(html1)
     athleteList = []
     teamType = getTeamType(html1)
+    #print(athleteNames)
+    #print(athleteProfiles)
     for i in range(1, len(athleteNames) - 1):
         name = " ".join(athleteNames[i][0].split(", ")[::-1])
         athleteList.append(Athlete(name, athleteProfiles[i - 1], [], logo, teamTitle, teamType))
@@ -167,6 +213,8 @@ def buildAthleteList(teamurl):
     for i in range(len(athleteList)):
         table[i] = list(chain.from_iterable(table[i]))
         athleteList[i].prs = table[i]
+        #print(athleteList[i])
+    
     return athleteList
 
 
@@ -174,12 +222,42 @@ def buildAthleteList(teamurl):
 def setallprs(athleteList):
     '''
     builds the prlists for each athlete for each event. Each event gets its own list of athletes for each team.
-    Ex. {Georgia Tech - {prs800: [{name: alan drosky, time: 1:41}]}}
+    Ex. {Georgia Tech - {prs1500: [{name: alan drosky, time: 3:43}]}}
             Parameters:
                     athleteList (list): list of all athletes, as returned from buildAthleteList()
     '''
 
     for i in range(len(athleteList)):
+        try:
+            index =  athleteList[i].prs.index('60') + 1
+            athleteList[i].pr60 = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('60H') + 1
+            athleteList[i].pr60H = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('100') + 1
+            athleteList[i].pr100 = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('200') + 1
+            athleteList[i].pr200 = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('400') + 1
+            athleteList[i].pr400 = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('1000') + 1
+            athleteList[i].pr1000 = athleteList[i].prs[index]
+        except ValueError:
+            pass
         try:
             index =  athleteList[i].prs.index('800') + 1
             athleteList[i].pr800 = athleteList[i].prs[index]
@@ -230,6 +308,84 @@ def setallprs(athleteList):
             athleteList[i].pr10k = athleteList[i].prs[index]
         except ValueError:
             pass
+
+        try:
+            index =  athleteList[i].prs.index('600') + 1
+            athleteList[i].pr600 = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('100H') + 1
+            athleteList[i].pr100H = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('110H') + 1
+            athleteList[i].pr110H = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('400H') + 1
+            athleteList[i].pr400H = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('3000S') + 1
+            athleteList[i].pr3000S = athleteList[i].prs[index]
+        except ValueError:
+            pass
+
+
+        try:
+            index =  athleteList[i].prs.index('TJ') + 1
+            athleteList[i].prTJ = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('LJ') + 1
+            athleteList[i].prLJ = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('HJ') + 1
+            athleteList[i].prHJ = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('PV') + 1
+            athleteList[i].prPV = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('WT') + 1
+            athleteList[i].prWT = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('HT') + 1
+            athleteList[i].prHT = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('SP') + 1
+            athleteList[i].prST = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('DT') + 1
+            athleteList[i].prDT = athleteList[i].prs[index]
+        except ValueError:
+            pass
+        try:
+            index =  athleteList[i].prs.index('JT') + 1
+            athleteList[i].prJT = athleteList[i].prs[index]
+        except ValueError:
+            pass
+
+
+
+
+        
    # print(athleteList)
     return athleteList
 
@@ -246,13 +402,24 @@ def buildprList(athleteList, distance):
     for i in range(len(athleteList)):
         if getattr(athleteList[i], distance, None) is not None:
             listprs.append(athleteList[i])
-    listprs = sorted(listprs, key=lambda x: sortprs(getattr(x, distance), timeFormats))
-
+    if (distance in FIELDEVENTS):
+         listprs = sorted(listprs, key=lambda x: sortprs(getattr(x, distance), timeFormats), reverse=True)
+    else:
+        listprs = sorted(listprs, key=lambda x: sortprs(getattr(x, distance), timeFormats))
     for i in range(len(listprs)):
         listprs[i].time = getattr(listprs[i], distance)
     return listprs
     
 def sortprs(date, formats):
+    date = date.split("  ")[0]
+    print(date)
+    if "m" in date:
+        date = date.replace("m", "")
+        return float(date)
+    if "w" in date:
+        date = date.replace("w", "")
+    if "W" in date:
+        date = date.replace("W", "")
     for frmt in formats:
         try:
             str_date = datetime.strptime(date, frmt)

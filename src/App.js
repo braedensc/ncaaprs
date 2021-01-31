@@ -18,7 +18,7 @@ class App extends Component {
       currentTime : null,
       teamList: [],
       currentAthletes: 'athletes800',
-      teamurl: 'https://www.tfrrs.org/teams/xc/GA_college_m_Georgia_Tech.html',
+      teamurl: 'https://www.tfrrs.org/teams/GA_college_m_Georgia_Tech.html',
       id : teamID,
       isLoading: false,
       teamurlList: [],
@@ -63,6 +63,188 @@ class App extends Component {
         }
        team.teamurl = teamLink
        team.athletes = allAthletes
+
+       let allAthletes60 = []
+       let currAthlete60 = null
+       for (let i = 0; i < data.athletes60.length; i++) {
+         currAthlete60 = data.athletes60[i]
+         currAthlete60 = JSON.parse(JSON.parse(currAthlete60))
+         allAthletes60.push(currAthlete60)
+       }
+       team.athletes60 = allAthletes60
+
+       let allAthletesHJ = []
+       let currAthleteHJ = null
+       for (let i = 0; i < data.athletesHJ.length; i++) {
+         currAthleteHJ = data.athletesHJ[i]
+         currAthleteHJ = JSON.parse(JSON.parse(currAthleteHJ))
+         allAthletesHJ.push(currAthleteHJ)
+       }
+       team.athletesHJ = allAthletesHJ
+
+       let allAthletesLJ = []
+       let currAthleteLJ = null
+       for (let i = 0; i < data.athletesLJ.length; i++) {
+         currAthleteLJ = data.athletesLJ[i]
+         currAthleteLJ = JSON.parse(JSON.parse(currAthleteLJ))
+         allAthletesLJ.push(currAthleteLJ)
+       }
+       team.athletesLJ = allAthletesLJ
+
+       let allAthletesTJ = []
+       let currAthleteTJ = null
+       for (let i = 0; i < data.athletesTJ.length; i++) {
+         currAthleteTJ = data.athletesTJ[i]
+         currAthleteTJ = JSON.parse(JSON.parse(currAthleteTJ))
+         allAthletesTJ.push(currAthleteTJ)
+       }
+       team.athletesTJ = allAthletesTJ
+
+       let allAthletesPV = []
+       let currAthletePV = null
+       for (let i = 0; i < data.athletesPV.length; i++) {
+         currAthletePV = data.athletesPV[i]
+         currAthletePV = JSON.parse(JSON.parse(currAthletePV))
+         allAthletesPV.push(currAthletePV)
+       }
+       team.athletesPV = allAthletesPV
+
+       let allAthletesWT = []
+       let currAthleteWT = null
+       for (let i = 0; i < data.athletesWT.length; i++) {
+         currAthleteWT = data.athletesWT[i]
+         currAthleteWT = JSON.parse(JSON.parse(currAthleteWT))
+         allAthletesWT.push(currAthleteWT)
+       }
+       team.athletesWT = allAthletesWT
+
+       let allAthletesHT = []
+       let currAthleteHT = null
+       for (let i = 0; i < data.athletesHT.length; i++) {
+         currAthleteHT = data.athletesHT[i]
+         currAthleteHT = JSON.parse(JSON.parse(currAthleteHT))
+         allAthletesHT.push(currAthleteHT)
+       }
+       team.athletesHT = allAthletesHT
+
+       let allAthletesST = []
+       let currAthleteST = null
+       for (let i = 0; i < data.athletesST.length; i++) {
+         currAthleteST = data.athletesST[i]
+         currAthleteST = JSON.parse(JSON.parse(currAthleteST))
+         allAthletesST.push(currAthleteST)
+       }
+       team.athletesST = allAthletesST
+
+       let allAthletesDT = []
+       let currAthleteDT = null
+       for (let i = 0; i < data.athletesDT.length; i++) {
+         currAthleteDT = data.athletesDT[i]
+         currAthleteDT = JSON.parse(JSON.parse(currAthleteDT))
+         allAthletesDT.push(currAthleteDT)
+       }
+       team.athletesDT = allAthletesDT
+
+       let allAthletesJT = []
+       let currAthleteJT = null
+       for (let i = 0; i < data.athletesJT.length; i++) {
+         currAthleteJT = data.athletesJT[i]
+         currAthleteJT = JSON.parse(JSON.parse(currAthleteJT))
+         allAthletesJT.push(currAthleteJT)
+       }
+       team.athletesJT = allAthletesJT
+
+       let allAthletes100H = []
+       let currAthlete100H = null
+       for (let i = 0; i < data.athletes100H.length; i++) {
+         currAthlete100H = data.athletes100H[i]
+         currAthlete100H = JSON.parse(JSON.parse(currAthlete100H))
+         allAthletes100H.push(currAthlete100H)
+       }
+       team.athletes100H = allAthletes100H
+
+       let allAthletes110H = []
+       let currAthlete110H = null
+       for (let i = 0; i < data.athletes110H.length; i++) {
+         currAthlete110H = data.athletes110H[i]
+         currAthlete110H = JSON.parse(JSON.parse(currAthlete110H))
+         allAthletes110H.push(currAthlete110H)
+       }
+       team.athletes110H = allAthletes110H
+
+       let allAthletes400H = []
+       let currAthlete400H = null
+       for (let i = 0; i < data.athletes400H.length; i++) {
+         currAthlete400H = data.athletes400H[i]
+         currAthlete400H = JSON.parse(JSON.parse(currAthlete400H))
+         allAthletes400H.push(currAthlete400H)
+       }
+       team.athletes400H = allAthletes400H
+
+       let allAthletes600 = []
+       let currAthlete600 = null
+       for (let i = 0; i < data.athletes600.length; i++) {
+         currAthlete600 = data.athletes600[i]
+         currAthlete600 = JSON.parse(JSON.parse(currAthlete600))
+         allAthletes600.push(currAthlete600)
+       }
+       team.athletes600 = allAthletes600
+
+       let allAthletes3000S = []
+       let currAthlete3000S = null
+       for (let i = 0; i < data.athletes3000S.length; i++) {
+         currAthlete3000S = data.athletes3000S[i]
+         currAthlete3000S = JSON.parse(JSON.parse(currAthlete3000S))
+         allAthletes3000S.push(currAthlete3000S)
+       }
+       team.athletes3000S = allAthletes3000S
+
+
+
+       let allAthletes60H = []
+       let currAthlete60H = null
+       for (let i = 0; i < data.athletes60H.length; i++) {
+         currAthlete60H = data.athletes60H[i]
+         currAthlete60H = JSON.parse(JSON.parse(currAthlete60H))
+         allAthletes60H.push(currAthlete60H)
+       }
+       team.athletes60H = allAthletes60H
+
+       let allAthletes100 = []
+       let currAthlete100 = null
+       for (let i = 0; i < data.athletes100.length; i++) {
+         currAthlete100 = data.athletes100[i]
+         currAthlete100 = JSON.parse(JSON.parse(currAthlete100))
+         allAthletes100.push(currAthlete100)
+       }
+       team.athletes100 = allAthletes100
+
+       let allAthletes200 = []
+       let currAthlete200 = null
+       for (let i = 0; i < data.athletes200.length; i++) {
+         currAthlete200 = data.athletes200[i]
+         currAthlete200 = JSON.parse(JSON.parse(currAthlete200))
+         allAthletes200.push(currAthlete200)
+       }
+       team.athletes200 = allAthletes200
+
+       let allAthletes400 = []
+       let currAthlete400 = null
+       for (let i = 0; i < data.athletes400.length; i++) {
+         currAthlete400 = data.athletes400[i]
+         currAthlete400 = JSON.parse(JSON.parse(currAthlete400))
+         allAthletes400.push(currAthlete400)
+       }
+       team.athletes400 = allAthletes400
+
+       let allAthletes1000 = []
+       let currAthlete1000 = null
+       for (let i = 0; i < data.athletes1000.length; i++) {
+         currAthlete1000 = data.athletes1000[i]
+         currAthlete1000 = JSON.parse(JSON.parse(currAthlete1000))
+         allAthletes1000.push(currAthlete1000)
+       }
+       team.athletes1000 = allAthletes1000
 
        let allAthletes800 = []
        let currAthlete800 = null
