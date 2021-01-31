@@ -6,21 +6,34 @@ import './Filter.css'
 export default function SECMenSearch({ changeTeam }) {
 
   const filterOptions = [
-    { value: "all", label: 'Add All' },
+    { value: "all", label: 'Add All (Track)' },
+    { value: "allXC", label: 'Add All (XC)' },
     { value: "https://www.tfrrs.org/teams/AL_college_m_Alabama.html", label: 'Alabama' },
+    { value: "https://www.tfrrs.org/teams/xc/AL_college_m_Alabama.html", label: 'Alabama (XC)' },
     { value: "https://www.tfrrs.org/teams/AR_college_m_Arkansas.html", label: 'Arkansas' },
+    { value: "https://www.tfrrs.org/teams/xc/AR_college_m_Arkansas.html", label: 'Arkansas (XC)' },
     { value: "https://www.tfrrs.org/teams/AL_college_m_Auburn.html", label: 'Auburn' },
+    { value: "https://www.tfrrs.org/teams/xc/AL_college_m_Auburn.html", label: 'Auburn (XC)' },
     { value: "https://www.tfrrs.org/teams/FL_college_m_Florida.html", label: 'Florida' },
+    { value: "https://www.tfrrs.org/teams/xc/FL_college_m_Florida.html", label: 'Florida (XC)' },
     { value: "https://www.tfrrs.org/teams/GA_college_m_Georgia.html", label: 'Georgia' },
+    { value: "https://www.tfrrs.org/teams/xc/GA_college_m_Georgia.html", label: 'Georgia (XC)' },
     { value: "https://www.tfrrs.org/teams/KY_college_m_Kentucky.html", label: 'Kentucky' },
+    { value: "https://www.tfrrs.org/teams/xc/KY_college_m_Kentucky.html", label: 'Kentucky (XC)' },
     { value: "https://www.tfrrs.org/teams/LA_college_m_LSU.html", label: 'LSU' },
+    { value: "https://www.tfrrs.org/teams/xc/LA_college_m_LSU.html", label: 'LSU (XC)' },
     { value: "https://www.tfrrs.org/teams/MS_college_m_Mississippi_St.html", label: 'Miss St' },
+    { value: "https://www.tfrrs.org/teams/xc/MS_college_m_Mississippi_St.html", label: 'Miss St (XC)' },
     { value: "https://www.tfrrs.org/teams/MO_college_m_Missouri.html", label: 'Missouri' },
+    { value: "https://www.tfrrs.org/teams/xc/MO_college_m_Missouri.html", label: 'Missouri (XC)' },
     { value: "https://www.tfrrs.org/teams/MS_college_m_Mississippi.html", label: 'Ole Miss' },
+    { value: "https://www.tfrrs.org/teams/xc/MS_college_m_Mississippi.html", label: 'Ole Miss (XC)' },
     { value: "https://www.tfrrs.org/teams/SC_college_m_South_Carolina.html", label: 'South Carolina' },
     { value: "https://www.tfrrs.org/teams/TN_college_m_Tennessee.html", label: 'Tennessee' },
+    { value: "https://www.tfrrs.org/teams/xc/TN_college_m_Tennessee.html", label: 'Tennessee (XC)' },
     { value: "https://www.tfrrs.org/teams/TX_college_m_Texas_AM.html", label: 'Texas A&M' },
-    { value: "https://www.tfrrs.org/teams/TN_college_m_Vanderbilt.html", label: 'Vanderbilt' },
+    { value: "https://www.tfrrs.org/teams/xc/TX_college_m_Texas_AM.html", label: 'Texas A&M (XC)' },
+    { value: "https://www.tfrrs.org/teams/xc/TN_college_m_Vanderbilt.html", label: 'Vanderbilt (XC)' },
 
   ];
 
@@ -101,11 +114,15 @@ export default function SECMenSearch({ changeTeam }) {
 
   const handleFilterChange = (selected) => {
     if (selected === 'all') {
-      for (let i = 1; i< filterOptions.length; i++) {
+      for (let i = 2; i< filterOptions.length; i+=2) {
+        changeTeam(filterOptions[i].value)
+      }
+    } else if (selected === "allXC") {
+      for (let i = 3; i< filterOptions.length; i+=2) {
         changeTeam(filterOptions[i].value)
       }
     } else {
-      changeTeam(selected);
+      changeTeam(selected)
     }
   };
   return (

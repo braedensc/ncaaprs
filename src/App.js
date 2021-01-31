@@ -18,7 +18,7 @@ class App extends Component {
       currentTime : null,
       teamList: [],
       currentAthletes: 'athletes800',
-      teamurl: 'https://www.tfrrs.org/teams/xc/GA_college_m_Georgia_Tech.html',
+      teamurl: 'https://www.tfrrs.org/teams/GA_college_m_Georgia_Tech.html',
       id : teamID,
       isLoading: false,
       teamurlList: [],
