@@ -9,6 +9,8 @@ export default function Sidebar({
    changeEvent
 }) {
   const body = document.getElementsByTagName('body')[0];
+
+
  
 
   const initialState = true;
@@ -38,25 +40,108 @@ export default function Sidebar({
     changeEvent(target)
   };
   const sidebarClassName = (expand) ? 'collapsible' : 'collapsible collapse';
+
+
   
-//add under the div below when implementing multi teams
-  /*     <button type="button" className="sidebar-add-button" id="signin-btn" onClick={() => authorizeUser()}>
-  <FontAwesomeIcon icon={faUserPlus} size="lg" title="Add an Account" />
-  {expand ? ' Add Team' : ''}
-</button>
-<button type="button" className="sidebar-remove-button" id="remove-btn" onClick={() => removeAllAccounts()}>
-  <FontAwesomeIcon icon={faUserSlash} size="lg" title="Remove All Accounts" />
-  {expand ? ' Remove All Teams' : ''}
-</button>
-*/
   return (
     <div className={(expand) ? 'sidebar' : 'sidebar collapse'}>
       <div>
-  
+
+      <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletesLJ') ? 'selected' : ''}`} id="athletesLJ" onClick={() => handleClick('athletesLJ')}>
+          
+          {expand ? ' Long Jump' : 'LJ'}
+        </button>
+
+        <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletesTJ') ? 'selected' : ''}`} id="athletesTJ" onClick={() => handleClick('athletesTJ')}>
+          
+          {expand ? ' Triple Jump' : 'TJ'}
+        </button>
+
+        <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletesHJ') ? 'selected' : ''}`} id="athletesHJ" onClick={() => handleClick('athletesHJ')}>
+          
+          {expand ? ' High Jump' : 'HJ'}
+        </button>
+
+        <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletesWT') ? 'selected' : ''}`} id="athletesWT" onClick={() => handleClick('athletesWT')}>
+          
+          {expand ? ' Weight Throw' : 'WT'}
+        </button>
+
+        <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletesHT') ? 'selected' : ''}`} id="athletesHT" onClick={() => handleClick('athletesHT')}>
+          
+          {expand ? ' Hammer Throw' : 'HT'}
+        </button>
+
+        <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletesST') ? 'selected' : ''}`} id="athletesST" onClick={() => handleClick('athletesST')}>
+          
+          {expand ? ' Shotput' : 'ST'}
+        </button>
+
+        <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletesDT') ? 'selected' : ''}`} id="athletesDT" onClick={() => handleClick('athletesDT')}>
+          
+          {expand ? ' Discus' : 'DT'}
+        </button>
+
+        <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletesJT') ? 'selected' : ''}`} id="athletesJT" onClick={() => handleClick('athletesJT')}>
+          
+          {expand ? ' Javelin' : 'JT'}
+        </button>
+
+        <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletesPV') ? 'selected' : ''}`} id="athletesPV" onClick={() => handleClick('athletesPV')}>
+          
+          {expand ? ' Pole Vault' : 'PV'}
+        </button>
+
+      <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletes60') ? 'selected' : ''}`} id="athletes60" onClick={() => handleClick('athletes60')}>
+          
+          {expand ? ' 60' : '60'}
+        </button>
+      <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletes60H') ? 'selected' : ''}`} id="athletes60H" onClick={() => handleClick('athletes60H')}>
+          
+          {expand ? ' 60 Hurdles' : '60H'}
+      </button>
+      <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletes100') ? 'selected' : ''}`} id="athletes100" onClick={() => handleClick('athletes100')}>
+          
+          {expand ? ' 100' : '100'}
+      </button>
+
+      <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletes100H') ? 'selected' : ''}`} id="athletes100H" onClick={() => handleClick('athletes100H')}>
+          
+          {expand ? ' 100 Hurdles' : '100H'}
+        </button>
+
+        <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletes110H') ? 'selected' : ''}`} id="athletes110H" onClick={() => handleClick('athletes110H')}>
+          
+          {expand ? ' 110 Hurdles' : '110H'}
+        </button>
+
+      <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletes200') ? 'selected' : ''}`} id="athletes200" onClick={() => handleClick('athletes200')}>
+          
+          {expand ? ' 200' : '200'}
+      </button>
+      <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletes400') ? 'selected' : ''}`} id="athletes400" onClick={() => handleClick('athletes400')}>
+          
+          {expand ? ' 400' : '400'}
+      </button>
+
+      <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletes400H') ? 'selected' : ''}`} id="athletes400H" onClick={() => handleClick('athletes400H')}>
+          
+          {expand ? ' 400 Hurdles' : '400H'}
+        </button>
+
+        <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletes600') ? 'selected' : ''}`} id="athletes600" onClick={() => handleClick('athletes600')}>
+          
+          {expand ? ' 600' : '600'}
+        </button>
+
         <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletes800') ? 'selected' : ''}`} id="athletes800" onClick={() => handleClick('athletes800')}>
           
           {expand ? ' 800' : '800'}
         </button>
+        <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletes1000') ? 'selected' : ''}`} id="athletes1000" onClick={() => handleClick('athletes1000')}>
+          
+          {expand ? ' 1000' : '1000'}
+      </button>
         <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletes1500') ? 'selected' : ''}`} id="athletes1500" onClick={() => handleClick('athletes1500')}>
           
           {expand ? ' 1500' : '1500'}
@@ -69,6 +154,13 @@ export default function Sidebar({
          
           {expand ? ' 3000' : '3000'}
         </button>
+
+        <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletes3000S') ? 'selected' : ''}`} id="athletes3000S" onClick={() => handleClick('athletes3000S')}>
+         
+         {expand ? ' 3000S' : '3000S'}
+       </button>
+
+
         <button type="button" className={`sidebar-item ${sidebarClassName} ${(selected === 'athletes5000') ? 'selected' : ''}`} id="athletes5000" onClick={() => handleClick('athletes5000')}>
          
           {expand ? ' 5000' : '5000'}
@@ -93,15 +185,24 @@ export default function Sidebar({
          
          {expand ? ' 10k (XC)' : '10k'}
        </button>
+       
+     
 
        
       </div>
+
+    
       <div className="collapse-container collapsible">
+      {/*
         <button type="button" className="collapse-button" onClick={() => toggleExpand()}>
           <FontAwesomeIcon icon={expand ? faCaretSquareLeft : faCaretSquareRight} size="lg" title={expand ? 'Collapse' : 'Expand'} />
         </button>
+        */}
       </div>
+     
     </div>
+           
+    
   );
 }
 
