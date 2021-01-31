@@ -9,6 +9,8 @@ export default function Sidebar({
    changeEvent
 }) {
   const body = document.getElementsByTagName('body')[0];
+
+
  
 
   const initialState = true;
@@ -38,6 +40,8 @@ export default function Sidebar({
     changeEvent(target)
   };
   const sidebarClassName = (expand) ? 'collapsible' : 'collapsible collapse';
+
+
   
   return (
     <div className={(expand) ? 'sidebar' : 'sidebar collapse'}>

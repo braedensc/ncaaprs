@@ -7,19 +7,20 @@ export default function SECMenSearch({ changeTeam }) {
 
   const filterOptions = [
     { value: "all", label: 'Add All' },
-    { value: "https://www.tfrrs.org/teams/xc/AL_college_m_Alabama.html", label: 'Alabama' },
-    { value: "https://www.tfrrs.org/teams/xc/AR_college_m_Arkansas.html", label: 'Arkansas' },
-    { value: "https://www.tfrrs.org/teams/xc/AL_college_m_Auburn.html", label: 'Auburn' },
-    { value: "https://www.tfrrs.org/teams/xc/FL_college_m_Florida.html", label: 'Florida' },
-    { value: "https://www.tfrrs.org/teams/xc/GA_college_m_Georgia.html", label: 'Georgia' },
-    { value: "https://www.tfrrs.org/teams/xc/KY_college_m_Kentucky.html", label: 'Kentucky' },
-    { value: "https://www.tfrrs.org/teams/xc/LA_college_m_LSU.html", label: 'LSU' },
-    { value: "https://www.tfrrs.org/teams/xc/MS_college_m_Mississippi_St.html", label: 'Miss St' },
-    { value: "https://www.tfrrs.org/teams/xc/MO_college_m_Missouri.html", label: 'Missouri' },
-    { value: "https://www.tfrrs.org/teams/xc/MS_college_m_Mississippi.html", label: 'Ole Miss' },
-    { value: "https://www.tfrrs.org/teams/xc/TN_college_m_Tennessee.html", label: 'Tennessee' },
-    { value: "https://www.tfrrs.org/teams/xc/TX_college_m_Texas_AM.html", label: 'Texas A&M' },
-    { value: "https://www.tfrrs.org/teams/xc/TN_college_m_Vanderbilt.html", label: 'Vanderbilt' },
+    { value: "https://www.tfrrs.org/teams/AL_college_m_Alabama.html", label: 'Alabama' },
+    { value: "https://www.tfrrs.org/teams/AR_college_m_Arkansas.html", label: 'Arkansas' },
+    { value: "https://www.tfrrs.org/teams/AL_college_m_Auburn.html", label: 'Auburn' },
+    { value: "https://www.tfrrs.org/teams/FL_college_m_Florida.html", label: 'Florida' },
+    { value: "https://www.tfrrs.org/teams/GA_college_m_Georgia.html", label: 'Georgia' },
+    { value: "https://www.tfrrs.org/teams/KY_college_m_Kentucky.html", label: 'Kentucky' },
+    { value: "https://www.tfrrs.org/teams/LA_college_m_LSU.html", label: 'LSU' },
+    { value: "https://www.tfrrs.org/teams/MS_college_m_Mississippi_St.html", label: 'Miss St' },
+    { value: "https://www.tfrrs.org/teams/MO_college_m_Missouri.html", label: 'Missouri' },
+    { value: "https://www.tfrrs.org/teams/MS_college_m_Mississippi.html", label: 'Ole Miss' },
+    { value: "https://www.tfrrs.org/teams/SC_college_m_South_Carolina.html", label: 'South Carolina' },
+    { value: "https://www.tfrrs.org/teams/TN_college_m_Tennessee.html", label: 'Tennessee' },
+    { value: "https://www.tfrrs.org/teams/TX_college_m_Texas_AM.html", label: 'Texas A&M' },
+    { value: "https://www.tfrrs.org/teams/TN_college_m_Vanderbilt.html", label: 'Vanderbilt' },
 
   ];
 

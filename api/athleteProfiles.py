@@ -101,8 +101,14 @@ def getAthletes(teamurl):
     html1 = html_bytes1.decode('utf-8', 'ignore')
     p = HTMLTableParser()
     p.feed(html1)
-    if "/teams/xc/" not in teamurl:
-        athleteNames = p.tables[1]
+    table = 0
+    athleteNames = p.tables[table]
+    while (p.tables[table][0][0] != "NAME"):
+        table += 1
+        athleteNames = p.tables[table]
+
+
+    if (table != 0):
         athleteProfiles = getLinksToAthleteProfiles(html1)
         extraLinkCount = 0
         for i in range(1, len(p.tables[0])):
@@ -113,7 +119,6 @@ def getAthletes(teamurl):
                     extraLinkCount += num
         del athleteProfiles[:extraLinkCount]
     else: 
-        athleteNames = p.tables[0]
         athleteProfiles = getLinksToAthleteProfiles(html1)
     logo = getLogo(html1)
     teamTitle = getTeamTitle(html1)
@@ -362,7 +367,7 @@ def setallprs(athleteList):
         except ValueError:
             pass
         try:
-            index =  athleteList[i].prs.index('ST') + 1
+            index =  athleteList[i].prs.index('SP') + 1
             athleteList[i].prST = athleteList[i].prs[index]
         except ValueError:
             pass
@@ -407,9 +412,14 @@ def buildprList(athleteList, distance):
     
 def sortprs(date, formats):
     date = date.split("  ")[0]
+    print(date)
     if "m" in date:
         date = date.replace("m", "")
         return float(date)
+    if "w" in date:
+        date = date.replace("w", "")
+    if "W" in date:
+        date = date.replace("W", "")
     for frmt in formats:
         try:
             str_date = datetime.strptime(date, frmt)
