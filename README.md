@@ -2,11 +2,13 @@ https://ncaaprs.herokuapp.com/
 
 TODO: 
 
--add track events (add xc and track option for all list teams)
+-add Pentathlon, Decathlon, etc.
+
+-add relays
 
 -add mobile compatibility 
 
--reduce load times
+-reduce load times (need to use a database to store the athlete arrays so it doesn't have to web scrape on start-up every time)
 
 # Getting Started with Create React App
 This is a create-react-app, but with python flask as backend also, so it's a little different. Read below for info on running the code and deploying it/updates to it.
