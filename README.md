@@ -8,7 +8,7 @@ TODO:
 
 -add mobile compatibility 
 
--reduce load times (need to use a database to store the athlete arrays so it doesn't have to web scrape on start-up every time)
+-reduce load times
 
 # Getting Started with Create React App
 This is a create-react-app, but with python flask as backend also, so it's a little different. Read below for info on running the code and deploying it/updates to it.
