@@ -75,7 +75,7 @@ git push heroku deployment:main
 
 
 
-INSTRUCTIONS TO RUN LOCALLY:
+INSTRUCTIONS TO RUN LOCALLY ON WINDOWS:
 
 (open cmd window)
 
@@ -84,6 +84,15 @@ git clone https://github.com/braedensc/teamprs.git
 npm install
 
 cd api
+
+make a new file ".flaskenv"
+
+ add these two lines:
+
+   FLASK_APP=api.py
+
+   FLASK_ENV=development
+
 
 venv\Scripts\activate
 
@@ -96,6 +105,46 @@ npm run start-api
 (open new cmd window in same directory)
 
 npm start
+
+(it should now be running on localhost:3000)
+
+
+npm install and pip install only need to be done once (or if new packages have been added).
+Make sure to always update requirements.txt when installing new python packages (both of them I'm not sure which one is actually being used).
+
+
+INSTRUCTIONS FOR MACOS:
+(open terminal)
+
+$ git clone https://github.com/braedensc/teamprs.git
+
+$ npm install
+
+$ cd api
+
+
+make a new file ".flaskenv"
+
+ add these two lines:
+
+   FLASK_APP=api.py
+
+   FLASK_ENV=development
+
+
+$ python3 -m venv venv (only do this the first time)
+$ source venv/bin/activate
+(venv) $ pip install flask python-dotenv
+
+in Finder, go to Applications/Python3.9 and double click on "Install Certificates.cmd" file
+
+$ pip install -r requirements.txt
+
+$ flask run
+
+(open new cmd window in ~/ncaaprs directory)
+
+$ npm start
 
 (it should now be running on localhost:3000)
 
