@@ -12,7 +12,7 @@ import concurrent.futures
 from urllib.parse import quote
 
 timeFormats = ['%M:%S.%f', '%H:%M:%S.%f', '%S.%f']
-MAX_THREADS = 60
+MAX_THREADS = 30
 
 FIELDEVENTS = ["prHJ", "prLJ", "prTJ", "prPV", "prST", "prDT", "prHT", "prJT", "prWT"]
 
@@ -114,7 +114,7 @@ def getAthletes(teamurl):
         for i in range(1, len(p.tables[0])):
             for j in range(0, len(p.tables[0][i])):
                     num = p.tables[0][i][j].count(". ")
-                    if (num == 0):
+                    if (num == 0 and p.tables[0][i][j] != "10,000"):
                         num = p.tables[0][i][j].count(",")
                     extraLinkCount += num
         del athleteProfiles[:extraLinkCount]

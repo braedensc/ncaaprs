@@ -46,14 +46,20 @@ class App extends Component {
       q++;
       this.setState({isLoading: true})
       let team = {};
+      let time1 = new Date().getTime();
+      //fetch(`https://ncaaprs-backend.herokuapp.com/api/athletes/?param1=${teamLink}`)
+      
       fetch(`/api/athletes/?param1=${teamLink}`)
       .then((res) => {
         console.log(res)
         if (!res.ok) {
           throw Error (res)
         }
+        let time2 = new Date().getTime();
+        console.log(time2 - time1)
         return res.json()})
       .then(data => {
+        console.log(data)
         let allAthletes = []
         let currAthlete = null
         for (let i = 0; i < data.athletes.length; i++) {
@@ -353,6 +359,7 @@ class App extends Component {
                 }), () => {
 
                   localStorage.setItem('teamurls', JSON.stringify(this.state.teamurlList))
+                  console.log(this.state.teamList)
                 })
         }
         }).catch((error) => {
