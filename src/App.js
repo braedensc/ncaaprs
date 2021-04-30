@@ -256,7 +256,9 @@ class App extends Component {
        let currAthlete800 = null
        for (let i = 0; i < data.athletes800.length; i++) {
          currAthlete800 = data.athletes800[i]
+         console.log(currAthlete800)
          currAthlete800 = JSON.parse(JSON.parse(currAthlete800))
+         console.log(currAthlete800)
          allAthletes800.push(currAthlete800)
        }
        team.athletes800 = allAthletes800

@@ -73,18 +73,73 @@ class Athlete:
 
 def getAthleteTimes(profileurl):
     '''
-    returns a list of events followed by prs for the given athlete: ex. [800, 1:40, 1500, 5:40]
+    returns a messy, nested list of events followed by prs for the given athlete: ex. ~ [800, 1:40, 1500, 5:40]
             Parameters:
                     profileurl (String): The link to the athletes tfrrs page
     '''
-
+    dates = []
     req = Request(quote(profileurl, safe=':/'), headers={'User-Agent': 'Mozilla/5.0'})
     page1 = urlopen(req)
     html_bytes1 = page1.read()
     html1 = html_bytes1.decode('utf-8', 'ignore')
+    #print(html1)
     p = HTMLTableParser()
+    
     p.feed(html1)
-    return p.tables[0]
+
+    #print(profileurl)
+    #print(p.tables[0])
+    prs = list(chain.from_iterable(p.tables[0]))
+   # print(profileurl)
+    #print(prs)
+    for i in range(1, (len(prs)), 2):
+      currPR = prs[i]
+    
+      currPR = currPR.split("  ")[0]
+      #(currPR)
+        #print('RONAN')
+        #print(html1)
+      currDate = re.findall(fr"""({currPR}([^,]+), \d+)""", html1)
+      
+      #print(len(currDate))S
+      if '(XC)' in (prs[i - 1]):
+        #print(currDate[len(currDate)-2])
+        #print(currDate[len(currDate)-2][0])
+        commaInDateIndex = currDate[len(currDate)-2][0].rfind(',')
+        #print(currPR)
+        #print(currDate[len(currDate)-2][0][commaInDateIndex - 15:commaInDateIndex + 6])
+        currDate = currDate[len(currDate)-2][0][commaInDateIndex - 15:commaInDateIndex + 6]
+        arrowInDateIndex = currDate.find('>')
+        currDate = currDate[arrowInDateIndex+1:]
+        #print(currDate)
+
+      else:
+        #print(currDate[len(currDate)-1][0]) 
+        commaInDateIndex = currDate[len(currDate)-1][0].rfind(',')
+        #print(currPR)
+        #print(currDate[len(currDate)-1][0][commaInDateIndex - 15:commaInDateIndex + 6])
+        currDate = currDate[len(currDate)-1][0][commaInDateIndex - 15:commaInDateIndex + 6]
+        arrowInDateIndex = currDate.find('>')
+        currDate = currDate[arrowInDateIndex+1:]
+        #print(currDate)
+
+      if currDate[5] == ' ':
+          currDate = currDate.replace(' ', '', 1)
+      #print(currDate)
+
+      dashIndex = currDate.find('-')
+      if dashIndex != -1:
+          currDate = currDate[0:5] + currDate[dashIndex+1:len(currDate)]
+      #print(currPR)
+      
+      #print(currDate)
+      #print('\n')
+      currDate = currDate.strip('\n')
+      prs[i] = [prs[i], currDate]
+      #print(prs)
+
+
+    return prs
 
 
  
@@ -202,19 +257,25 @@ def buildAthleteList(teamurl):
     #make new temp table of links here
     tempTable = []
     table = []
-
+    table1 = []
     for i in range(len(athleteList)):
         tempTable.append('https:' + str(athleteList[i].link))
-    with concurrent.futures.ThreadPoolExecutor(max_workers=threads) as executor:
+    with concurrent.futures.ProcessPoolExecutor(max_workers=threads) as executor:
+        #tempTable is just a list of the links to profiles to call getAthleteTimes() on
         table.append(executor.map(getAthleteTimes, tempTable))
    # for i in range(len(athleteList)):
     #     table = getAthleteTimes('https:' + str(athleteList[i].link))
-    table = list(chain.from_iterable(table))
-    for i in range(len(athleteList)):
-        table[i] = list(chain.from_iterable(table[i]))
-        athleteList[i].prs = table[i]
-        #print(athleteList[i])
+
     
+    table1 = list(chain.from_iterable(table))
+   # print(table1)
+     #table contains pr time/marks in athlete order, since concurrent retains order called in output
+    for i in range(len(athleteList)):
+        #print(table[i])
+        #table[i] = list(chain.from_iterable(table[i]))
+        athleteList[i].prs = table1[i]
+        #print(athleteList[i])
+    #print(athleteList)
     return athleteList
 
 
@@ -260,6 +321,7 @@ def setallprs(athleteList):
             pass
         try:
             index =  athleteList[i].prs.index('800') + 1
+            #print(athleteList[i].prs[index])
             athleteList[i].pr800 = athleteList[i].prs[index]
         except ValueError:
             pass
@@ -386,7 +448,7 @@ def setallprs(athleteList):
 
 
         
-   # print(athleteList)
+    #print(athleteList)
     return athleteList
 
 
@@ -408,21 +470,24 @@ def buildprList(athleteList, distance):
         listprs = sorted(listprs, key=lambda x: sortprs(getattr(x, distance), timeFormats))
     for i in range(len(listprs)):
         listprs[i].time = getattr(listprs[i], distance)
+    #print(listprs)
     return listprs
     
 def sortprs(date, formats):
-    date = date.split("  ")[0]
-    print(date)
-    if "m" in date:
-        date = date.replace("m", "")
-        return float(date)
-    if "w" in date:
-        date = date.replace("w", "")
-    if "W" in date:
-        date = date.replace("W", "")
+    #print(date)
+    dateTemp = date[0]
+    dateTemp = dateTemp.split("  ")[0]
+    #print(date)
+    if "m" in dateTemp:
+        dateTemp = dateTemp.replace("m", "")
+        return float(dateTemp)
+    if "w" in dateTemp:
+        dateTemp = dateTemp.replace("w", "")
+    if "W" in dateTemp:
+        dateTemp = dateTemp.replace("W", "")
     for frmt in formats:
         try:
-            str_date = datetime.strptime(date, frmt)
+            str_date = datetime.strptime(dateTemp, frmt)
             return str_date
         except ValueError:
             continue
