@@ -16,7 +16,9 @@ TODO:
 
 -set front-end local instance to be able use deployed back-end (necessary to utilize db for testing, and later on for con job data)
 
--start storing teams/athletes/times in db
+-start storing teams/athletes/times in db, and utilizing stored info instead of scraping, when available
+
+- allow user to manually refresh a team, and display refeshed on date
 
 -set up cron job to scrape automatically on set time (allow manual update in UI)
 
