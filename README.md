@@ -12,6 +12,8 @@ TODO:
 
 -dockerize app
 
+-update ReadME instrucions on how to run locally and deply
+
 -set front-end local instance to be able use deployed back-end (necessary to utilize db for testing, and later on for con job data)
 
 -start storing teams/athletes/times in db
