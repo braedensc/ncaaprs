@@ -12,6 +12,8 @@ TODO:
 
 -set up cron job to scrape automatically on set time (allow manual update in UI)
 
+-dockerize app
+
 -add Pentathlon, Decathlon, etc.
 
 -add relays
