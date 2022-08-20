@@ -4,7 +4,7 @@ https://ncaaprs.herokuapp.com/
 
 TODO: 
 
--fix team logos
+~~-fix team logos
 
 -set up c# api to act as go between for the front-end requests and the python web scraper
 
