@@ -8,11 +8,13 @@ TODO:
 
 -set up c# api to act as go between for the front-end requests and the python web scraper
 
+-deploy app on ec2
+
+-dockerize app
+
 -start storing teams/athletes/times in db
 
 -set up cron job to scrape automatically on set time (allow manual update in UI)
-
--dockerize app
 
 -add Pentathlon, Decathlon, etc.
 
