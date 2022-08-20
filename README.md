@@ -1,5 +1,7 @@
 https://ncaaprs.herokuapp.com/
 
+***THE api folder in this repo is outdated, and will no longer work. To run this project, use the api in ncaaprs_Backend repo https://github.com/braedensc/ncaaprs_backend***
+
 TODO: 
 
 -fix team logos
