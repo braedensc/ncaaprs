@@ -2,6 +2,14 @@ https://ncaaprs.herokuapp.com/
 
 TODO: 
 
+-fix team logos
+
+-set up c# api to act as go between for the front-end requests and the python web scraper
+
+-start storing teams/athletes/times in db
+
+-set up cron job to scrape automatically on set time (allow manual update in UI)
+
 -add Pentathlon, Decathlon, etc.
 
 -add relays
@@ -9,6 +17,10 @@ TODO:
 -add mobile compatibility 
 
 -reduce load times
+
+-handle 404 errors for invalid athlete page links
+
+
 
 # Getting Started with Create React App
 This is a create-react-app, but with python flask as backend also, so it's a little different. Read below for info on running the code and deploying it/updates to it.
