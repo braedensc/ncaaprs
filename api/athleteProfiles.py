@@ -1,3 +1,4 @@
+import html
 from urllib.request import Request, urlopen
 from pprint import pprint
 import pandas as p
@@ -12,7 +13,7 @@ import concurrent.futures
 from urllib.parse import quote
 
 timeFormats = ['%M:%S.%f', '%H:%M:%S.%f', '%S.%f']
-MAX_THREADS = 60
+MAX_THREADS = 30
 
 FIELDEVENTS = ["prHJ", "prLJ", "prTJ", "prPV", "prST", "prDT", "prHT", "prJT", "prWT"]
 
@@ -77,7 +78,6 @@ def getAthleteTimes(profileurl):
             Parameters:
                     profileurl (String): The link to the athletes tfrrs page
     '''
-
     req = Request(quote(profileurl, safe=':/'), headers={'User-Agent': 'Mozilla/5.0'})
     page1 = urlopen(req)
     html_bytes1 = page1.read()
@@ -106,26 +106,11 @@ def getAthletes(teamurl):
     while (p.tables[table][0][0] != "NAME"):
         table += 1
         athleteNames = p.tables[table]
-
-
-    if (table != 0):
-        athleteProfiles = getLinksToAthleteProfiles(html1)
-        extraLinkCount = 0
-        for i in range(1, len(p.tables[0])):
-            for j in range(0, len(p.tables[0][i])):
-                    num = p.tables[0][i][j].count(". ")
-                    if (num == 0):
-                        num = p.tables[0][i][j].count(",")
-                    extraLinkCount += num
-        del athleteProfiles[:extraLinkCount]
-    else: 
-        athleteProfiles = getLinksToAthleteProfiles(html1)
+    athleteProfiles = getLinksToAthleteProfiles(html1)
     logo = getLogo(html1)
     teamTitle = getTeamTitle(html1)
     athleteList = []
     teamType = getTeamType(html1)
-    #print(athleteNames)
-    #print(athleteProfiles)
     for i in range(1, len(athleteNames) - 1):
         name = " ".join(athleteNames[i][0].split(", ")[::-1])
         athleteList.append(Athlete(name, athleteProfiles[i - 1], [], logo, teamTitle, teamType))
@@ -143,12 +128,13 @@ def getLinksToAthleteProfiles(html1):
             Parameters:
                     html1 (String): All the html code on the team roster web page, as a very very long String
     '''
-
-    urllist = re.findall(r"""<\s*A\s*HREF=["']([^=]+)["']""", html1)
-    string = '//www.tfrrs.org/athletes/'
+    with open('html_sample.txt', 'w') as f:
+        print(html1, file=f)
+    urllist = re.findall(r"""href="\/athletes.*html""", html1)
+    string = '//tfrrs.org'
     urls = list(filter(lambda x : ('athletes' in x), urllist))
     for i in range(len(urls)):
-        urls[i] = urls[i].replace(" ", "")
+        urls[i] = string + (urls[i].replace("href=\"", ""))
     return urls
 
 
@@ -173,9 +159,9 @@ def getTeamTitle(html1):
                     html1 (String): All the html code on the team roster web page, as a very very long String
     '''
 
-    urllist = re.findall(r"""https://logos.tfrrs.org/[^\s<>"]+.*\n.*\n""", html1)
-    teamNameIndex = urllist[0].find("\n")
-    teamTitle = urllist[0][teamNameIndex:-6]
+    urllist = re.findall(r"""https://logos.tfrrs.org\/[^\s<>"]+.*\n.*\n*\n*[^<]*""", html1)
+    teamNameIndex = urllist[0].rindex("\n")
+    teamTitle = urllist[0][teamNameIndex:]
     return teamTitle
 
 def getTeamType(html1):
@@ -184,9 +170,9 @@ def getTeamType(html1):
             Parameters:
                     html1 (String): All the html code on the team roster web page, as a very very long String
     '''
-    urllist = re.findall(r"""https://logos.tfrrs.org/[^\s<>"]+.*\n.*\n.*\n.*\n""", html1)
-    teamTypeIndex = urllist[0].find('actions">')
-    teamType = urllist[0][teamTypeIndex + 9:-6]
+    urllist = re.findall(r"""team-gender-and-sport[^\s<>"]+.*\n*[^<]*""", html1)
+    teamTypeIndex = urllist[0].find('sport\'>') + 7
+    teamType = html.unescape(urllist[0][teamTypeIndex:])
     return teamType
 
 
@@ -213,7 +199,6 @@ def buildAthleteList(teamurl):
     for i in range(len(athleteList)):
         table[i] = list(chain.from_iterable(table[i]))
         athleteList[i].prs = table[i]
-        #print(athleteList[i])
     
     return athleteList
 
@@ -381,12 +366,6 @@ def setallprs(athleteList):
             athleteList[i].prJT = athleteList[i].prs[index]
         except ValueError:
             pass
-
-
-
-
-        
-   # print(athleteList)
     return athleteList
 
 
@@ -412,7 +391,6 @@ def buildprList(athleteList, distance):
     
 def sortprs(date, formats):
     date = date.split("  ")[0]
-    print(date)
     if "m" in date:
         date = date.replace("m", "")
         return float(date)
@@ -434,4 +412,3 @@ def sortprs(date, formats):
 
 #the fetch request does this for each event after the above and then sends it all as one big JSON object to the front-end
 #return buildprList(athletes, 'pr8k'))
-
