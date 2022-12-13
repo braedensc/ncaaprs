@@ -19,6 +19,9 @@
     "react-sidebar": "^3.0.2",
     "web-vitals": "^0.2.4"
   },
+  "engines" : { 
+    "node" : "14.8.0"
+  },
   "scripts": {
     "start": "react-scripts start",
     "start-api": "cd api && venv\\Scripts\\activate &&  flask run --no-debugger",
