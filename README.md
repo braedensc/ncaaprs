@@ -6,9 +6,13 @@ TODO:
 
 ~~-fix team logos~~
 
--set up c# api to act as go between for the front-end requests and the python web scraper
+- seperate out python back-end - deploy to it's own server on heroku
+- revamp front-end - make new ts project for it and deploy to heroku
+- set up basic c# api to act as just a proxy (for now) for the front-end requests and the python web scraper
+- set up nosql db to hold team data, update python api to save data there wile also returning info back to c# api
+- update c# api to access db and only call python api if info is "out of date". Need a "viewed on" field for teams data, and an "updated on"
+- create cron job which causes python api to periodically retrieve team info (maybe twice a day). Which teams? How should I limit?
 
--deploy app on ec2
 
 -dockerize app
 
