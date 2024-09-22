@@ -1,0 +1,1338 @@
+<!DOCTYPE html>
+<html class="no-js js-menubar" lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-0Z9Z2N6ZD0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-0Z9Z2N6ZD0');
+</script>
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-66287-6', 'auto');  
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta name="author" content="">
+    <title>TFRRS | Georgia Tech Men&#39;s Track &amp; Field Results &amp; Statistics</title>
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="KPoB9-5WrgaK36KmV7RBC7dlysPznIzRe1yygoZ_z39rCAFqW9y-sZEb2GBfdfDNGiN_32k_p2misqLfjNAgpQ" />
+  
+  <link rel="stylesheet" href="/assets/application-a1113638bc156e6e214c8f9c53207d764d24305a643c770eec0a2eebfd1b4f8e.css" data-turbo-track="reload" />
+  <script src="/assets/application-d4008ddeb261f22a9f53f3dddd43752869320b84c550fd43799c92ffa08750df.js" data-turbo-track="reload" defer="defer"></script>
+  <script src="/assets/jquery.min-3e889c340ba9f9e88ff5f1badaeaceec65dd060a0232a85eb144c9b62b2786fe.js" data-turbo-track="reload" defer="defer"></script>
+  <script src="/assets/typeahead.bundle.min-d18d792426fa7f0a9679ed2c33e71307a8fe09561df9f593465a4d6feba70aec.js" data-turbo-track="reload" defer="defer"></script>
+  <script src="/assets/tablesaw.jquery.min-4701cd748c6834f95c3161b48f459469158169ddf7c12219be1c12c34481dd59.js" data-turbo-track="reload" defer="defer"></script>
+  <script src="/assets/tablesaw-init.min-1d6a00c96918bd12190e2fb280b0f5517d523937ed1845e65f13c4ab26130352.js" data-turbo-track="reload" defer="defer"></script>
+  <script src="/assets/jquery.tablesorter.min-fe520a3599ba9fc81844e8160254f452265de294151587c5dc8389022a0c404a.js" data-turbo-track="reload" defer="defer"></script>
+  <script src="/assets/widget-filter.min-1d2e9572bc5b838def30b532beaadf466ec4a4232e1a5a29088cccc092fe3086.js" data-turbo-track="reload" defer="defer"></script>
+
+  <script src="/assets/jquery-asScrollbar.min-c9765e34bfd33c5bc144253cdfccb3f2347afc9c3c92a8c8adf041183bc8913e.js" data-turbo-track="reload" defer="defer"></script>
+  <script src="/assets/jquery-asScrollable.min-581394978134953074cf3346996ad52e1d43ce9255c4c6ea05975833b502b8d0.js" data-turbo-track="reload" defer="defer"></script>
+  <script src="/assets/breakpoints-c357bc89f972ec2735029b3c3bc86bd4d54625b8347d4347ab57a1fdff2b027b.js" data-turbo-track="reload" defer="defer"></script>
+
+  <script src="/assets/babel-external-helpers-3bb9d34dcbba0de2bc460fb97b17cb78345d4df3873425d88dab40ff8c29b93e.js" data-turbo-track="reload" defer="defer"></script>
+  <script src="/assets/tether.min-1ca7b7364b258390c80bd1394bc5f3eda891b8c0b012b8ef26e03a9d369616ca.js" data-turbo-track="reload" defer="defer"></script>
+  <script src="/assets/popper.min-a35160b48a83891e024ad0e561f6d718eb47b9da1e8c8591f564894d30e49453.js" data-turbo-track="reload" defer="defer"></script>
+  <script src="/assets/bootstrap.min-b7e4b4eb09e42019e53eb11387a89ad1e4a7ca09a3b705c43db6167a5f4f37fa.js" data-turbo-track="reload" defer="defer"></script>
+
+  <script src="/assets/State-22323558f7bdfbe6ee1fe771491a431bbdd0206669a8804bd9d7ed2340563e85.js" data-turbo-track="reload" defer="defer"></script>
+
+  <script src="/assets/Component-d3b4189b709f8f5f34cda43509ddc3c24c69e13aa07fdcd150eb6de5a5e5567c.js" data-turbo-track="reload" defer="defer"></script>
+
+  <script src="/assets/Plugin-c667fcb4a45c3b7fe8291856a03f82025b733501885d532ed91ddaf9899c37d5.js" data-turbo-track="reload" defer="defer"></script>
+
+  <script src="/assets/Base-fdda45b3789c693e7e36db949b8455a47ad123039e8e1c80873d29f6196c6017.js" data-turbo-track="reload" defer="defer"></script>
+
+  <script src="/assets/Menubar-ca18355478b4182b2c6fd46e39e576692fb46ebb338e3697af3294be001dc091.js" data-turbo-track="reload" defer="defer"></script>
+
+  <script src="/assets/Sidebar-2b8a4fb8775cad5c8f48b4e9072c520a128c93de44277a03f356ffccd442f049.js" data-turbo-track="reload" defer="defer"></script>
+
+  <script src="/assets/PageAside-9e225775b27ecd8847c282f548f820399a4d261977a154d240f4d042dbc2264c.js" data-turbo-track="reload" defer="defer"></script>
+
+  <script src="/assets/menu-92ed59eeb67da3f42ee4a3919171b2cce1b94d01d0e781f427979eab697c30b9.js" data-turbo-track="reload" defer="defer"></script>
+
+  <script src="/assets/AssetSite-820c527b2f05e216e7844316f29636d287a82e7622a8312b28ed7da37413ec28.js" data-turbo-track="reload" defer="defer"></script>
+
+  <script src="/assets/bootstrap-datepicker.min-f3fcc2903d76b2cdb29452b3f0256c90772fd3beeb7818be185aaa4db6362a0a.js" data-turbo-track="reload" defer="defer"></script>
+
+  <script src="/assets/bootstrap-select.min-281407c5f68d119b06e38b696397e1d8139e5fe6052bb203b9b7e545059035d7.js" data-turbo-track="reload" defer="defer"></script>
+
+  <script src="/assets/init-2e09e52e809bcfa5e2219133005caefc381babaf24f41ad12cb56fb58adf3711.js" data-turbo-track="reload" defer="defer"></script>
+
+  <link rel="stylesheet" href="/assets/bootstrap.min-ea362e84a9f5cc626295a685aca36b51950bedfa00454f5eb8ae1f2454484a2f.css" data-turbo-track="reload" />
+  <link rel="stylesheet" href="/assets/bootstrap-extend.min-e818edbc82dcdb6c8a15c7b7830852f21184d7014b58337689186b7b03528bca.css" data-turbo-track="reload" />
+  <link rel="stylesheet" href="/assets/site-58a6a8df1b1f345f7102340bcec41da64ef5209b33e8d662b2fe47830220de20.css" data-turbo-track="reload" />
+  <link rel="stylesheet" href="/assets/main-19d90a676b47e99838610a8cdd53f709fe0abffc40cd0e72567547f3f3b99de2.css" data-turbo-track="reload" />
+  <link rel="stylesheet" href="/assets/tablesaw-9aadb8b0a807a577c968d42d977f70b89acbca55dfba8784138576dd9f14587f.css" data-turbo-track="reload" />
+  <link rel="stylesheet" href="/assets/asScrollable-bf8159f60730f7391f091c5807a2c0f1e0ddbae2c3708dc87a8dd2125ef27829.css" data-turbo-track="reload" />
+  <link rel="stylesheet" href="/assets/typeahead.min-ca8d2708c2f18195741f87b0e469a4e99688b7fb67bc179553e089863af5d550.css" data-turbo-track="reload" />
+  <link rel="stylesheet" href="/assets/Roboto-23a1c1e33751bd43df85d705836b96b590f2f13a491e7687c932835aa0b069d1.css" data-turbo-track="reload" />
+  <link rel="stylesheet" href="/assets/proxima-nova-46208f674a9effe7c048ac37d6c7ef4f356e45f975c293696e48c65ee327fded.css" data-turbo-track="reload" />
+  <link rel="stylesheet" href="/assets/font-awesome-ce93c9293a2ef156c2930be8f14768ebfb33d213bf3159eb0c982eb201e1f3b0.css" data-turbo-track="reload" />
+  <link rel="stylesheet" href="/assets/material-design.min-7954ef339aa441ba58fdeba9c480b4e44b7a276f423568a58c6ecfa2f1306c57.css" data-turbo-track="reload" />
+  <link rel="stylesheet" href="/assets/frame-support-9304d5b0bd8d10156c6ba27255a589b0583833ed622210120063cdc471ed8fae.css" data-turbo-track="reload" />
+  <link rel="stylesheet" href="/assets/bootstrap-select.min-b248e59e991ebc495c96bdfce4c677452becca97820ea670a23d508a82a52adf.css" data-turbo-track="reload" />
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="//assets.tfrrs.org/images/favicons/apple-touch-icon-57x57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114"
+          href="//assets.tfrrs.org/images/favicons/apple-touch-icon-114x114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="//assets.tfrrs.org/images/favicons/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144"
+          href="//assets.tfrrs.org/images/favicons/apple-touch-icon-144x144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="//assets.tfrrs.org/images/favicons/apple-touch-icon-60x60.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="120x120"
+          href="//assets.tfrrs.org/images/favicons/apple-touch-icon-120x120.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="//assets.tfrrs.org/images/favicons/apple-touch-icon-76x76.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="152x152"
+          href="//assets.tfrrs.org/images/favicons/apple-touch-icon-152x152.png"/>
+    <link rel="icon" type="image/png" href="//assets.tfrrs.org/images/favicons/favicon-196x196.png" sizes="196x196"/>
+    <link rel="icon" type="image/png" href="//assets.tfrrs.org/images/favicons/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/png" href="//assets.tfrrs.org/images/favicons/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="//assets.tfrrs.org/images/favicons/favicon-16x16.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="//assets.tfrrs.org/images/favicons/favicon-128.png" sizes="128x128"/>
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF"/>
+    <meta name="msapplication-TileImage" content="//assets.tfrrs.org/images/favicons/mstile-144x144.png"/>
+    <meta name="msapplication-square70x70logo" content="//assets.tfrrs.org/images/favicons/mstile-70x70.png"/>
+    <meta name="msapplication-square150x150logo" content="//assets.tfrrs.org/images/favicons/mstile-150x150.png"/>
+    <meta name="msapplication-wide310x150logo" content="//assets.tfrrs.org/images/favicons/mstile-310x150.png"/>
+    <meta name="msapplication-square310x310logo" content="//assets.tfrrs.org/images/favicons/mstile-310x310.png"/>
+
+
+
+<style>
+::-webkit-scrollbar {
+    width:9px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    background:rgba(0,0,0,0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    background:rgba(0,0,0,0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background:rgba(0,0,0,0.4);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background:rgba(0,0,0,0.05);
+}
+
+#scrollable-dropdown-menu .tt-menu {
+  max-height: 150px;
+  overflow-y: scroll;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.hoka-navbar-brand-logo {
+    height: 40px !important;
+}
+
+img.hoka-navbar-brand-logo {
+    display: inline-block;
+    vertical-align: top;
+}
+
+</style>
+</head>
+<body class=" page-body" style="background-image: url('//assets.tfrrs.org/images/background.png') ;">
+<nav class="site-navbar navbar navbar-default navbar-mega hidden-lg-up hidden-md-up" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <a href="//www.tfrrs.org">
+              <img class="navbar-brand-logo" src="//assets.tfrrs.org/images/TFRRS_157x30.png" title="TFRRS Logo" />
+            </a>
+            <span style="font-size:27px;color:gray;position:relative; top:10px;">/</span>
+            <img  class="hoka-navbar-brand-logo"  src="//assets.tfrrs.org/sponsor/hoka/hoka_blue.png" title="HOKA Logo" />
+          </div>
+        </div>
+    </div>
+</nav>
+<div class="site-menu-mobile ">
+    <button type="button" class="navbar-toggler hamburger hamburger-close navbar-toggler-left hided"
+            data-toggle="menubar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="hamburger-bar"></span>
+    </button>
+</div>
+<div class="site-menubar">
+    <div class="site-menubar-body container">
+        <div>
+            <div>
+                <div class="inline-block site-menu-logo">
+
+                    <a href="//www.tfrrs.org">
+                      <img class="mb-15 w-200" src="//assets.tfrrs.org/images/TFRRS_200x38.png" title="TFRRS Logo" />
+                    </a>
+                  <span style="font-size:36px;vertical-align: bottom;">/</span>
+                  <img height="58px" src="//assets.tfrrs.org/sponsor/hoka/hoka_blue.png" title="HOKA Logo" />
+                </div>
+                <ul class="site-menu inline-block ml-lg-40" data-plugin="menu">
+                    <li class="site-menu-item has-sub">
+                        <a style="color:#4c4654" dropdown-badge="false" class=" waves-effect waves-classic">
+                            <span class="">TEAMS</span>
+                            <i class="site-menu-arrow fa fa-chevron-down mt-10" aria-hidden="true"></i>
+                        </a>
+                        <ul class="site-menu-sub">
+                            <li class="site-menu-item">
+                                
+                                    <div class="input-group m-20 w-250 hidden-sm-down">
+				    <div id="scrollable-dropdown-menu">
+                                        <input type="text" class="form-control" name="team_search" id="team_search"
+                                               placeholder="Search for a team..." onkeypress="teamKeyPress(event)" ></div>
+                                        <span class="input-group-btn">
+                                                          <div onclick="teamsSubmit()"  class="btn btn-primary">
+                                                              <i class="fa fa-search" aria-hidden="true"></i>
+                                                          </div>
+                                                        </span>
+                                    </div>
+                                    <div class="input-search clearfix hidden-lg-up hidden-md-up input-search-menu">
+                                        <button type="submit" class="input-search-btn">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+				    <div id="scrollable-dropdown-menu">
+                                        <input type="text" class="form-control"
+                                               name="mobile_team_search" id="mobile_team_search"
+                                               placeholder="Search Teams"></div></div>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="site-menu-item has-sub">
+                        <a style="color:#4c4654" dropdown-badge="false" class=" waves-effect waves-classic">
+                            <span class="">CONFERENCES</span>
+                            <i class="site-menu-arrow fa fa-chevron-down mt-10" aria-hidden="true"></i>
+                        </a>
+                        <ul class="site-menu-sub">
+                            <li class="site-menu-item">
+
+                                    <div class="input-group m-20 w-250 hidden-sm-down" id="scrollable-dropdown-menu">
+
+                                        <input type="text" class="form-control" name="conference_search" id="conference_search"
+                                               placeholder="Search for a conference..." onkeypress="conferenceKeyPress(event)" >
+                                        <span class="input-group-btn">
+                                                          <div class="btn btn-primary" onclick="conferenceSubmit();">
+                                                              <i class="fa fa-search" aria-hidden="true"></i>
+                                                          </div>
+                                                        </span>
+                                    </div>
+                                    <div class="input-search clearfix hidden-lg-up hidden-md-up input-search-menu">
+                                        <button type="submit" class="input-search-btn">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+<div id="scrollable-dropdown-menu">
+                                        <input type="text" class="form-control"
+                                               name="mobile_conference_search" id="mobile_conference_search"
+                                               placeholder="Search Conferences"></div></div>
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="site-menu-item ">
+                        <a href="https://www.tfrrs.org/results_search.html" dropdown-badge="false" class=" waves-effect waves-classic">
+                            <span class="">RESULTS</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item has-sub hidden-sm-down">
+                        <a style="color:#4c4654" dropdown-badge="false" class=" waves-effect waves-classic">
+                            <span class="">LISTS</span>
+                            <i class="site-menu-arrow fa fa-chevron-down" aria-hidden="true"></i>
+                        </a>
+                        <ul class="site-menu-sub">
+                            <li class="site-menu-item">
+                                <a class="animsition-link waves-effect waves-classic" href="https://tf.tfrrs.org/indoor_lists.html">
+                                    <span class="site-menu-title">INDOOR LISTS</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="animsition-link waves-effect waves-classic" href="https://tf.tfrrs.org/outdoor_lists.html">
+                                    <span class="site-menu-title">OUTDOOR LISTS</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="animsition-link waves-effect waves-classic" href="https://tf.tfrrs.org/archives.html">
+                                    <span class="site-menu-title">ARCHIVES</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="site-menu-item hidden-md-up hidden-lg-up hidden-xl-up">
+                        <a href="https://tf.tfrrs.org/indoor_lists.html" dropdown-badge="false" class=" waves-effect waves-classic">
+                            <span>INDOOR LISTS</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item hidden-md-up hidden-lg-up hidden-xl-up">
+                        <a href="https://tf.tfrrs.org/outdoor_lists.html" dropdown-badge="false" class=" waves-effect waves-classic">
+                            <span>OUTDOOR LISTS</span>
+                        </a>
+                    </li>
+                    <li class="site-menu-item hidden-md-up hidden-lg-up hidden-xl-up">
+                        <a class="animsition-link waves-effect waves-classic" href="https://tf.tfrrs.org/archives.html">
+                            <span>ARCHIVES</span> 
+                        </a>
+                    </li>
+                  <turbo-frame class="inline-block float-right" id="login_nav" src="/loginNavigation.html"></turbo-frame>
+		    </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+ <script>
+    function seasonSelect(sel, target, newWindow) {
+  document.forms.lists.submit();
+}
+  </script>
+ <form name="lists" action="https://www.tfrrs.org/teams/tf/GA_college_m_Georgia_Tech.html" accept-charset="UTF-8" method="get">
+<div class="page container">
+  <div class="page-content panel-container">
+    <div class="panel panel-bordered">
+      <div class="panel-heading">
+        <h3 class="panel-title large-title" id='team-name'>
+            <img src="https://logos.tfrrs.org/georgia-tech.png" height="40px" style="padding-top:0px;padding-bottom:4px;" />
+
+          GEORGIA TECH</h3>
+
+        <h3 class="panel-title panel-actions" id='team-gender-and-sport'>MEN&#39;S
+          TRACK &amp; FIELD</h3>
+
+
+      </div>
+      <div class="panel-second-title">
+        <div class="row">
+          <!-- if leagues -->
+          <div class="col-lg-8 pt-5">
+                        <span class="panel-heading-normal-text">
+<a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/leagues/62.html">ACC</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/leagues/1619.html">DI South Region</a>
+                        </span>
+          </div>
+<!-- end if leagues -->
+          <div class="col-lg-4 pt-5">
+            <select class="form-control" onchange="seasonSelect(this, 'window', false);" name="config_hnd">
+              <option value="348" >
+2024 Cross Country
+              </option>
+              <option value="333"  selected >
+2024 Outdoor
+              </option>
+              <option value="320" >
+2024 Indoor
+              </option>
+              <option value="303" >
+2023 Cross Country
+              </option>
+              <option value="290" >
+2023 Outdoor
+              </option>
+              <option value="277" >
+2022-23 Indoor
+              </option>
+              <option value="264" >
+2022 Cross Country
+              </option>
+              <option value="254" >
+2022 Outdoor
+              </option>
+              <option value="238" >
+2021-22 Indoor
+              </option>
+              <option value="222" >
+2021 Cross Country
+              </option>
+              <option value="214" >
+2021 Outdoor
+              </option>
+              <option value="203" >
+2020-21 Indoor
+              </option>
+              <option value="195" >
+2020 Cross Country
+              </option>
+              <option value="187" >
+2020 Outdoor
+              </option>
+              <option value="176" >
+2019-20 NCAA Indoor
+              </option>
+              <option value="167" >
+2019 Cross Country
+              </option>
+              <option value="158" >
+2019 Outdoor
+              </option>
+              <option value="146" >
+2018-19 NCAA Indoor
+              </option>
+              <option value="138" >
+2018 Cross Country
+              </option>
+              <option value="129" >
+2018 Outdoor
+              </option>
+              <option value="123" >
+2017-2018 NCAA Indoor
+              </option>
+              <option value="115" >
+2017 Cross Country
+              </option>
+              <option value="108" >
+2017 NCAA Outdoor
+              </option>
+              <option value="102" >
+2016-2017 NCAA Indoor
+              </option>
+              <option value="96" >
+2016 Cross Country
+              </option>
+              <option value="91" >
+2016 NCAA Outdoor
+              </option>
+              <option value="83" >
+2015-2016 NCAA Indoor
+              </option>
+              <option value="78" >
+2015 Cross Country
+              </option>
+              <option value="72" >
+2015 Outdoor
+              </option>
+              <option value="65" >
+2014-2015 Indoor
+              </option>
+              <option value="60" >
+2014 Cross Country
+              </option>
+              <option value="54" >
+2014 Outdoor
+              </option>
+              <option value="47" >
+2013-2014 Indoor
+              </option>
+              <option value="43" >
+2013 Cross Country
+              </option>
+              <option value="35" >
+2013 Outdoor
+              </option>
+              <option value="29" >
+2012-2013 Indoor
+              </option>
+              <option value="25" >
+2012 Cross Country
+              </option>
+              <option value="21" >
+2012 Outdoor
+              </option>
+              <option value="17" >
+2011-12 Indoor
+              </option>
+              <option value="13" >
+2011 Outdoor
+              </option>
+              <option value="9" >
+2010-11 Indoor
+              </option>
+              <option value="5" >
+2010 Outdoor
+              </option>
+              <option value="1" >
+2009-10 Indoor
+              </option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12 pt-5">
+            <span class="panel-heading-text">MORE TEAMS:</span>
+
+            <span class="panel-heading-normal-text">
+    <span class="panel-heading-normal-text">
+      <a class="main-link" data-turbo-frame="_top" data-turbo="false" href="/teams/tf/GA_college_f_Georgia_Tech.html">Women&#39;s Track &amp; Field</a>
+    </span>
+    <div class="col-lg-11">
+    <span class="panel-heading-normal-text text-right">
+      <a class="main-link" data-turbo-frame="_top" data-turbo="false" href="/teams/xc/GA_college_m_Georgia_Tech.html">Men&#39;s Cross Country</a>
+    </span>
+    </div>
+    <div class="col-lg-11">
+    <span class="panel-heading-normal-text text-right">
+      <a class="main-link" data-turbo-frame="_top" data-turbo="false" href="/teams/xc/GA_college_f_Georgia_Tech.html">Women&#39;s Cross Country</a>
+    </span>
+    </div>
+
+</span>
+
+          </div>
+        </div>
+        <div class="row pt-30">
+          <div class="col-lg-4">
+            <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/top_qualifiers/GA_college_m_Georgia_Tech.html?list_hnd=4515&amp;season_hnd=633" class="btn btn-panel-lg w-full mb-20 pt-20 btn-margin-mobile">
+            TOP QUALIFIERS (POP)
+            </a>
+          </div>
+
+
+          <div class="col-lg-4">
+            <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/top_performances/GA_college_m_Georgia_Tech.html?list_hnd=4541&amp;season_hnd=645" class="btn btn-panel-lg w-full mb-20 pt-20 btn-margin-mobile">TOP PERFORMANCES</a>
+          </div>
+
+          <div class="col-lg-4">
+            <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/all_performances/GA_college_m_Georgia_Tech.html?list_hnd=4541&amp;season_hnd=645" class="btn btn-panel-lg w-full mb-20 pt-20 btn-margin-mobile">ALL PERFORMANCES</a>
+          </div>
+        </div>
+      </div>
+      <div class="panel-body">
+        <div class="row d-flex">
+          <div class="col-lg-12 order-lg-first order-md-first order-sm-first order-first">
+            <h3 class="font-weight-500">TOP MARKS</h3>
+            <table class="tablesaw table-striped table-bordered table-hover"
+                   data-tablesaw-mode="columntoggle">
+              <thead>
+              <tr>
+                <th
+                  data-tablesaw-priority="persist" scope="col">EVENT
+                </th>
+                <th
+                  data-tablesaw-priority="persist" scope="col">ATHLETE/SQUAD
+                </th>
+                <th
+                  data-tablesaw-priority="2" scope="col">YEAR
+                </th>
+                <th
+                  data-tablesaw-priority="persist 1" scope="col">TIME/MARK
+                </th>
+              </tr>
+              </thead>
+              <tbody>
+
+              <tr>
+                <td>100</td>
+                  <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8738703/Georgia_Tech/Eric_Singleton_Jr.">Singleton Jr., Eric</a>
+                  </td>
+                  <td>FR-1</td>
+                <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/86277/5219586/Georgia_Tech_Invitational/Mens-100-Meters">10.32</a>
+                </td>
+              </tr>
+              <tr>
+                <td>200</td>
+                  <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8738703/Georgia_Tech/Eric_Singleton_Jr.">Singleton Jr., Eric</a>
+                  </td>
+                  <td>FR-1</td>
+                <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/86920/ACC_Outdoor_Track__Field_Championships">21.18</a>
+                </td>
+              </tr>
+              <tr>
+                <td>400</td>
+                  <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7535052/Georgia_Tech/Jameson_Miller">Miller, Jameson</a>
+                  </td>
+                  <td>SR-4</td>
+                <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/86277/5219607/Georgia_Tech_Invitational/Mens-400-Meters">46.83</a>
+                </td>
+              </tr>
+              <tr>
+                <td>800</td>
+                  <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687316/Georgia_Tech/Alex_Thomas">Thomas, Alex</a>
+                  </td>
+                  <td>JR-3</td>
+                <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/86277/5219590/Georgia_Tech_Invitational/Mens-800-Meters">1:49.80</a>
+                </td>
+              </tr>
+              <tr>
+                <td>1500</td>
+                  <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7381085/Georgia_Tech/Nick_Nyman">Nyman, Nick</a>
+                  </td>
+                  <td>SR-4</td>
+                <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/86277/5219595/Georgia_Tech_Invitational/Mens-1500-Meters">3:42.56</a>
+                </td>
+              </tr>
+              <tr>
+                <td>5000</td>
+                  <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687314/Georgia_Tech/Charlie_Smith">Smith, Charlie</a>
+                  </td>
+                  <td>JR-3</td>
+                <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/82236/5194753/2024_Bryan_Clay_Invitational/Mens-5000-Meters">14:07.27</a>
+                </td>
+              </tr>
+              <tr>
+                <td>10,000</td>
+                  <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687311/Georgia_Tech/Devin_Wade">Wade, Devin</a>
+                  </td>
+                  <td>JR-3</td>
+                <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/85174/5146955/Raleigh_Relays/Mens-10000-Meters">29:39.92</a>
+                </td>
+              </tr>
+              <tr>
+                <td>110H</td>
+                  <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8668038/Georgia_Tech/George_Benjamin">Benjamin, George</a>
+                  </td>
+                  <td>FR-1</td>
+                <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/86920/ACC_Outdoor_Track__Field_Championships">14.36</a>
+                </td>
+              </tr>
+              <tr>
+                <td>3000S</td>
+                  <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8591928/Georgia_Tech/Billy_Carlton">Carlton, Billy</a>
+                  </td>
+                  <td>FR-1</td>
+                <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/86574/5277013/Penn_Relays/Mens-3000-Steeplechase">8:52.50</a>
+                </td>
+              </tr>
+              <tr>
+                <td>4x400</td>
+                  <td><a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/7535052/Georgia_Tech/Jameson_Miller.html"><span class="hidden-xs-down">Jameson</span> Miller</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/8668041/Georgia_Tech/Sidney_McReynolds.html"><span class="hidden-xs-down">Sidney</span> McReynolds</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/8668042/Georgia_Tech/Caden_Terrell.html"><span class="hidden-xs-down">Caden</span> Terrell</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/8668039/Georgia_Tech/Winston_DeCuir_III.html"><span class="hidden-xs-down">Winston</span> DeCuir III</a></td>
+                  <td>&nbsp;</td>
+                <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/86997/5284581/NCAA_East_First_Round/Mens-4-x-400-Relay">3:06.34</a>
+                </td>
+              </tr>
+              <tr>
+                <td>4x800</td>
+                  <td><a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/7889490/Georgia_Tech/Parker_Buchheit.html"><span class="hidden-xs-down">Parker</span> Buchheit</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/7687316/Georgia_Tech/Alex_Thomas.html"><span class="hidden-xs-down">Alex</span> Thomas</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/6876084/Georgia_Tech/Jeremiah_LaDuca.html"><span class="hidden-xs-down">Jeremiah</span> LaDuca</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/7381085/Georgia_Tech/Nick_Nyman.html"><span class="hidden-xs-down">Nick</span> Nyman</a></td>
+                  <td>&nbsp;</td>
+                <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/86574/5277057/Penn_Relays/Mens-4-x-800-Relay">7:28.67</a>
+                </td>
+              </tr>
+              <tr>
+                <td>4xMile</td>
+                  <td><a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/7381085/Georgia_Tech/Nick_Nyman.html"><span class="hidden-xs-down">Nick</span> Nyman</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/7687309/Georgia_Tech/Myles_Collins.html"><span class="hidden-xs-down">Myles</span> Collins</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/8591927/Georgia_Tech/Alexander_Arrambide.html"><span class="hidden-xs-down">Alexander</span> Arrambide</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/7687314/Georgia_Tech/Charlie_Smith.html"><span class="hidden-xs-down">Charlie</span> Smith</a></td>
+                  <td>&nbsp;</td>
+                <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/86574/5277038/Penn_Relays/Mens-4-x-1-Mile-Relay">16:40.15</a>
+                </td>
+              </tr>
+              <tr>
+                <td>HJ</td>
+                  <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8323970/Georgia_Tech/Omar_Arnaout">Arnaout, Omar</a>
+                  </td>
+                  <td>SO-2</td>
+                <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/84936/5126543/FSU_Relays/Mens-High-Jump">2.08m</a>
+                </td>
+              </tr>
+              <tr>
+                <td>LJ</td>
+                  <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7726299/Georgia_Tech/Cameron_O&#39;Neal">O&#39;Neal, Cameron</a>
+                  </td>
+                  <td>JR-3</td>
+                <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/83593/5148582/Pepsi_Florida_Relays/Mens-Long-Jump">7.78m</a>
+                </td>
+              </tr>
+              <tr>
+                <td>TJ</td>
+                  <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7726300/Georgia_Tech/John_Watkins">Watkins, John</a>
+                  </td>
+                  <td>JR-3</td>
+                <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/84666/5113170/Yellow_Jacket_Invitational/Mens-Triple-Jump">15.33m</a>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-lg-4 ">
+            
+            <h3 class="font-weight-500">ROSTER</h3>
+            <table class="tablesaw table-striped table-bordered table-hover"
+                   data-tablesaw-mode="columntoggle">
+              <thead>
+              <tr>
+                <th
+                  data-tablesaw-priority="persist" scope="col">NAME
+                </th>
+                <th
+                  data-tablesaw-priority="persist" scope="col">YEAR
+                </th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7381081/Georgia_Tech/Leif_Andersen.html">Andersen, Leif</a>
+                </td>
+                <td>
+                  SR-4
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8323970/Georgia_Tech/Omar_Arnaout.html">Arnaout, Omar</a>
+                </td>
+                <td>
+                  SO-2
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8323972/Georgia_Tech/Miguel_Aronategui.html">Aronategui, Miguel</a>
+                </td>
+                <td>
+                  SO-2
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8591927/Georgia_Tech/Alexander_Arrambide.html">Arrambide, Alexander</a>
+                </td>
+                <td>
+                  FR-1
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687317/Georgia_Tech/Tristan_Autry.html">Autry, Tristan</a>
+                </td>
+                <td>
+                  JR-3
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7977851/Georgia_Tech/Weston_Baptiste.html">Baptiste, Weston</a>
+                </td>
+                <td>
+                  JR-3
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8236362/Georgia_Tech/Trent_Bell.html">Bell, Trent</a>
+                </td>
+                <td>
+                  SO-2
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8668038/Georgia_Tech/George_Benjamin.html">Benjamin, George</a>
+                </td>
+                <td>
+                  FR-1
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7381083/Georgia_Tech/Mac_Bloodworth.html">Bloodworth, Mac</a>
+                </td>
+                <td>
+                  JR-3
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687312/Georgia_Tech/Jackson_Borden.html">Borden, Jackson</a>
+                </td>
+                <td>
+                  JR-3
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7889490/Georgia_Tech/Parker_Buchheit.html">Buchheit, Parker</a>
+                </td>
+                <td>
+                  JR-3
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8591928/Georgia_Tech/Billy_Carlton.html">Carlton, Billy</a>
+                </td>
+                <td>
+                  FR-1
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8591929/Georgia_Tech/Matt_Castronuovo.html">Castronuovo, Matt</a>
+                </td>
+                <td>
+                  FR-1
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687313/Georgia_Tech/Chris_Cherono.html">Cherono, Chris</a>
+                </td>
+                <td>
+                  JR-3
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687309/Georgia_Tech/Myles_Collins.html">Collins, Myles</a>
+                </td>
+                <td>
+                  JR-3
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7889491/Georgia_Tech/Ethan_Curnow.html">Curnow, Ethan</a>
+                </td>
+                <td>
+                  JR-3
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8668039/Georgia_Tech/Winston_DeCuir_III.html">DeCuir III, Winston</a>
+                </td>
+                <td>
+                  FR-1
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7977852/Georgia_Tech/Bradley__Favors.html">Favors, Bradley </a>
+                </td>
+                <td>
+                  JR-3
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7381082/Georgia_Tech/Harrison_Fultz.html">Fultz, Harrison</a>
+                </td>
+                <td>
+                  SR-4
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8668040/Georgia_Tech/William_Gituku.html">Gituku, William</a>
+                </td>
+                <td>
+                  FR-1
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687310/Georgia_Tech/John__Higinbotham.html">Higinbotham, John </a>
+                </td>
+                <td>
+                  JR-3
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8236363/Georgia_Tech/Ethan_Kurilko.html">Kurilko, Ethan</a>
+                </td>
+                <td>
+                  FR-1
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/6876084/Georgia_Tech/Jeremiah_LaDuca.html">LaDuca, Jeremiah</a>
+                </td>
+                <td>
+                  SR-4
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8668041/Georgia_Tech/Sidney_McReynolds.html">McReynolds, Sidney</a>
+                </td>
+                <td>
+                  FR-1
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7381086/Georgia_Tech/Cole_Miller.html">Miller, Cole</a>
+                </td>
+                <td>
+                  SR-4
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7535052/Georgia_Tech/Jameson_Miller.html">Miller, Jameson</a>
+                </td>
+                <td>
+                  SR-4
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7381085/Georgia_Tech/Nick_Nyman.html">Nyman, Nick</a>
+                </td>
+                <td>
+                  SR-4
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7726299/Georgia_Tech/Cameron_O&#39;Neal.html">O&#39;Neal, Cameron</a>
+                </td>
+                <td>
+                  JR-3
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7889492/Georgia_Tech/Jean-Lou_Pare.html">Pare, Jean-Lou</a>
+                </td>
+                <td>
+                  JR-3
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8236364/Georgia_Tech/Joey_Sandel.html">Sandel, Joey</a>
+                </td>
+                <td>
+                  SO-2
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7977853/Georgia_Tech/Jackson_Sexton.html">Sexton, Jackson</a>
+                </td>
+                <td>
+                  JR-3
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8738703/Georgia_Tech/Eric_Singleton_Jr..html">Singleton Jr., Eric</a>
+                </td>
+                <td>
+                  FR-1
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687314/Georgia_Tech/Charlie_Smith.html">Smith, Charlie</a>
+                </td>
+                <td>
+                  JR-3
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8236365/Georgia_Tech/Nathan_Solomon.html">Solomon, Nathan</a>
+                </td>
+                <td>
+                  SO-2
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8668042/Georgia_Tech/Caden_Terrell.html">Terrell, Caden</a>
+                </td>
+                <td>
+                  FR-1
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687316/Georgia_Tech/Alex_Thomas.html">Thomas, Alex</a>
+                </td>
+                <td>
+                  JR-3
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687315/Georgia_Tech/Jack_Voss.html">Voss, Jack</a>
+                </td>
+                <td>
+                  JR-3
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687311/Georgia_Tech/Devin_Wade.html">Wade, Devin</a>
+                </td>
+                <td>
+                  JR-3
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8591930/Georgia_Tech/Taylor_Wade.html">Wade, Taylor</a>
+                </td>
+                <td>
+                  FR-1
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7726300/Georgia_Tech/John_Watkins.html">Watkins, John</a>
+                </td>
+                <td>
+                  JR-3
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-lg-8 ">
+            <div class="header-mobile">
+              <h3 class="font-weight-500  ">LATEST RESULTS</h3>
+            </div>
+            <table class="tablesaw table-striped table-bordered table-hover"
+                   data-tablesaw-mode="columntoggle">
+              <thead>
+              <tr>
+                <th
+                  data-tablesaw-priority="persist" scope="col" width="150px">DATE
+                </th>
+                <th data-tablesaw-priority="persist">MEET</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td>September 13, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/xc/23393/Southern_Showcase_University_College_">Southern Showcase (University/College) </a></td>
+              </tr>
+              <tr>
+                <td>August 30, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/xc/24107/Kennesaw_State_Stan_Sims_Cross_Country_Opener">Kennesaw State Stan Sims Cross Country Opener</a></td>
+              </tr>
+              <tr>
+                <td>May 22-25, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/86997/NCAA_East_First_Round">NCAA East First Round</a></td>
+              </tr>
+              <tr>
+                <td>May  9-11, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/86920/ACC_Outdoor_Track__Field_Championships">ACC Outdoor Track &amp; Field Championships</a></td>
+              </tr>
+              <tr>
+                <td>April 27, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/84133/LSU_Invitational">LSU Invitational</a></td>
+              </tr>
+              <tr>
+                <td>April 25-27, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/86574/Penn_Relays">Penn Relays</a></td>
+              </tr>
+              <tr>
+                <td>April 19-20, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/86277/Georgia_Tech_Invitational">Georgia Tech Invitational</a></td>
+              </tr>
+              <tr>
+                <td>April 12-13, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/85961/Tom_Jones_Memorial_Invitational">Tom Jones Memorial Invitational</a></td>
+              </tr>
+              <tr>
+                <td>April 12-13, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/81408/Berry_Field_Day_Invitational_2024">Berry Field Day Invitational 2024</a></td>
+              </tr>
+              <tr>
+                <td>April 11-12, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/81405/Berry_Field_Day_Multis">Berry Field Day Multi&#39;s</a></td>
+              </tr>
+              <tr>
+                <td>April 11-13, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/82236/2024_Bryan_Clay_Invitational">2024 Bryan Clay Invitational</a></td>
+              </tr>
+              <tr>
+                <td>April  5- 6, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/82934/Lee_University_-_Fast_Break_Invitational">Lee University - Fast Break Invitational</a></td>
+              </tr>
+              <tr>
+                <td>March 29-30, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/83593/Pepsi_Florida_Relays">Pepsi Florida Relays</a></td>
+              </tr>
+              <tr>
+                <td>March 28-30, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/85174/Raleigh_Relays">Raleigh Relays</a></td>
+              </tr>
+              <tr>
+                <td>March 21-22, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/84936/FSU_Relays">FSU Relays</a></td>
+              </tr>
+              <tr>
+                <td>March 16, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/84666/Yellow_Jacket_Invitational">Yellow Jacket Invitational</a></td>
+              </tr>
+              <tr>
+                <td>February 22-24, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/83939/ACC_Indoor_Track__Field_Championships">ACC Indoor Track &amp; Field Championships</a></td>
+              </tr>
+              <tr>
+                <td>February  9-10, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/81355/Music_City_Challenge_">Music City Challenge </a></td>
+              </tr>
+              <tr>
+                <td>February  9-10, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/83628/Clemson_Tiger_Paw_Invitational">Clemson Tiger Paw Invitational</a></td>
+              </tr>
+              <tr>
+                <td>February  9-10, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/81789/Boston_University_David_Hemery_Valentine_Invitational">Boston University David Hemery Valentine Invitational</a></td>
+              </tr>
+              <tr>
+                <td>January 26-27, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/83278/Clemson_Bob_Pollock_Invitational">Clemson Bob Pollock Invitational</a></td>
+              </tr>
+              <tr>
+                <td>January 19-20, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/83135/Vanderbilt_Invitational">Vanderbilt Invitational</a></td>
+              </tr>
+              <tr>
+                <td>January 12-13, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/82978/Clemson_Invitational">Clemson Invitational</a></td>
+              </tr>
+              <tr>
+                <td>December  8, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/82321/Clemson_Opener">Clemson Opener</a></td>
+              </tr>
+              <tr>
+                <td>November 10, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/xc/23305/NCAA_Division_I_South_Region_Cross_Country_Championships">NCAA Division I South Region Cross Country Championships</a></td>
+              </tr>
+              <tr>
+                <td>October 27, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/xc/23202/ACC_Cross_Country_Championships">ACC Cross Country Championships</a></td>
+              </tr>
+              <tr>
+                <td>October 13, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/xc/23108/Arturo_Barrios_Invite">Arturo Barrios Invite</a></td>
+              </tr>
+              <tr>
+                <td>September 30, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/xc/22343/Lehigh_Paul_Short_Run_College">Lehigh Paul Short Run (College)</a></td>
+              </tr>
+              <tr>
+                <td>September 30, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/xc/21523/Alexander_ASICS_XC_Invitational">Alexander ASICS XC Invitational</a></td>
+              </tr>
+              <tr>
+                <td>September 15, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/xc/21473/The_Southern_Showcase_college">The Southern Showcase (college)</a></td>
+              </tr>
+              <tr>
+                <td>September 15, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/xc/22636/Mountain_Dew_Invitational">Mountain Dew Invitational</a></td>
+              </tr>
+              <tr>
+                <td>September 15, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/xc/21266/UNG_Invitational">UNG Invitational</a></td>
+              </tr>
+              <tr>
+                <td>September  1, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/xc/21728/Kennesaw_State_Stan_Sims_Cross_Country_Opener">Kennesaw State Stan Sims Cross Country Opener</a></td>
+              </tr>
+              <tr>
+                <td>June  7-10, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/81300/NCAA_Division_I_Outdoor_Track__Field_Championships">NCAA Division I Outdoor Track &amp; Field Championships</a></td>
+              </tr>
+              <tr>
+                <td>May 25-27, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/81274/NCAA_East_Preliminary_Round">NCAA East Preliminary Round</a></td>
+              </tr>
+              <tr>
+                <td>May 11-13, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/81191/ACC_Outdoor_Track__Field_Championships">ACC Outdoor Track &amp; Field Championships</a></td>
+              </tr>
+              <tr>
+                <td>April 29, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/77936/Georgia_Southern_Classic">Georgia Southern Classic</a></td>
+              </tr>
+              <tr>
+                <td>April 29, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/78407/LSU_Invitational">LSU Invitational</a></td>
+              </tr>
+              <tr>
+                <td>April 27-29, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/80814/Penn_Relays">Penn Relays</a></td>
+              </tr>
+              <tr>
+                <td>April 21-22, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/80375/Georgia_Tech_Invitational">Georgia Tech Invitational</a></td>
+              </tr>
+              <tr>
+                <td>April 14-15, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/78102/UF_Tom_Jones_Memorial">UF Tom Jones Memorial</a></td>
+              </tr>
+              <tr>
+                <td>April  7- 8, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/76694/Flames_Invitational">Flames Invitational</a></td>
+              </tr>
+              <tr>
+                <td>April  6- 7, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/79636/Spec_Towns_-_Torrin_Lawrence_Invitational">Spec Towns - Torrin Lawrence Invitational</a></td>
+              </tr>
+              <tr>
+                <td>March 31-April  1, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/77662/Pepsi_Florida_Relays">Pepsi Florida Relays</a></td>
+              </tr>
+              <tr>
+                <td>March 23-24, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/78847/FSU_Relays_College">FSU Relays (College)</a></td>
+              </tr>
+              <tr>
+                <td>March 23-25, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/78810/Raleigh_Relays">Raleigh Relays</a></td>
+              </tr>
+              <tr>
+                <td>March 17-18, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/78633/Yellow_Jacket_Invitational">Yellow Jacket Invitational</a></td>
+              </tr>
+              <tr>
+                <td>February 23-25, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/77876/ACC_Indoor_Track__Field_Championships">ACC Indoor Track &amp; Field Championships</a></td>
+              </tr>
+              <tr>
+                <td>February 10-11, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/77549/Music_City_Challenge">Music City Challenge</a></td>
+              </tr>
+              <tr>
+                <td>February 10-11, 2023</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/75636/Tiger_Paw_Invite">Tiger Paw Invite</a></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</form>
+
+<footer class="site-footer">
+    <div class="container vertical-container">
+        <div class="site-footer-center">
+            <div class="footer-terms text-center">
+                <a href="https://www.tfrrs.org/privacy.html">PRIVACY</a>
+                <span>/</span>
+                <a href="https://www.tfrrs.org/tos.html">TERMS OF USE</a>
+                <span>/</span>
+                <a href="https://www.tfrrs.org/sites.html">SITES</a>
+                <span>/</span>
+                <a href="//www.tfrrs.org/director_info.html">SUBMITTING RESULTS</a>
+                <span>/</span>
+                <a href="mailto:info@tfrrs.org">CONTACT TFRRS </a>
+            </div>
+<div id="autoComplete" style="display:none"></div>
+<p class="footer-text text-center hidden-xs-down hidden-sm-down">TRACK & FIELD RESULTS REPORTING SYSTEM</p>
+            <div class="text-center">
+                <a href="https://www.directathletics.com">
+                    <img class="footer-logo" src="//assets.tfrrs.org/images/footer-logo.jpg">
+                </a>
+
+                <a href="https://xc.tfrrs.org/">
+                    <img class="footer-logo-xc" src="//assets.tfrrs.org/images/xc_logo.png">
+                </a>
+&nbsp;
+ <a href="https://florida.tfrrs.org/">
+                    <img class="footer-logo-xc" src="//assets.tfrrs.org/images/TFRRS_FL_cropped.png" style="padding-top:20px">
+                </a>
+
+            </div>
+            <p class="text-center footer-copyright">Copyright © 2024 DirectAthletics, Inc.
+</p>
+	    <div class="text-center footer-copyright" style="font-size:8px" >Generated 2024-09-20 00:32:16  </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+
+var substringMatcher = function(strs) {
+  return function findMatches(q, cb) {
+    var matches, substringRegex;
+
+    // an array that will be populated with substring matches
+    matches = [];
+
+    // regex used to determine if a string contains the substring `q`
+    substrRegex = new RegExp(q, 'i');
+
+    // iterate through the pool of strings and for any string that
+    // contains the substring `q`, add it to the `matches` array
+    $.each(strs, function(i, str) {
+      if (substrRegex.test(str)) {
+        matches.push(str);
+      }
+    });
+
+    cb(matches);
+  };
+};
+
+var autoCompleteMatcher = function(strs) {
+  return function findMatches(q, cb) {
+    var matches, substringRegex;
+
+    // an array that will be populated with substring matches
+    matches = [];
+    var search = q.split('(')[0];
+    // regex used to determine if a string contains the substring `q`
+    substrRegex = new RegExp(search, 'i');
+
+    // iterate through the pool of strings and for any string that
+    // contains the substring `q`, add it to the `matches` array
+    $.each(strs, function(i, str) {
+      if (substrRegex.test(str.text)) {
+        matches.push(str);
+      }
+    });
+
+    cb(matches);
+  };
+};
+
+</script>
+<script src="/assets/list_autocomplete-4a8d0c670d77d7485e4b3faa528b7d74241c5941a93c508a1a789c5a486593f5.js" data-turbo-track="reload" defer="defer"></script>
+<script src="/js/navbar_autocomplete.js"  data-turbo-track="reload" defer="defer"></script>
+
+<link rel="stylesheet" href="//assets.tfrrs.org/css/bootstrap-datepicker3.standalone.min.css">
+</body>
+</html>
+
+
+
+

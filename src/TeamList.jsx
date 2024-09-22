@@ -4,19 +4,20 @@ import './TeamList.css';
 
 export default function TeamList(props) {
   const {
-    teamList, removeFunc
+    teamList = [], // Provide a default value of an empty array
+    removeFunc
   } = props;
-
+console.log(teamList)
   return (
     <div className="user-list">
       {teamList.map((team) => (
         <Team
+          key={team.id} // Ensure each child has a unique key
           team={team}
-          forwardRef = {team.ref}
-          removeFunc = {removeFunc}
+          forwardRef={team.ref}
+          removeFunc={removeFunc}
         />
       ))}
     </div>
   );
 }
-

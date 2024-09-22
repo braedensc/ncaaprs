@@ -2,8 +2,8 @@ import html
 from urllib.request import Request, urlopen
 from pprint import pprint
 import pandas as p
-from html_table_parser_python3 import HTMLTableParser
 import lxml.html
+from html_table_parser import HTMLTableParser
 import re
 from itertools import chain
 from flask import Flask
@@ -69,7 +69,7 @@ class Athlete:
         return "Name: %s \n Link: %s \n Logo: %s \n  Type: %s \n Title: %s \n PRS: %s \n\n\n\n"%(self.name, self.link, self.logo, self.teamType, self.title, self.prs)
 
     def toJson(self):
-        return json.dumps(self, default=lambda o: o.__dict__)
+        return self.__dict__
 
 
 def getAthleteTimes(profileurl):
