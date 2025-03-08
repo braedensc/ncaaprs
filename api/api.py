@@ -5,6 +5,11 @@ import copy
 app = Flask(__name__, static_folder='../build', static_url_path='/')
 
 
+@app.route('/')
+def index():
+    return app.send_static_file('index.html')
+
+
 def build_and_convert_pr_list(athletes, pr_type):
     return buildprList(athletes, pr_type)
 
