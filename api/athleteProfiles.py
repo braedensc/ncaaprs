@@ -2,8 +2,8 @@ import html
 from urllib.request import Request, urlopen
 from pprint import pprint
 import pandas as p
-from html_table_parser_python3 import HTMLTableParser
 import lxml.html
+from html_table_parser import HTMLTableParser
 import re
 from itertools import chain
 from flask import Flask
@@ -69,7 +69,7 @@ class Athlete:
         return "Name: %s \n Link: %s \n Logo: %s \n  Type: %s \n Title: %s \n PRS: %s \n\n\n\n"%(self.name, self.link, self.logo, self.teamType, self.title, self.prs)
 
     def toJson(self):
-        return json.dumps(self, default=lambda o: o.__dict__)
+        return self.__dict__
 
 
 def getAthleteTimes(profileurl):
@@ -84,6 +84,8 @@ def getAthleteTimes(profileurl):
     html1 = html_bytes1.decode('utf-8', 'ignore')
     p = HTMLTableParser()
     p.feed(html1)
+    if not p.tables:
+        return []
     return p.tables[0]
 
 
@@ -191,6 +193,7 @@ def buildAthleteList(teamurl):
 
     for i in range(len(athleteList)):
         tempTable.append('https:' + str(athleteList[i].link))
+        athleteList[i].link = 'https:' + str(athleteList[i].link)
     with concurrent.futures.ThreadPoolExecutor(max_workers=threads) as executor:
         table.append(executor.map(getAthleteTimes, tempTable))
    # for i in range(len(athleteList)):
