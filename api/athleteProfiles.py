@@ -3,7 +3,7 @@ from urllib.request import Request, urlopen
 from pprint import pprint
 import pandas as p
 import lxml.html
-from html_table_parser import HTMLTableParser
+from html_table_parser_python3 import HTMLTableParser
 import re
 from itertools import chain
 from flask import Flask
