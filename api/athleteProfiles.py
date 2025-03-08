@@ -84,6 +84,8 @@ def getAthleteTimes(profileurl):
     html1 = html_bytes1.decode('utf-8', 'ignore')
     p = HTMLTableParser()
     p.feed(html1)
+    if not p.tables:
+        return []
     return p.tables[0]
 
 
@@ -191,6 +193,7 @@ def buildAthleteList(teamurl):
 
     for i in range(len(athleteList)):
         tempTable.append('https:' + str(athleteList[i].link))
+        athleteList[i].link = 'https:' + str(athleteList[i].link)
     with concurrent.futures.ThreadPoolExecutor(max_workers=threads) as executor:
         table.append(executor.map(getAthleteTimes, tempTable))
    # for i in range(len(athleteList)):

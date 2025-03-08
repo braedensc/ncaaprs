@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html class="no-js js-menubar" lang="en">
 <head>
+<script src="https://cmp.osano.com/AzyWAQS5NWEEWkU9/e3b114da-6525-4d22-9495-f15f4ca62659/osano.js"></script>
+<script src="https://www.flolive.tv/osano-flo.js" ></script> 
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KHKXQ368');</script>
+<!-- End Google Tag Manager -->
+
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Z9Z2N6ZD0"></script>
 <script>
@@ -29,10 +39,10 @@ ga('send', 'pageview');
     <meta name="author" content="">
     <title>TFRRS | Georgia Tech Men&#39;s Track &amp; Field Results &amp; Statistics</title>
   <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="KPoB9-5WrgaK36KmV7RBC7dlysPznIzRe1yygoZ_z39rCAFqW9y-sZEb2GBfdfDNGiN_32k_p2misqLfjNAgpQ" />
+<meta name="csrf-token" content="XnfK8MAYzK5zpZNzfSdHaxsaYYBlboDAGz3OB_rtbMzNqxu5jtGm3rPJuw_wTT85JayZSMFi_5lWM1G3Q6B-lQ" />
   
   <link rel="stylesheet" href="/assets/application-a1113638bc156e6e214c8f9c53207d764d24305a643c770eec0a2eebfd1b4f8e.css" data-turbo-track="reload" />
-  <script src="/assets/application-d4008ddeb261f22a9f53f3dddd43752869320b84c550fd43799c92ffa08750df.js" data-turbo-track="reload" defer="defer"></script>
+  <script src="/assets/application-370b41ccfc120199bf5d9943c7f7c84a54ce1cb69a1cf6aae5b50a877f800bcc.js" data-turbo-track="reload" defer="defer"></script>
   <script src="/assets/jquery.min-3e889c340ba9f9e88ff5f1badaeaceec65dd060a0232a85eb144c9b62b2786fe.js" data-turbo-track="reload" defer="defer"></script>
   <script src="/assets/typeahead.bundle.min-d18d792426fa7f0a9679ed2c33e71307a8fe09561df9f593465a4d6feba70aec.js" data-turbo-track="reload" defer="defer"></script>
   <script src="/assets/tablesaw.jquery.min-4701cd748c6834f95c3161b48f459469158169ddf7c12219be1c12c34481dd59.js" data-turbo-track="reload" defer="defer"></script>
@@ -43,6 +53,7 @@ ga('send', 'pageview');
   <script src="/assets/jquery-asScrollbar.min-c9765e34bfd33c5bc144253cdfccb3f2347afc9c3c92a8c8adf041183bc8913e.js" data-turbo-track="reload" defer="defer"></script>
   <script src="/assets/jquery-asScrollable.min-581394978134953074cf3346996ad52e1d43ce9255c4c6ea05975833b502b8d0.js" data-turbo-track="reload" defer="defer"></script>
   <script src="/assets/breakpoints-c357bc89f972ec2735029b3c3bc86bd4d54625b8347d4347ab57a1fdff2b027b.js" data-turbo-track="reload" defer="defer"></script>
+
 
   <script src="/assets/babel-external-helpers-3bb9d34dcbba0de2bc460fb97b17cb78345d4df3873425d88dab40ff8c29b93e.js" data-turbo-track="reload" defer="defer"></script>
   <script src="/assets/tether.min-1ca7b7364b258390c80bd1394bc5f3eda891b8c0b012b8ef26e03a9d369616ca.js" data-turbo-track="reload" defer="defer"></script>
@@ -69,13 +80,13 @@ ga('send', 'pageview');
 
   <script src="/assets/bootstrap-datepicker.min-f3fcc2903d76b2cdb29452b3f0256c90772fd3beeb7818be185aaa4db6362a0a.js" data-turbo-track="reload" defer="defer"></script>
 
-  <script src="/assets/bootstrap-select.min-281407c5f68d119b06e38b696397e1d8139e5fe6052bb203b9b7e545059035d7.js" data-turbo-track="reload" defer="defer"></script>
+  <script src="/assets/bootstrap-select-0f401498b63ba10f10c8ceb163affd9eaba6f3c0f555fad130659434c2cb081b.js" data-turbo-track="reload" defer="defer"></script>
 
   <script src="/assets/init-2e09e52e809bcfa5e2219133005caefc381babaf24f41ad12cb56fb58adf3711.js" data-turbo-track="reload" defer="defer"></script>
 
   <link rel="stylesheet" href="/assets/bootstrap.min-ea362e84a9f5cc626295a685aca36b51950bedfa00454f5eb8ae1f2454484a2f.css" data-turbo-track="reload" />
   <link rel="stylesheet" href="/assets/bootstrap-extend.min-e818edbc82dcdb6c8a15c7b7830852f21184d7014b58337689186b7b03528bca.css" data-turbo-track="reload" />
-  <link rel="stylesheet" href="/assets/site-58a6a8df1b1f345f7102340bcec41da64ef5209b33e8d662b2fe47830220de20.css" data-turbo-track="reload" />
+  <link rel="stylesheet" href="/assets/site_w_ad-d8bf61f56dbfd3306573da073ecc5a5b88d3564666787c168c2445c1d391a25f.css" data-turbo-track="reload" />
   <link rel="stylesheet" href="/assets/main-19d90a676b47e99838610a8cdd53f709fe0abffc40cd0e72567547f3f3b99de2.css" data-turbo-track="reload" />
   <link rel="stylesheet" href="/assets/tablesaw-9aadb8b0a807a577c968d42d977f70b89acbca55dfba8784138576dd9f14587f.css" data-turbo-track="reload" />
   <link rel="stylesheet" href="/assets/asScrollable-bf8159f60730f7391f091c5807a2c0f1e0ddbae2c3708dc87a8dd2125ef27829.css" data-turbo-track="reload" />
@@ -156,9 +167,17 @@ img.hoka-navbar-brand-logo {
     vertical-align: top;
 }
 
+.osano-cm-widget {
+  display: none;
+}
 </style>
+<script src="https://99bad415-a15a-4792-bd4c-dd79f2848ebb.redfastlabs.com/assets/redfast.js" async></script>
 </head>
 <body class=" page-body" style="background-image: url('//assets.tfrrs.org/images/background.png') ;">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KHKXQ368"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 <nav class="site-navbar navbar navbar-default navbar-mega hidden-lg-up hidden-md-up" role="navigation">
     <div class="container">
         <div class="navbar-header">
@@ -166,8 +185,6 @@ img.hoka-navbar-brand-logo {
             <a href="//www.tfrrs.org">
               <img class="navbar-brand-logo" src="//assets.tfrrs.org/images/TFRRS_157x30.png" title="TFRRS Logo" />
             </a>
-            <span style="font-size:27px;color:gray;position:relative; top:10px;">/</span>
-            <img  class="hoka-navbar-brand-logo"  src="//assets.tfrrs.org/sponsor/hoka/hoka_blue.png" title="HOKA Logo" />
           </div>
         </div>
     </div>
@@ -184,12 +201,9 @@ img.hoka-navbar-brand-logo {
         <div>
             <div>
                 <div class="inline-block site-menu-logo">
-
                     <a href="//www.tfrrs.org">
                       <img class="mb-15 w-200" src="//assets.tfrrs.org/images/TFRRS_200x38.png" title="TFRRS Logo" />
                     </a>
-                  <span style="font-size:36px;vertical-align: bottom;">/</span>
-                  <img height="58px" src="//assets.tfrrs.org/sponsor/hoka/hoka_blue.png" title="HOKA Logo" />
                 </div>
                 <ul class="site-menu inline-block ml-lg-40" data-plugin="menu">
                     <li class="site-menu-item has-sub">
@@ -218,7 +232,7 @@ img.hoka-navbar-brand-logo {
                                         <input type="text" class="form-control"
                                                name="mobile_team_search" id="mobile_team_search"
                                                placeholder="Search Teams"></div></div>
-
+                               
                             </li>
                         </ul>
                     </li>
@@ -229,7 +243,7 @@ img.hoka-navbar-brand-logo {
                         </a>
                         <ul class="site-menu-sub">
                             <li class="site-menu-item">
-
+                                
                                     <div class="input-group m-20 w-250 hidden-sm-down" id="scrollable-dropdown-menu">
 
                                         <input type="text" class="form-control" name="conference_search" id="conference_search"
@@ -248,18 +262,18 @@ img.hoka-navbar-brand-logo {
                                         <input type="text" class="form-control"
                                                name="mobile_conference_search" id="mobile_conference_search"
                                                placeholder="Search Conferences"></div></div>
-
+                                
                             </li>
                         </ul>
                     </li>
                     <li class="site-menu-item ">
                         <a href="https://www.tfrrs.org/results_search.html" dropdown-badge="false" class=" waves-effect waves-classic">
-                            <span class="">RESULTS</span>
+                            <span class="">MEET RESULTS</span>
                         </a>
                     </li>
                     <li class="site-menu-item has-sub hidden-sm-down">
                         <a style="color:#4c4654" dropdown-badge="false" class=" waves-effect waves-classic">
-                            <span class="">LISTS</span>
+                            <span class="">PERFORMANCE LISTS</span>
                             <i class="site-menu-arrow fa fa-chevron-down" aria-hidden="true"></i>
                         </a>
                         <ul class="site-menu-sub">
@@ -276,6 +290,11 @@ img.hoka-navbar-brand-logo {
                             <li class="site-menu-item">
                                 <a class="animsition-link waves-effect waves-classic" href="https://tf.tfrrs.org/archives.html">
                                     <span class="site-menu-title">ARCHIVES</span>
+                                </a>
+                            </li>
+                            <li class="site-menu-item">
+                                <a class="animsition-link waves-effect waves-classic" href="https://www.tfrrs.org/conversion">
+                                    <span class="site-menu-title">CONVERSIONS</span>
                                 </a>
                             </li>
                         </ul>
@@ -295,12 +314,25 @@ img.hoka-navbar-brand-logo {
                             <span>ARCHIVES</span> 
                         </a>
                     </li>
+                     <li class="site-menu-item hidden-md-up hidden-lg-up hidden-xl-up">
+                        <a class="animsition-link waves-effect waves-classic" href="https://www.tfrrs.org/conversion">
+                            <span>CONVERSIONS</span> 
+                        </a>
+                    </li>
                   <turbo-frame class="inline-block float-right" id="login_nav" src="/loginNavigation.html"></turbo-frame>
 		    </ul>
 
             </div>
         </div>
     </div>
+</div>
+<div class="row">
+  <div class="col-12 d-flex justify-content-center">
+    <div id='mobile-re-top' class="d-md-none re-placement" style="width: 320px; height: 50px; display: flex; justify-content: center; align-items: center; border: 1px solid #cccccc; background-color: white;">
+    </div>
+    <div id='desktop-re-top' class="d-none d-md-flex re-placement" style="min-width: 728px; height: 90px; display: flex; justify-content: center; align-items: center; border: 1px solid #cccccc; margin-top: 100px; background-color: white;">
+    </div>
+  </div>
 </div>
 
  <script>
@@ -334,10 +366,16 @@ img.hoka-navbar-brand-logo {
 <!-- end if leagues -->
           <div class="col-lg-4 pt-5">
             <select class="form-control" onchange="seasonSelect(this, 'window', false);" name="config_hnd">
+              <option value="380" >
+2025 Outdoor
+              </option>
+              <option value="367"  selected >
+2025 Indoor
+              </option>
               <option value="348" >
 2024 Cross Country
               </option>
-              <option value="333"  selected >
+              <option value="333" >
 2024 Outdoor
               </option>
               <option value="320" >
@@ -491,18 +529,18 @@ img.hoka-navbar-brand-logo {
         </div>
         <div class="row pt-30">
           <div class="col-lg-4">
-            <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/top_qualifiers/GA_college_m_Georgia_Tech.html?list_hnd=4515&amp;season_hnd=633" class="btn btn-panel-lg w-full mb-20 pt-20 btn-margin-mobile">
+            <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/top_qualifiers/GA_college_m_Georgia_Tech.html?list_hnd=4867&amp;season_hnd=655" class="btn btn-panel-lg w-full mb-20 pt-20 btn-margin-mobile">
             TOP QUALIFIERS (POP)
             </a>
           </div>
 
 
           <div class="col-lg-4">
-            <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/top_performances/GA_college_m_Georgia_Tech.html?list_hnd=4541&amp;season_hnd=645" class="btn btn-panel-lg w-full mb-20 pt-20 btn-margin-mobile">TOP PERFORMANCES</a>
+            <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/top_performances/GA_college_m_Georgia_Tech.html?list_hnd=4874&amp;season_hnd=661" class="btn btn-panel-lg w-full mb-20 pt-20 btn-margin-mobile">TOP PERFORMANCES</a>
           </div>
 
           <div class="col-lg-4">
-            <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/all_performances/GA_college_m_Georgia_Tech.html?list_hnd=4541&amp;season_hnd=645" class="btn btn-panel-lg w-full mb-20 pt-20 btn-margin-mobile">ALL PERFORMANCES</a>
+            <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/all_performances/GA_college_m_Georgia_Tech.html?list_hnd=4874&amp;season_hnd=661" class="btn btn-panel-lg w-full mb-20 pt-20 btn-margin-mobile">ALL PERFORMANCES</a>
           </div>
         </div>
       </div>
@@ -531,117 +569,119 @@ img.hoka-navbar-brand-logo {
               <tbody>
 
               <tr>
-                <td>100</td>
-                  <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8738703/Georgia_Tech/Eric_Singleton_Jr.">Singleton Jr., Eric</a>
-                  </td>
-                  <td>FR-1</td>
-                <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/results/86277/5219586/Georgia_Tech_Invitational/Mens-100-Meters">10.32</a>
-                </td>
-              </tr>
-              <tr>
                 <td>200</td>
                   <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8738703/Georgia_Tech/Eric_Singleton_Jr.">Singleton Jr., Eric</a>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7977851/Georgia_Tech/Weston_Baptiste">Baptiste, Weston</a>
                   </td>
-                  <td>FR-1</td>
+                  <td>SR-4</td>
                 <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/results/86920/ACC_Outdoor_Track__Field_Championships">21.18</a>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/89052/5362322/Orange__Purple_Invitational/Mens-200-Meters">22.46</a>
                 </td>
               </tr>
               <tr>
                 <td>400</td>
                   <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7535052/Georgia_Tech/Jameson_Miller">Miller, Jameson</a>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8668039/Georgia_Tech/Winston_DeCuir_III">DeCuir III, Winston</a>
                   </td>
-                  <td>SR-4</td>
+                  <td>SO-2</td>
                 <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/results/86277/5219607/Georgia_Tech_Invitational/Mens-400-Meters">46.83</a>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/89468/5391418/Tiger_Paw_Invitational/Mens-400-Meters">47.44</a>
+                </td>
+              </tr>
+              <tr>
+                <td>600</td>
+                  <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7889490/Georgia_Tech/Parker_Buchheit">Buchheit, Parker</a>
+                  </td>
+                  <td>JR-3</td>
+                <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/89052/5362324/Orange__Purple_Invitational/Mens-600-Meters">1:18.38</a>
                 </td>
               </tr>
               <tr>
                 <td>800</td>
                   <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8975403/Georgia_Tech/Kamren_Kennedy">Kennedy, Kamren</a>
+                  </td>
+                  <td>SO-2</td>
+                <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/89473/5401792/Music_City_Challenge/Mens-800-Meters">1:49.94</a>
+                </td>
+              </tr>
+              <tr>
+                <td>1000</td>
+                  <td>
                     <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687316/Georgia_Tech/Alex_Thomas">Thomas, Alex</a>
                   </td>
-                  <td>JR-3</td>
+                  <td>SR-4</td>
                 <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/results/86277/5219590/Georgia_Tech_Invitational/Mens-800-Meters">1:49.80</a>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/88881/5355107/Vanderbilt_Invitational/Mens-1000-Meters">2:24.82</a>
                 </td>
               </tr>
               <tr>
                 <td>1500</td>
                   <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7381085/Georgia_Tech/Nick_Nyman">Nyman, Nick</a>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687309/Georgia_Tech/Myles_Collins">Collins, Myles</a>
                   </td>
                   <td>SR-4</td>
                 <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/results/86277/5219595/Georgia_Tech_Invitational/Mens-1500-Meters">3:42.56</a>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/88419/5394387/Boston_University_David_Hemery_Valentine_Invitational/Mens-1500-Meters">3:49.50</a>
+                </td>
+              </tr>
+              <tr>
+                <td>Mile</td>
+                  <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687314/Georgia_Tech/Charlie_Smith">Smith, Charlie</a>
+                  </td>
+                  <td>SR-4</td>
+                <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/89052/5362316/Orange__Purple_Invitational/Mens-Mile">4:03.84</a>
+                </td>
+              </tr>
+              <tr>
+                <td>3000</td>
+                  <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687310/Georgia_Tech/John__Higinbotham">Higinbotham, John </a>
+                  </td>
+                  <td>SR-4</td>
+                <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/87628/5371627/Bob_Pollock/Mens-3000-Meters">8:02.23</a>
                 </td>
               </tr>
               <tr>
                 <td>5000</td>
                   <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687314/Georgia_Tech/Charlie_Smith">Smith, Charlie</a>
-                  </td>
-                  <td>JR-3</td>
-                <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/results/82236/5194753/2024_Bryan_Clay_Invitational/Mens-5000-Meters">14:07.27</a>
-                </td>
-              </tr>
-              <tr>
-                <td>10,000</td>
-                  <td>
                     <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687311/Georgia_Tech/Devin_Wade">Wade, Devin</a>
                   </td>
-                  <td>JR-3</td>
+                  <td>SR-4</td>
                 <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/results/85174/5146955/Raleigh_Relays/Mens-10000-Meters">29:39.92</a>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/88419/5390024/Boston_University_David_Hemery_Valentine_Invitational/Mens-5000-Meters">14:11.46</a>
                 </td>
               </tr>
               <tr>
-                <td>110H</td>
+                <td>60H</td>
                   <td>
                     <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8668038/Georgia_Tech/George_Benjamin">Benjamin, George</a>
                   </td>
-                  <td>FR-1</td>
+                  <td>SO-2</td>
                 <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/results/86920/ACC_Outdoor_Track__Field_Championships">14.36</a>
-                </td>
-              </tr>
-              <tr>
-                <td>3000S</td>
-                  <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8591928/Georgia_Tech/Billy_Carlton">Carlton, Billy</a>
-                  </td>
-                  <td>FR-1</td>
-                <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/results/86574/5277013/Penn_Relays/Mens-3000-Steeplechase">8:52.50</a>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/89052/5362314/Orange__Purple_Invitational/Mens-60-Hurdles">8.27</a>
                 </td>
               </tr>
               <tr>
                 <td>4x400</td>
-                  <td><a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/7535052/Georgia_Tech/Jameson_Miller.html"><span class="hidden-xs-down">Jameson</span> Miller</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/8668041/Georgia_Tech/Sidney_McReynolds.html"><span class="hidden-xs-down">Sidney</span> McReynolds</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/8668042/Georgia_Tech/Caden_Terrell.html"><span class="hidden-xs-down">Caden</span> Terrell</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/8668039/Georgia_Tech/Winston_DeCuir_III.html"><span class="hidden-xs-down">Winston</span> DeCuir III</a></td>
+                  <td><a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/8668042/Georgia_Tech/Caden_Terrell.html"><span class="hidden-xs-down">Caden</span> Terrell</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/7889490/Georgia_Tech/Parker_Buchheit.html"><span class="hidden-xs-down">Parker</span> Buchheit</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/7977851/Georgia_Tech/Weston_Baptiste.html"><span class="hidden-xs-down">Weston</span> Baptiste</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/8668039/Georgia_Tech/Winston_DeCuir_III.html"><span class="hidden-xs-down">Winston</span> DeCuir III</a></td>
                   <td>&nbsp;</td>
                 <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/results/86997/5284581/NCAA_East_First_Round/Mens-4-x-400-Relay">3:06.34</a>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/87628/5371645/Bob_Pollock/Mens-4-x-400-Relay">3:11.78</a>
                 </td>
               </tr>
               <tr>
-                <td>4x800</td>
-                  <td><a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/7889490/Georgia_Tech/Parker_Buchheit.html"><span class="hidden-xs-down">Parker</span> Buchheit</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/7687316/Georgia_Tech/Alex_Thomas.html"><span class="hidden-xs-down">Alex</span> Thomas</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/6876084/Georgia_Tech/Jeremiah_LaDuca.html"><span class="hidden-xs-down">Jeremiah</span> LaDuca</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/7381085/Georgia_Tech/Nick_Nyman.html"><span class="hidden-xs-down">Nick</span> Nyman</a></td>
+                <td>DMR</td>
+                  <td><a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/7687316/Georgia_Tech/Alex_Thomas.html"><span class="hidden-xs-down">Alex</span> Thomas</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/8975403/Georgia_Tech/Kamren_Kennedy.html"><span class="hidden-xs-down">Kamren</span> Kennedy</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/7889490/Georgia_Tech/Parker_Buchheit.html"><span class="hidden-xs-down">Parker</span> Buchheit</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/8591927/Georgia_Tech/Alexander_Arrambide.html"><span class="hidden-xs-down">Alexander</span> Arrambide</a></td>
                   <td>&nbsp;</td>
                 <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/results/86574/5277057/Penn_Relays/Mens-4-x-800-Relay">7:28.67</a>
-                </td>
-              </tr>
-              <tr>
-                <td>4xMile</td>
-                  <td><a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/7381085/Georgia_Tech/Nick_Nyman.html"><span class="hidden-xs-down">Nick</span> Nyman</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/7687309/Georgia_Tech/Myles_Collins.html"><span class="hidden-xs-down">Myles</span> Collins</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/8591927/Georgia_Tech/Alexander_Arrambide.html"><span class="hidden-xs-down">Alexander</span> Arrambide</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/7687314/Georgia_Tech/Charlie_Smith.html"><span class="hidden-xs-down">Charlie</span> Smith</a></td>
-                  <td>&nbsp;</td>
-                <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/results/86574/5277038/Penn_Relays/Mens-4-x-1-Mile-Relay">16:40.15</a>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/89052/5362338/Orange__Purple_Invitational/Mens-Distance-Medley-Relay">9:50.82</a>
                 </td>
               </tr>
               <tr>
@@ -649,19 +689,19 @@ img.hoka-navbar-brand-logo {
                   <td>
                     <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8323970/Georgia_Tech/Omar_Arnaout">Arnaout, Omar</a>
                   </td>
-                  <td>SO-2</td>
+                  <td>JR-3</td>
                 <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/results/84936/5126543/FSU_Relays/Mens-High-Jump">2.08m</a>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/89052/5362335/Orange__Purple_Invitational/Mens-High-Jump">2.06m</a>
                 </td>
               </tr>
               <tr>
                 <td>LJ</td>
                   <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7726299/Georgia_Tech/Cameron_O&#39;Neal">O&#39;Neal, Cameron</a>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8983385/Georgia_Tech/Charlie_Crowder">Crowder, Charlie</a>
                   </td>
-                  <td>JR-3</td>
+                  <td>FR-1</td>
                 <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/results/83593/5148582/Pepsi_Florida_Relays/Mens-Long-Jump">7.78m</a>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/88881/5355110/Vanderbilt_Invitational/Mens-Long-Jump">6.96m</a>
                 </td>
               </tr>
               <tr>
@@ -669,9 +709,19 @@ img.hoka-navbar-brand-logo {
                   <td>
                     <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7726300/Georgia_Tech/John_Watkins">Watkins, John</a>
                   </td>
-                  <td>JR-3</td>
+                  <td>SR-4</td>
                 <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/results/84666/5113170/Yellow_Jacket_Invitational/Mens-Triple-Jump">15.33m</a>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/87628/5371654/Bob_Pollock/Mens-Triple-Jump">15.88m</a>
+                </td>
+              </tr>
+              <tr>
+                <td>WT</td>
+                  <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8980499/Georgia_Tech/Tahir_Hines">Hines, Tahir</a>
+                  </td>
+                  <td>FR-1</td>
+                <td>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/89468/5391397/Tiger_Paw_Invitational/Mens-Weight-Throw">18.98m</a>
                 </td>
               </tr>
               </tbody>
@@ -695,26 +745,10 @@ img.hoka-navbar-brand-logo {
               <tbody>
               <tr>
                 <td>
-                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7381081/Georgia_Tech/Leif_Andersen.html">Andersen, Leif</a>
-                </td>
-                <td>
-                  SR-4
-                </td>
-              </tr>
-              <tr>
-                <td>
                   <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8323970/Georgia_Tech/Omar_Arnaout.html">Arnaout, Omar</a>
                 </td>
                 <td>
-                  SO-2
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8323972/Georgia_Tech/Miguel_Aronategui.html">Aronategui, Miguel</a>
-                </td>
-                <td>
-                  SO-2
+                  JR-3
                 </td>
               </tr>
               <tr>
@@ -722,7 +756,7 @@ img.hoka-navbar-brand-logo {
                   <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8591927/Georgia_Tech/Alexander_Arrambide.html">Arrambide, Alexander</a>
                 </td>
                 <td>
-                  FR-1
+                  SO-2
                 </td>
               </tr>
               <tr>
@@ -730,7 +764,7 @@ img.hoka-navbar-brand-logo {
                   <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687317/Georgia_Tech/Tristan_Autry.html">Autry, Tristan</a>
                 </td>
                 <td>
-                  JR-3
+                  SR-4
                 </td>
               </tr>
               <tr>
@@ -738,7 +772,7 @@ img.hoka-navbar-brand-logo {
                   <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7977851/Georgia_Tech/Weston_Baptiste.html">Baptiste, Weston</a>
                 </td>
                 <td>
-                  JR-3
+                  SR-4
                 </td>
               </tr>
               <tr>
@@ -746,7 +780,7 @@ img.hoka-navbar-brand-logo {
                   <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8236362/Georgia_Tech/Trent_Bell.html">Bell, Trent</a>
                 </td>
                 <td>
-                  SO-2
+                  JR-3
                 </td>
               </tr>
               <tr>
@@ -754,23 +788,7 @@ img.hoka-navbar-brand-logo {
                   <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8668038/Georgia_Tech/George_Benjamin.html">Benjamin, George</a>
                 </td>
                 <td>
-                  FR-1
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7381083/Georgia_Tech/Mac_Bloodworth.html">Bloodworth, Mac</a>
-                </td>
-                <td>
-                  JR-3
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687312/Georgia_Tech/Jackson_Borden.html">Borden, Jackson</a>
-                </td>
-                <td>
-                  JR-3
+                  SO-2
                 </td>
               </tr>
               <tr>
@@ -794,7 +812,7 @@ img.hoka-navbar-brand-logo {
                   <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8591929/Georgia_Tech/Matt_Castronuovo.html">Castronuovo, Matt</a>
                 </td>
                 <td>
-                  FR-1
+                  SO-2
                 </td>
               </tr>
               <tr>
@@ -802,7 +820,7 @@ img.hoka-navbar-brand-logo {
                   <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687313/Georgia_Tech/Chris_Cherono.html">Cherono, Chris</a>
                 </td>
                 <td>
-                  JR-3
+                  SR-4
                 </td>
               </tr>
               <tr>
@@ -810,7 +828,15 @@ img.hoka-navbar-brand-logo {
                   <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687309/Georgia_Tech/Myles_Collins.html">Collins, Myles</a>
                 </td>
                 <td>
-                  JR-3
+                  SR-4
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8983385/Georgia_Tech/Charlie_Crowder.html">Crowder, Charlie</a>
+                </td>
+                <td>
+                  FR-1
                 </td>
               </tr>
               <tr>
@@ -826,7 +852,7 @@ img.hoka-navbar-brand-logo {
                   <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8668039/Georgia_Tech/Winston_DeCuir_III.html">DeCuir III, Winston</a>
                 </td>
                 <td>
-                  FR-1
+                  SO-2
                 </td>
               </tr>
               <tr>
@@ -834,15 +860,15 @@ img.hoka-navbar-brand-logo {
                   <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7977852/Georgia_Tech/Bradley__Favors.html">Favors, Bradley </a>
                 </td>
                 <td>
-                  JR-3
+                  SR-4
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7381082/Georgia_Tech/Harrison_Fultz.html">Fultz, Harrison</a>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8898580/Georgia_Tech/Elijah_Forrest.html">Forrest, Elijah</a>
                 </td>
                 <td>
-                  SR-4
+                  FR-1
                 </td>
               </tr>
               <tr>
@@ -850,7 +876,7 @@ img.hoka-navbar-brand-logo {
                   <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8668040/Georgia_Tech/William_Gituku.html">Gituku, William</a>
                 </td>
                 <td>
-                  FR-1
+                  SO-2
                 </td>
               </tr>
               <tr>
@@ -858,12 +884,12 @@ img.hoka-navbar-brand-logo {
                   <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687310/Georgia_Tech/John__Higinbotham.html">Higinbotham, John </a>
                 </td>
                 <td>
-                  JR-3
+                  SR-4
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8236363/Georgia_Tech/Ethan_Kurilko.html">Kurilko, Ethan</a>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8980499/Georgia_Tech/Tahir_Hines.html">Hines, Tahir</a>
                 </td>
                 <td>
                   FR-1
@@ -871,7 +897,63 @@ img.hoka-navbar-brand-logo {
               </tr>
               <tr>
                 <td>
-                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/6876084/Georgia_Tech/Jeremiah_LaDuca.html">LaDuca, Jeremiah</a>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8898581/Georgia_Tech/Joseph_Jacquot.html">Jacquot, Joseph</a>
+                </td>
+                <td>
+                  FR-1
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8999238/Georgia_Tech/John_Jessup.html">Jessup, John</a>
+                </td>
+                <td>
+                  SO-2
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8898582/Georgia_Tech/Ian_Johnson.html">Johnson, Ian</a>
+                </td>
+                <td>
+                  FR-1
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8983386/Georgia_Tech/Aaron_Jones.html">Jones, Aaron</a>
+                </td>
+                <td>
+                  FR-1
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8975403/Georgia_Tech/Kamren_Kennedy.html">Kennedy, Kamren</a>
+                </td>
+                <td>
+                  SO-2
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8236363/Georgia_Tech/Ethan_Kurilko.html">Kurilko, Ethan</a>
+                </td>
+                <td>
+                  SO-2
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8975404/Georgia_Tech/Willem_Mandel.html">Mandel, Willem</a>
+                </td>
+                <td>
+                  FR-1
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8898583/Georgia_Tech/Hayden_Marshall.html">Marshall, Hayden</a>
                 </td>
                 <td>
                   SR-4
@@ -882,39 +964,7 @@ img.hoka-navbar-brand-logo {
                   <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8668041/Georgia_Tech/Sidney_McReynolds.html">McReynolds, Sidney</a>
                 </td>
                 <td>
-                  FR-1
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7381086/Georgia_Tech/Cole_Miller.html">Miller, Cole</a>
-                </td>
-                <td>
-                  SR-4
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7535052/Georgia_Tech/Jameson_Miller.html">Miller, Jameson</a>
-                </td>
-                <td>
-                  SR-4
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7381085/Georgia_Tech/Nick_Nyman.html">Nyman, Nick</a>
-                </td>
-                <td>
-                  SR-4
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7726299/Georgia_Tech/Cameron_O&#39;Neal.html">O&#39;Neal, Cameron</a>
-                </td>
-                <td>
-                  JR-3
+                  SO-2
                 </td>
               </tr>
               <tr>
@@ -922,7 +972,23 @@ img.hoka-navbar-brand-logo {
                   <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7889492/Georgia_Tech/Jean-Lou_Pare.html">Pare, Jean-Lou</a>
                 </td>
                 <td>
-                  JR-3
+                  SR-4
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8983310/Georgia_Tech/Kushan_Patel.html">Patel, Kushan</a>
+                </td>
+                <td>
+                  SO-2
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8898584/Georgia_Tech/Richard_Planck.html">Planck, Richard</a>
+                </td>
+                <td>
+                  FR-1
                 </td>
               </tr>
               <tr>
@@ -938,15 +1004,7 @@ img.hoka-navbar-brand-logo {
                   <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7977853/Georgia_Tech/Jackson_Sexton.html">Sexton, Jackson</a>
                 </td>
                 <td>
-                  JR-3
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8738703/Georgia_Tech/Eric_Singleton_Jr..html">Singleton Jr., Eric</a>
-                </td>
-                <td>
-                  FR-1
+                  SR-4
                 </td>
               </tr>
               <tr>
@@ -954,7 +1012,7 @@ img.hoka-navbar-brand-logo {
                   <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687314/Georgia_Tech/Charlie_Smith.html">Smith, Charlie</a>
                 </td>
                 <td>
-                  JR-3
+                  SR-4
                 </td>
               </tr>
               <tr>
@@ -970,7 +1028,7 @@ img.hoka-navbar-brand-logo {
                   <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8668042/Georgia_Tech/Caden_Terrell.html">Terrell, Caden</a>
                 </td>
                 <td>
-                  FR-1
+                  SO-2
                 </td>
               </tr>
               <tr>
@@ -978,28 +1036,12 @@ img.hoka-navbar-brand-logo {
                   <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687316/Georgia_Tech/Alex_Thomas.html">Thomas, Alex</a>
                 </td>
                 <td>
-                  JR-3
+                  SR-4
                 </td>
               </tr>
               <tr>
                 <td>
-                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687315/Georgia_Tech/Jack_Voss.html">Voss, Jack</a>
-                </td>
-                <td>
-                  JR-3
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687311/Georgia_Tech/Devin_Wade.html">Wade, Devin</a>
-                </td>
-                <td>
-                  JR-3
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8591930/Georgia_Tech/Taylor_Wade.html">Wade, Taylor</a>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8983309/Georgia_Tech/Cooper_Timberman.html">Timberman, Cooper</a>
                 </td>
                 <td>
                   FR-1
@@ -1007,10 +1049,34 @@ img.hoka-navbar-brand-logo {
               </tr>
               <tr>
                 <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687311/Georgia_Tech/Devin_Wade.html">Wade, Devin</a>
+                </td>
+                <td>
+                  SR-4
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8591930/Georgia_Tech/Taylor_Wade.html">Wade, Taylor</a>
+                </td>
+                <td>
+                  SO-2
+                </td>
+              </tr>
+              <tr>
+                <td>
                   <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7726300/Georgia_Tech/John_Watkins.html">Watkins, John</a>
                 </td>
                 <td>
-                  JR-3
+                  SR-4
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a data-turbo-frame="_top" data-turbo="false" href="/athletes/8983387/Georgia_Tech/William_Zelnak.html">Zelnak, William</a>
+                </td>
+                <td>
+                  FR-1
                 </td>
               </tr>
               </tbody>
@@ -1031,6 +1097,58 @@ img.hoka-navbar-brand-logo {
               </tr>
               </thead>
               <tbody>
+              <tr>
+                <td>February 14-15, 2025</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/89473/Music_City_Challenge">Music City Challenge</a></td>
+              </tr>
+              <tr>
+                <td>February 14-15, 2025</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/89468/Tiger_Paw_Invitational">Tiger Paw Invitational</a></td>
+              </tr>
+              <tr>
+                <td>February 14-15, 2025</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/88419/Boston_University_David_Hemery_Valentine_Invitational">Boston University David Hemery Valentine Invitational</a></td>
+              </tr>
+              <tr>
+                <td>January 31-February  1, 2025</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/87628/Bob_Pollock">Bob Pollock</a></td>
+              </tr>
+              <tr>
+                <td>January 24-25, 2025</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/89052/Orange__Purple_Invitational">Orange &amp; Purple Invitational</a></td>
+              </tr>
+              <tr>
+                <td>January 17-18, 2025</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/88881/Vanderbilt_Invitational">Vanderbilt Invitational</a></td>
+              </tr>
+              <tr>
+                <td>December  7, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/87526/Boston_University_Sharon_Colyear-Danville_Season_Opener">Boston University Sharon Colyear-Danville Season Opener</a></td>
+              </tr>
+              <tr>
+                <td>December  6, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/88056/Clemson_Opener">Clemson Opener</a></td>
+              </tr>
+              <tr>
+                <td>November 15, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/xc/25320/NCAA_Division_I_South_Region_Cross_Country_Championships">NCAA Division I South Region Cross Country Championships</a></td>
+              </tr>
+              <tr>
+                <td>November  1, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/xc/25255/ACC_Cross_Country_Championships">ACC Cross Country Championships</a></td>
+              </tr>
+              <tr>
+                <td>October 18, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/xc/25176/Arturo_Barrios_Invitational">Arturo Barrios Invitational</a></td>
+              </tr>
+              <tr>
+                <td>October  4, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/xc/23967/Georgia_Tech_XC_Invitational">Georgia Tech XC Invitational</a></td>
+              </tr>
+              <tr>
+                <td>September 27, 2024</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/xc/24873/Gans_Creek_Classic">Gans Creek Classic</a></td>
+              </tr>
               <tr>
                 <td>September 13, 2024</td>
                 <td><a data-turbo-frame="_top" data-turbo="false" href="/results/xc/23393/Southern_Showcase_University_College_">Southern Showcase (University/College) </a></td>
@@ -1179,58 +1297,6 @@ img.hoka-navbar-brand-logo {
                 <td>April 29, 2023</td>
                 <td><a data-turbo-frame="_top" data-turbo="false" href="/results/77936/Georgia_Southern_Classic">Georgia Southern Classic</a></td>
               </tr>
-              <tr>
-                <td>April 29, 2023</td>
-                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/78407/LSU_Invitational">LSU Invitational</a></td>
-              </tr>
-              <tr>
-                <td>April 27-29, 2023</td>
-                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/80814/Penn_Relays">Penn Relays</a></td>
-              </tr>
-              <tr>
-                <td>April 21-22, 2023</td>
-                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/80375/Georgia_Tech_Invitational">Georgia Tech Invitational</a></td>
-              </tr>
-              <tr>
-                <td>April 14-15, 2023</td>
-                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/78102/UF_Tom_Jones_Memorial">UF Tom Jones Memorial</a></td>
-              </tr>
-              <tr>
-                <td>April  7- 8, 2023</td>
-                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/76694/Flames_Invitational">Flames Invitational</a></td>
-              </tr>
-              <tr>
-                <td>April  6- 7, 2023</td>
-                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/79636/Spec_Towns_-_Torrin_Lawrence_Invitational">Spec Towns - Torrin Lawrence Invitational</a></td>
-              </tr>
-              <tr>
-                <td>March 31-April  1, 2023</td>
-                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/77662/Pepsi_Florida_Relays">Pepsi Florida Relays</a></td>
-              </tr>
-              <tr>
-                <td>March 23-24, 2023</td>
-                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/78847/FSU_Relays_College">FSU Relays (College)</a></td>
-              </tr>
-              <tr>
-                <td>March 23-25, 2023</td>
-                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/78810/Raleigh_Relays">Raleigh Relays</a></td>
-              </tr>
-              <tr>
-                <td>March 17-18, 2023</td>
-                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/78633/Yellow_Jacket_Invitational">Yellow Jacket Invitational</a></td>
-              </tr>
-              <tr>
-                <td>February 23-25, 2023</td>
-                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/77876/ACC_Indoor_Track__Field_Championships">ACC Indoor Track &amp; Field Championships</a></td>
-              </tr>
-              <tr>
-                <td>February 10-11, 2023</td>
-                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/77549/Music_City_Challenge">Music City Challenge</a></td>
-              </tr>
-              <tr>
-                <td>February 10-11, 2023</td>
-                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/75636/Tiger_Paw_Invite">Tiger Paw Invite</a></td>
-              </tr>
               </tbody>
             </table>
           </div>
@@ -1241,21 +1307,42 @@ img.hoka-navbar-brand-logo {
   </div>
 </div>
 </form>
-
+<footer class="fixed-bottom">
+<div class="col-md-12 d-flex justify-content-center" style="padding-top: 0px;">
+    <div id='mobile-re-bottom' class="d-md-none re-placement" style="width: 320px; height: 50px; display: flex; justify-content: center; align-items: center; border: 1px solid #cccccc; margin-top: 100px; background-color: white;">
+    </div>
+    <div id='desktop-re-bottom' class="d-none d-md-flex re-placement" style="width: 728px; height: 90px; display: flex; justify-content: center; align-items: center; border: 1px solid #cccccc; margin-top: 100px; background-color: white;">
+    </div>
+  </div>
+</footer>
 <footer class="site-footer">
     <div class="container vertical-container">
         <div class="site-footer-center">
             <div class="footer-terms text-center">
-                <a href="https://www.tfrrs.org/privacy.html">PRIVACY</a>
+                <a href="https://www.flosports.tv/privacy/">Privacy Policy</a>
                 <span>/</span>
-                <a href="https://www.tfrrs.org/tos.html">TERMS OF USE</a>
+                <a href="https://www.flosports.tv/california-privacy-policy/">California Privacy Policy</a>
                 <span>/</span>
-                <a href="https://www.tfrrs.org/sites.html">SITES</a>
+                <a href="https://www.flosports.tv/terms-of-service/">Terms of Use</a>
                 <span>/</span>
-                <a href="//www.tfrrs.org/director_info.html">SUBMITTING RESULTS</a>
+                <a href="https://www.tfrrs.org/sites.html">Sites</a>
                 <span>/</span>
-                <a href="mailto:info@tfrrs.org">CONTACT TFRRS </a>
+                <a href="//www.tfrrs.org/director_info.html">Submitting Results</a>
+                <span>/</span>
+                <a href="mailto:info@tfrrs.org">Contact TFRRS </a>
+                <span>/</span>
+                <a href="#" id="cookiePref" onclick="">Cookie Preferences / Do Not Sell or Share My Personal Information</a>
             </div>
+<script>
+window.addEventListener('DOMContentLoaded', function() {
+    $(document).ready(function () {
+        $(document).on("click", '#cookiePref', function (e) {
+            e.preventDefault();
+            Osano.cm.showDrawer('osano-cm-dom-info-dialog-open')
+        })
+    })
+})
+</script>
 <div id="autoComplete" style="display:none"></div>
 <p class="footer-text text-center hidden-xs-down hidden-sm-down">TRACK & FIELD RESULTS REPORTING SYSTEM</p>
             <div class="text-center">
@@ -1272,9 +1359,9 @@ img.hoka-navbar-brand-logo {
                 </a>
 
             </div>
-            <p class="text-center footer-copyright">Copyright © 2024 DirectAthletics, Inc.
+            <p class="text-center footer-copyright">Copyright © 2025 DirectAthletics, Inc.
 </p>
-	    <div class="text-center footer-copyright" style="font-size:8px" >Generated 2024-09-20 00:32:16  </div>
+	    <div class="text-center footer-copyright" style="font-size:8px" >Generated 2025-02-22 11:47:52  </div>
         </div>
     </div>
 </footer>
