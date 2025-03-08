@@ -1,4 +1,4 @@
-from athleteProfiles import buildAthleteList, buildprList, setallprs
+from .athleteProfiles import *
 from flask import Flask, request, jsonify
 import copy
 
