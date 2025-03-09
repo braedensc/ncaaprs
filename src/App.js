@@ -268,6 +268,8 @@ class App extends Component {
 
   changeEvent = (event) => {
     let teams = this.state.teamList;
+    console.log('state', this.state)
+    console.log('teams', teams)
     for (let i = 0; i < teams.length; i++) {
       teams[i].currentAthletes = event;
     }
@@ -275,7 +277,10 @@ class App extends Component {
       currentAthletes: event,
       teamList: teams
     });
+    console.log('state', this.state)
   }
+
+
 
   changeTeam = (event) => {
     this.setState({

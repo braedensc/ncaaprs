@@ -39,7 +39,7 @@ ga('send', 'pageview');
     <meta name="author" content="">
     <title>TFRRS | Georgia Tech Men&#39;s Track &amp; Field Results &amp; Statistics</title>
   <meta name="csrf-param" content="authenticity_token" />
-<meta name="csrf-token" content="XnfK8MAYzK5zpZNzfSdHaxsaYYBlboDAGz3OB_rtbMzNqxu5jtGm3rPJuw_wTT85JayZSMFi_5lWM1G3Q6B-lQ" />
+<meta name="csrf-token" content="ucSPUBh0jPHJyZqQTGARXQOw01OlY2dbAQQhIOOmlxkhCW7DO3T6-eKoEGL0Jxft9yebZUccHMMLGqiqzDp27w" />
   
   <link rel="stylesheet" href="/assets/application-a1113638bc156e6e214c8f9c53207d764d24305a643c770eec0a2eebfd1b4f8e.css" data-turbo-track="reload" />
   <script src="/assets/application-370b41ccfc120199bf5d9943c7f7c84a54ce1cb69a1cf6aae5b50a877f800bcc.js" data-turbo-track="reload" defer="defer"></script>
@@ -641,11 +641,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <tr>
                 <td>3000</td>
                   <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687310/Georgia_Tech/John__Higinbotham">Higinbotham, John </a>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/athletes/7687314/Georgia_Tech/Charlie_Smith">Smith, Charlie</a>
                   </td>
                   <td>SR-4</td>
                 <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/results/87628/5371627/Bob_Pollock/Mens-3000-Meters">8:02.23</a>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/89086/5424407/ACC_Indoor_Track__Field_Championships/Mens-3000-Meters">7:58.76</a>
                 </td>
               </tr>
               <tr>
@@ -678,10 +678,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </tr>
               <tr>
                 <td>DMR</td>
-                  <td><a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/7687316/Georgia_Tech/Alex_Thomas.html"><span class="hidden-xs-down">Alex</span> Thomas</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/8975403/Georgia_Tech/Kamren_Kennedy.html"><span class="hidden-xs-down">Kamren</span> Kennedy</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/7889490/Georgia_Tech/Parker_Buchheit.html"><span class="hidden-xs-down">Parker</span> Buchheit</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/8591927/Georgia_Tech/Alexander_Arrambide.html"><span class="hidden-xs-down">Alexander</span> Arrambide</a></td>
+                  <td><a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/7687316/Georgia_Tech/Alex_Thomas.html"><span class="hidden-xs-down">Alex</span> Thomas</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/7889490/Georgia_Tech/Parker_Buchheit.html"><span class="hidden-xs-down">Parker</span> Buchheit</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/8975403/Georgia_Tech/Kamren_Kennedy.html"><span class="hidden-xs-down">Kamren</span> Kennedy</a>, <a data-turbo-frame="_top" data-turbo="false" href="https://www.tfrrs.org/athletes/7687314/Georgia_Tech/Charlie_Smith.html"><span class="hidden-xs-down">Charlie</span> Smith</a></td>
                   <td>&nbsp;</td>
                 <td>
-                    <a data-turbo-frame="_top" data-turbo="false" href="/results/89052/5362338/Orange__Purple_Invitational/Mens-Distance-Medley-Relay">9:50.82</a>
+                    <a data-turbo-frame="_top" data-turbo="false" href="/results/89086/5420555/ACC_Indoor_Track__Field_Championships/Mens-Distance-Medley-Relay">9:47.04</a>
                 </td>
               </tr>
               <tr>
@@ -1098,6 +1098,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </thead>
               <tbody>
               <tr>
+                <td>March  2, 2025</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/87219/2025_Last_Chance_Indoor_Natnl_Qualifier_at_Boston_Univ">2025 Last Chance Indoor Nat&#39;nl Qualifier at Boston Univ.</a></td>
+              </tr>
+              <tr>
+                <td>March  1- 3, 2025</td>
+                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/89086/ACC_Indoor_Track__Field_Championships">ACC Indoor Track &amp; Field Championships</a></td>
+              </tr>
+              <tr>
                 <td>February 14-15, 2025</td>
                 <td><a data-turbo-frame="_top" data-turbo="false" href="/results/89473/Music_City_Challenge">Music City Challenge</a></td>
               </tr>
@@ -1289,14 +1297,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <td>May 25-27, 2023</td>
                 <td><a data-turbo-frame="_top" data-turbo="false" href="/results/81274/NCAA_East_Preliminary_Round">NCAA East Preliminary Round</a></td>
               </tr>
-              <tr>
-                <td>May 11-13, 2023</td>
-                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/81191/ACC_Outdoor_Track__Field_Championships">ACC Outdoor Track &amp; Field Championships</a></td>
-              </tr>
-              <tr>
-                <td>April 29, 2023</td>
-                <td><a data-turbo-frame="_top" data-turbo="false" href="/results/77936/Georgia_Southern_Classic">Georgia Southern Classic</a></td>
-              </tr>
               </tbody>
             </table>
           </div>
@@ -1361,7 +1361,7 @@ window.addEventListener('DOMContentLoaded', function() {
             </div>
             <p class="text-center footer-copyright">Copyright © 2025 DirectAthletics, Inc.
 </p>
-	    <div class="text-center footer-copyright" style="font-size:8px" >Generated 2025-02-22 11:47:52  </div>
+	    <div class="text-center footer-copyright" style="font-size:8px" >Generated 2025-03-09 12:43:28  </div>
         </div>
     </div>
 </footer>
